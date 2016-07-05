@@ -1,0 +1,10 @@
+<textarea class="ng-class:{'col-xs-12':true, 'has-error':field.errors.length>0}" data-ui-tinymce="editor.tinymceOptions" name="{{field.qualifier}}-{{qualifier}}" data-ng-disabled="!field.editable" data-ng-model="model[qualifier]" data-ng-change="reassignUserCheck()"></textarea>
+
+
+
+<div data-ng-if="field.requiresUserCheck">
+    <input type="checkbox" data-ng-model="field.isUserChecked" />
+
+
+    <span class="ng-class:{'warning-check-msg':true, 'not-checked':editor.hasFrontEndValidationErrors && !field.isCheckedByUser}" data-translate="editor.richtext.check">{{'editor.richtext.check"' | translate}}</span>
+</div>

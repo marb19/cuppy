@@ -1,0 +1,38 @@
+<div class="cmsx-ctx-wrapper1">
+    <div class="cmsx-ctx-wrapper2">
+        <div class="decorative-top-border decorative-border" ng-if="active"></div>
+        <div class="decorative-right-border decorative-border" ng-if="active"></div>
+        <div class="decorative-bottom-border decorative-border" ng-if="active"></div>
+        <div class="decorative-left-border decorative-border" ng-if="active"></div>
+        <div class="contextualMenuOverlay" data-ng-show="active">
+            <div data-ng-repeat="item in getItems().leftMenuItems" class="btn btn-primary cmsx-ctx-btns" ng-init="itemsrc = item.iconIdle" ng-mouseout="itemsrc = item.iconIdle" ng-mouseover="itemsrc = item.iconNonIdle">
+                <span id="{{item.i18nKey | translate}}-{{smarteditComponentId}}-{{smarteditComponentType}}-{{$index}}" data-ng-if="item.iconIdle && isHybrisIcon(item.displayClass)" ng-click="item.callback(smarteditComponentType, smarteditComponentId, $event)" class="ng-class:{clickable:true}">
+                    <img ng-src="{{itemsrc}}" id="{{item.i18nKey | translate}}-{{smarteditComponentId}}-{{smarteditComponentType}}-{{$index}}" />
+                </span>
+                <img id="{{item.i18nKey | translate}}-{{smarteditComponentId}}-{{smarteditComponentType}}-{{$index}}" title="{{item.i18nKey | translate}}" data-ng-if="item.iconIdle && !isHybrisIcon(item.displayClass)" class="{{item.displayClass}}" ng-class="{clickable:true}" data-ng-click="item.callback(smarteditComponentType, smarteditComponentId, $event)" data-ng-src="{{itemsrc}}" />
+            </div>
+            <div data-ng-if="getItems().moreMenuItems.length > 0" class="cmsx-ctx-more">
+
+                <div class="btn-group yCmsCtxMenu" dropdown is-open="status.isopen" ng-init="itemsrc = moreBtn.iconIdle" ng-mouseout="itemsrc = moreBtn.iconIdle" ng-mouseover="itemsrc = moreBtn.iconNonIdle">
+
+                    <button type="button" class="cmsx-ctx-more-btn pull-right" data-ng-click="toggleDropdown($event)">
+                        <img title="{{moreBtn.i18nKey | translate}}" ng-src="{{status.isopen? moreBtn.iconNonIdle : itemsrc}}" ng-class="{noboxshadow:status.isopen}" />
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li role="menu" data-ng-repeat="item in getItems().moreMenuItems">
+                            <a data-ng-click="item.callback(smarteditComponentType, smarteditComponentId, $event)">
+                                <span ng-if="item.displayClass" class="icontext {{item.displayClass}}" />
+                                <img id="{{item.i18nKey | translate}}-{{smarteditComponentId}}-{{smarteditComponentType}}-{{$index}}" title="{{item.i18nKey | translate}}" class="cmsx-ctx-menu-more-icon" data-ng-if="item.smallIcon && !isHybrisIcon(item.smallIcon)" data-ng-src="{{item.smallIcon}}" />
+                                <span class="labeltext">{{item.i18nKey | translate}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="contextualmenuBackground"></div>
+        </div>
+        <div class="yWrapperData">
+            <div data-ng-transclude></div>
+        </div>
+    </div>
+</div>

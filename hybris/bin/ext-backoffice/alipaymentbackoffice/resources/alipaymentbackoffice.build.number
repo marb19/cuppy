@@ -1,0 +1,11 @@
+#Ant properties
+#Wed Feb 24 03:46:08 CET 2016
+builddate=20160224 0346
+description=alipaymentbackoffice
+group.id=de.hybris.platform
+module.name=platform-module
+name=alipaymentbackoffice
+releasedate=20160128 1547
+vendor=hybris
+version=6.0.0.0-SNAPSHOT
+version.api=6.0.0

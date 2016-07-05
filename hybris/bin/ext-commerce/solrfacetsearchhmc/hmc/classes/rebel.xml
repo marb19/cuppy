@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://www.zeroturnaround.com">
+  <classpath>
+    <dir name="/rp/tmp/pipelines/20160307103047_search_and_nav_artifact_develop/prepare/build/source/solrfacetsearchhmc/hmc/classes" />
+  </classpath>
+</application>

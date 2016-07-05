@@ -1,0 +1,17 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Output from XSSEncoderTest</title>
+</head>
+<body>
+<pre>INSECURE: q=%27]%29;;alert%28%27HACKED%27%29//&amp;page=0
+SECURE: q=&amp;#x25;27&amp;#x5d;&amp;#x25;29&amp;#x3b;&amp;#x3b;alert&amp;#x25;28&amp;#x25;27HACKED&amp;#x25;27&amp;#x25;29&amp;#x2f;&amp;#x2f;&amp;amp;page&amp;#x3d;0
+INSECURE: &lt;p&gt;&lt;/p&gt;&lt;script&gt;malicious code&lt;/script&gt;&lt;p&gt;&lt;/p&gt;
+SECURE: &lt;p&gt;&amp;lt;&amp;#x2f;p&amp;gt;&amp;lt;script&amp;gt;malicious&amp;#x20;code&amp;lt;&amp;#x2f;script&amp;gt;&amp;lt;p&amp;gt;&lt;/p&gt;
+INSECURE: &lt;div title=""&gt;&lt;/div&gt;&lt;script&gt;malicious code&lt;/script&gt;&lt;div title=""&gt;div content&lt;/div&gt;
+SECURE: &lt;div title="&amp;quot;&amp;gt;&amp;lt;&amp;#x2f;div&amp;gt;&amp;lt;script&amp;gt;malicious&amp;#x20;code&amp;lt;&amp;#x2f;script&amp;gt;&amp;lt;div&amp;#x20;title&amp;#x3d;&amp;quot;"&gt;div content&lt;/div&gt;
+INSECURE: alert("");malicious code;alert("")
+SECURE: alert("&amp;quot;&amp;#x29;&amp;#x3b;malicious&amp;#x20;code&amp;#x3b;alert&amp;#x28;&amp;quot;")
+</pre>
+</body>
+</html>

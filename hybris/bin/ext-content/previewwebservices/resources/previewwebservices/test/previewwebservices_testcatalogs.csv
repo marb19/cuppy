@@ -1,0 +1,26 @@
+$contentCatalog=testContentCatalog
+$productCatalog=testProductCatalog
+$languages=en
+$defaultLanguage=en
+$storeUid=testStore
+$siteUid=testSite
+
+
+# Content catalog for CMS contents
+INSERT_UPDATE ContentCatalog;id[unique=true]
+;$contentCatalog
+;$productCatalog
+
+# Catalog versions for content catalogs
+INSERT_UPDATE CatalogVersion;catalog(id)[unique=true];version[unique=true];active;languages(isoCode)
+;$contentCatalog;Staged;false;$languages
+;$contentCatalog;Online;true;$languages
+;$productCatalog;Staged;false;$languages
+;$productCatalog;Online;true;$languages
+
+INSERT_UPDATE BaseStore;uid[unique=true];catalogs(id);
+;$storeUid;$productCatalog;
+
+INSERT_UPDATE CMSSite;uid[unique=true];stores(uid);contentCatalogs(id);defaultCatalog(id);urlPatterns;active;
+;$siteUid;$storeUid;$contentCatalog;$productCatalog;(?i)^https?://[^/]+(/[^?]*)?\?(.*\&)?(site=$siteUid)(|\&.*)$,(?i)^https?://$siteUid\.[^/]+(|/.*|\?.*)$;true
+

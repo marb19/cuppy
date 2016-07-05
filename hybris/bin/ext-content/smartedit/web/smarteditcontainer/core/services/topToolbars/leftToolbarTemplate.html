@@ -1,0 +1,44 @@
+<div>
+    <nav class="leftNav">
+
+        <ul class="list-unstyled ySEUser left-toolbar">
+            <li class="text-right yCloseToolbar">
+                <a href="#" class="nav-close" data-ng-click="closeLeftToolbar($event)">
+                    <span class="hyicon hyicon-close"></span>
+                </a>
+            </li>
+            <li class="text-left yUserData">
+                <div class="yUserInfo">
+                    <p>{{'left.toolbar.cmsuser.name' | translate}}</p>
+                    <a href="#" id="" data-ng-click="signOut($event)">{{'left.toolbar.sign.out' | translate}}</a>
+                </div>
+            </li>
+            <li class="divider leftnavdivider"></li>
+        </ul>
+
+        <ul class="list-unstyled left-toolbar" id="hamburger-menu-level1">
+            <li class="leftnavitemlist"><a data-ng-click="showSites()">{{'left.toolbar.sites' | translate}}</span></a></li>
+            <li class="leftnavitemlist"><a id="configurationCenter" data-ng-click="showCfgCenter($event)">{{'left.toolbar.configuration.center' | translate}}<span class="icon "></span></a></li>
+        </ul>
+        <ul class="list-unstyled left-toolbar ySELeftHideLevel2" id="hamburger-menu-level2">
+            <li>
+                <a class="leftnavitemlist" data-ng-click="goBack()">
+                    <span class=" icon-back ">{{'left.toolbar.back' | translate}}</span>
+                </a>
+            </li>
+            <li class="leftnavitemlist">
+                <general-configuration/>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="navbar-header pull-left leftNavBtn">
+        <button type="button " class="navbar-toggle collapsed " data-toggle="collapse " data-target="#bs-example-navbar-collapse-1 " id="nav-expander" data-ng-click="showToolbar($event) ">
+            <span class="sr-only ">{{'left.toolbar.toggle.navigation' | translate}}</span>
+            <span class="icon-bar "></span>
+            <span class="icon-bar "></span>
+            <span class="icon-bar "></span>
+        </button>
+    </div>
+
+</div>

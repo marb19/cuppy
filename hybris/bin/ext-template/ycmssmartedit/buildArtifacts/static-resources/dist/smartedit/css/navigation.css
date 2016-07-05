@@ -1,0 +1,938 @@
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.open div .dropdown-menu {
+  display: block;
+}
+body {
+  padding: 0;
+}
+body .ySmartEditToolbars {
+  z-index: 1;
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  font-family: "Dosis", sans-serif;
+}
+body .ySmartEditToolbars .dropdown-menu {
+  background-color: #32a0ec;
+  color: #ffffff;
+  min-width: 0;
+  border-radius: 0px;
+  margin-top: 0px;
+  border-top: 1px solid #e5e5e5;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar {
+  background-color: #0486e0;
+  height: 65px;
+  padding: 15px 0px 0 19px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar {
+  padding-top: 15px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .dropdown-menu {
+  background-color: #32a0ec;
+  min-width: 0;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .leftNav .nav-close {
+  font-size: 18px;
+  margin-right: 32px;
+  color: #DBE3ED;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .leftNav .nav-close {
+  font-size: 18px;
+  margin-right: 32px;
+  color: #DBE3ED;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yToolbarBtn .yDdResolution > li > a:hover {
+  color: inherit;
+  background-color: inherit;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yToolbarBtn .yHybridAction {
+  box-shadow: none;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yToolbarBtn .btn-group {
+  padding-top: 15px;
+  box-shadow: none;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yToolbarBtn .btn-group.open {
+  background-color: #32a0ec;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yToolbarBtn button.btn {
+  font-size: 15px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .divider-vertical {
+  height: 50px;
+  margin: 0 9px;
+  border-left: 1px solid #F2F2F2;
+  border-right: 1px solid #FFF;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar-toggle {
+  display: inline-block;
+  padding: 0;
+  margin: 9px 40px 0 30px;
+  border-radius: 0;
+  float: none;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar-toggle .icon-bar {
+  background-color: #fff;
+  border-radius: 0;
+  height: 3px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .nav-pills button {
+  background: transparent none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 0;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .nav-pills button + .ySmartEditTitleToolbar .nav-pills button {
+  margin-right: 18px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .nav-pills {
+  margin-top: -15px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yHybridAction {
+  box-shadow: none;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yHybridAction img {
+  padding: 14px 25px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yTemplateToolbar {
+  display: inline;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .ySmartEditAppLogo {
+  margin-top: 2px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar {
+  background-color: #ffffff;
+  height: 65px;
+  padding: 0;
+  color: #0486e0;
+  border-bottom: 1px solid #cedcec;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .yDddlbResolution {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .yHybridAction {
+  box-shadow: none;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .btn-group.open {
+  background-color: #32a0ec;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yWebsiteTB experience-selector-button > div > .btn {
+  text-transform: none;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yWebsiteTB .yToolbarBtn {
+  width: 100%;
+  padding-top: 18px;
+  float: none;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn .pageToolMenu .list-unstyled .yCloseToolbar {
+  margin-top: 20px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn .pageToolMenu .list-unstyled .yCloseToolbar a:hover {
+  color: #a1aebd;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn .pageToolMenu .list-unstyled.page-tool-menu li {
+  padding-left: 30px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn .pageToolMenu .list-unstyled.page-tool-menu li a:hover {
+  color: #a1aebd;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn .pageToolMenu #page-tool-menu-home li {
+  padding-left: 30px;
+  padding-bottom: 25px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn .pageToolMenu #page-tool-menu-home li:first-of-type {
+  padding-top: 20px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .glyphicon {
+  color: #8592a2;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .navbar-toggle {
+  display: inline-block;
+  padding: 0;
+  margin: 5px 40px 0 48px;
+  border-radius: 0;
+  float: none;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .navbar-toggle .icon-bar {
+  background-color: #fff;
+  border-radius: 0;
+  height: 3px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .nav-pills > .yToolbarBtn > div > button,
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .nav-pills > .yToolbarBtn > experience-selector-button > div > button,
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .nav-pills > .yToolbarBtn > div > div > component-menu > div > button {
+  background: transparent none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 0;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .nav-pills > .yToolbarBtn > experience-selector-button > div > button {
+  padding: 0 0 0 49px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions {
+  float: right;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn {
+  padding: inherit;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn:first-child {
+  margin-right: 1em;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn.btn-primary {
+  color: #27394f;
+  background-color: #FCDF2B;
+  border-color: #e2c713;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn-primary.focus,
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn-primary:focus {
+  color: #27394f;
+  background-color: #f1d003;
+  border-color: #6c5f09;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn-primary:hover {
+  color: #27394f;
+  background-color: #f1d003;
+  border-color: #aa950e;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn-default {
+  color: #fff;
+  background-color: #3f5875;
+  border-color: #2b415b;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn-default.focus,
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn.btn-default:focus {
+  color: #fff;
+  background-color: #2d3f54;
+  border-color: #020304;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn-default:hover {
+  color: #fff;
+  background-color: #2d3f54;
+  border-color: #172331;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .btn-group {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: none;
+  border-radius: 0;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .nav-pills button + .ySmartEditTitleToolbar .nav-pills button {
+  margin-right: 18px;
+}
+/*left nav*/
+.nav-expanded-left .ySmartEditTitleToolbar a.nav-expander,
+.nav-expanded-left .ySmartEditTitleToolbar button.nav-expander {
+  background: none repeat scroll 0 0 #000000;
+  color: #FFFFFF;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-left: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  left: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  width: 130px;
+  z-index: 12;
+  transition: left 0.3s ease-in-out 0s;
+  -webkit-transition: left 0.3s ease-in-out 0s;
+  -moz-transition: left 0.3s ease-in-out 0s;
+  -o-transition: left 0.3s ease-in-out 0s;
+}
+.nav-expanded-left .ySmartEditTitleToolbar a.nav-expander.fixed,
+.nav-expanded-left .ySmartEditTitleToolbar button.nav-expander.fixed {
+  left: 20em;
+}
+.nav-expanded-left .ySmartEditTitleToolbar nav {
+  left: 0;
+}
+.ySmartEditTitleToolbar a.nav-expander:hover,
+.ySmartEditTitleToolbar button.nav-expander:hover {
+  cursor: pointer;
+}
+.ySmartEditTitleToolbar a.nav-expander.fixed,
+.ySmartEditTitleToolbar button.nav-expander.fixed {
+  position: fixed;
+}
+.ySmartEditTitleToolbar .navbar-inverse,
+.ySmartEditTitleToolbar .navbar-toggle {
+  background: #0486e0;
+  color: #ffffff;
+  border: none;
+}
+.ySmartEditTitleToolbar .navbar-inverse .navbar-toggle:hover,
+.ySmartEditTitleToolbar .navbar-inverse .navbar-toggle:focus {
+  background-color: #0486e0;
+}
+.ySmartEditTitleToolbar nav {
+  background: #233243;
+  color: #36c2f2;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  left: -20em;
+  font-size: 15px;
+  top: 0;
+  width: 20em;
+  z-index: 1001;
+  transition: left 0.3s ease-in-out 0s;
+  -webkit-transition: left 0.3s ease-in-out 0s;
+  -moz-transition: left 0.3s ease-in-out 0s;
+  -o-transition: left 0.3s ease-in-out 0s;
+}
+.ySmartEditTitleToolbar .left-toolbar {
+  font-size: 16px !important;
+  padding-top: 0;
+}
+.ySmartEditTitleToolbar .left-toolbar li {
+  padding: 12px 12px 36px 48px;
+}
+.ySmartEditTitleToolbar .left-toolbar li.divider {
+  border-bottom: 1px solid #172535;
+  margin-left: 48px;
+  height: 1px;
+}
+.ySmartEditTitleToolbar .left-toolbar li.yUserData .yUserInfo p {
+  color: #dbe3eb;
+}
+.ySmartEditTitleToolbar .left-toolbar li.yUserData .yUserInfo a {
+  color: #808fa1;
+}
+.ySmartEditTitleToolbar .left-toolbar li a {
+  color: #808fa1;
+  text-decoration: none;
+}
+.ySmartEditTitleToolbar .left-toolbar li a:hover {
+  color: #dbe3eb;
+  text-decoration: none;
+}
+.ySmartEditTitleToolbar .left-toolbar li.yCloseToolbar {
+  padding-bottom: 0;
+  padding-right: 0;
+}
+.ySmartEditTitleToolbar .left-toolbar li .sub-nav {
+  border-bottom: 0;
+  padding: 4px;
+}
+.ySmartEditTitleToolbar .left-toolbar a .caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+  content: "";
+  margin-top: 8px;
+}
+.ySmartEditTitleToolbar .left-toolbar a:hover .caret {
+  border-top-color: #4f5963;
+}
+.ySmartEditTitleToolbar .left-toolbar li.open > a > .caret {
+  border-top: none;
+  border-bottom: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+}
+.ySmartEditTitleToolbar .left-toolbar li.open > a:hover > .caret {
+  border-bottom-color: #4f5963;
+}
+.ySmartEditTitleToolbar .page-tool-menu {
+  font-size: 16px !important;
+  padding-top: 0;
+}
+.ySmartEditTitleToolbar .page-tool-menu li {
+  padding: 12px 12px 36px 48px;
+}
+.ySmartEditTitleToolbar .page-tool-menu li.divider {
+  border-bottom: 1px solid #172535;
+  margin-left: 48px;
+  height: 1px;
+}
+.ySmartEditTitleToolbar .page-tool-menu li.yUserData .yUserInfo p {
+  color: #dbe3eb;
+}
+.ySmartEditTitleToolbar .page-tool-menu li.yUserData .yUserInfo a {
+  color: #808fa1;
+}
+.ySmartEditTitleToolbar .page-tool-menu li a {
+  color: #808fa1;
+  text-decoration: none;
+}
+.ySmartEditTitleToolbar .page-tool-menu li a:hover {
+  color: #dbe3eb;
+  text-decoration: none;
+}
+.ySmartEditTitleToolbar .page-tool-menu li.yCloseToolbar {
+  padding-bottom: 0;
+  padding-right: 0;
+}
+.ySmartEditTitleToolbar .page-tool-menu li .sub-nav {
+  border-bottom: 0;
+  padding: 4px;
+}
+.ySmartEditTitleToolbar .page-tool-menu a .caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+  content: "";
+  margin-top: 8px;
+}
+.ySmartEditTitleToolbar .page-tool-menu a:hover .caret {
+  border-top-color: #4f5963;
+}
+.ySmartEditTitleToolbar .page-tool-menu li.open > a > .caret {
+  border-top: none;
+  border-bottom: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+}
+.ySmartEditTitleToolbar .page-tool-menu li.open > a:hover > .caret {
+  border-bottom-color: #4f5963;
+}
+.ySmartEditTitleToolbar .icon:before {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '>';
+}
+.ySmartEditTitleToolbar .icon-back:before {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '< ';
+}
+.ySmartEditTitleToolbar .left-toolbar li > a > span.icon {
+  float: right;
+  margin: -2px 24px -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.ySmartEditTitleToolbar .left-toolbar li > a:hover > span.icon {
+  float: right;
+  margin: -2px 24px -0.1em 0;
+  opacity: 1;
+}
+.ySmartEditTitleToolbar .page-tool-menu li > a > span.icon {
+  float: right;
+  margin: -2px 24px -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.ySmartEditTitleToolbar .page-tool-menu li > a:hover > span.icon {
+  float: right;
+  margin: -2px 24px -0.1em 0;
+  opacity: 1;
+}
+.ySmartEditTitleToolbar .nav-close {
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+body.nav-expanded-left {
+  margin-right: 0em;
+  /*123*/
+  transition: left 0.4s ease-in-out 0s;
+  -webkit-transition: left 0.4s ease-in-out 0s;
+  -moz-transition: left 0.4s ease-in-out 0s;
+  -o-transition: left 0.4s ease-in-out 0s;
+}
+/*left nav*/
+/*right nav*/
+.nav-expanded-right .ySmartEditExperienceSelectorToolbar a.nav-expander,
+.nav-expanded-right .ySmartEditExperienceSelectorToolbar button.nav-expander {
+  background: none repeat scroll 0 0 #000000;
+  color: #0f0f0f;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-right: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  left: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  width: 130px;
+  z-index: 12;
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+}
+.nav-expanded-right .ySmartEditExperienceSelectorToolbar a.nav-expander.fixed,
+.nav-expanded-right .ySmartEditExperienceSelectorToolbar button.nav-expander.fixed {
+  right: 20em;
+}
+.nav-expanded-right .ySmartEditExperienceSelectorToolbar nav {
+  right: 0;
+}
+.ySmartEditExperienceSelectorToolbar a.nav-expander:hover,
+.ySmartEditExperienceSelectorToolbar button.nav-expander:hover {
+  cursor: pointer;
+}
+.ySmartEditExperienceSelectorToolbar a.nav-expander.fixed,
+.ySmartEditExperienceSelectorToolbar button.nav-expander.fixed {
+  position: fixed;
+}
+.ySmartEditExperienceSelectorToolbar .navbar-inverse,
+.ySmartEditExperienceSelectorToolbar .navbar-toggle {
+  background: #0486e0;
+  color: #0f0f0f;
+  border: none;
+}
+.ySmartEditExperienceSelectorToolbar .navbar-inverse .navbar-toggle:hover,
+.ySmartEditExperienceSelectorToolbar .navbar-inverse .navbar-toggle:focus {
+  background-color: #0486e0;
+}
+.ySmartEditExperienceSelectorToolbar nav {
+  background: #ffffff;
+  color: #36c2f2;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -20em;
+  font-size: 15px;
+  top: 0;
+  width: 20em;
+  z-index: 1000;
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar {
+  padding-top: 0;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li {
+  margin-left: 10px;
+  font-size: 18px;
+  padding: 12px 12px 12px 20px;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.divider {
+  border-bottom: 1px solid #172535;
+  margin-right: 48px;
+  height: 1px;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.yUserData {
+  height: 70px;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.yUserData .yUserInfo p {
+  color: #dbe3eb;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.yUserData .yUserInfo a {
+  color: #808fa1;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li a:hover {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.yCloseToolbar {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li .sub-nav {
+  border-bottom: 0;
+  padding: 4px;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar a .caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+  content: "";
+  margin-top: 8px;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar a:hover .caret {
+  border-top-color: #4f5963;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.open > a > .caret {
+  border-top: none;
+  border-bottom: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.open > a:hover > .caret {
+  border-bottom-color: #4f5963;
+}
+.ySmartEditExperienceSelectorToolbar .icon:before {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '>';
+}
+.ySmartEditExperienceSelectorToolbar .icon-back:before {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '< ';
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li > a > span.icon {
+  float: left;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li > a:hover > span.icon {
+  float: left;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}
+.ySmartEditExperienceSelectorToolbar .nav-close {
+  font-size: 20px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+.ySmartEditExperienceSelectorToolbar span.yStatusError {
+  color: #ff3b30;
+}
+.ySmartEditExperienceSelectorToolbar span.yStatusDefault {
+  color: #27394f;
+}
+.ySmartEditExperienceSelectorToolbar span.yStatusInfo {
+  color: #18bc33;
+}
+.ySmartEditExperienceSelectorToolbar div.yStatusSubtitle {
+  color: #8592a2;
+  font-size: 14px;
+  padding-left: 37px;
+}
+.ySmartEditExperienceSelectorToolbar span.yStatusError img,
+.ySmartEditExperienceSelectorToolbar span.yStatusDefault img,
+.ySmartEditExperienceSelectorToolbar span.yStatusInfo img {
+  padding-right: 18px;
+}
+body.nav-expanded-right {
+  margin-left: 0em;
+  /*123*/
+  transition: right 0.4s ease-in-out 0s;
+  -webkit-transition: right 0.4s ease-in-out 0s;
+  -moz-transition: right 0.4s ease-in-out 0s;
+  -o-transition: right 0.4s ease-in-out 0s;
+}
+/*right nav*/
+@media (max-width: 991px) {
+  body .ySmartEditToolbars .ySmartEditTitleToolbar {
+    height: 100px;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar-toggle {
+    padding-top: 15px;
+    margin-top: 8px;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar-toggle .icon-bar {
+    width: 40px;
+    height: 4px;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 6px;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar {
+    padding-top: 30px;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .ySmartEditAppLogo {
+    height: 35px;
+    margin-top: 18px;
+  }
+  .yWebsite,
+  .yPage {
+    border-bottom: 1px solid #cedcec;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100px;
+    background-color: #FFFFFF;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .yWebsite .btn-text,
+  .yPage .btn-text {
+    font-size: 22px;
+  }
+  body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yWebsite {
+    border-bottom: 1px solid #cedcec;
+  }
+  body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yWebsite .yWebsiteTB .yToolbarBtn {
+    padding-top: 30px;
+  }
+  .yPage .yPageTB {
+    padding-top: 0;
+  }
+  body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .btn-group {
+    padding: 29px 22px 29px 22px;
+  }
+  body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .btn-group img {
+    height: 40px;
+  }
+  body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .btn-group .dropdown-menu .item {
+    font-size: 22px;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .yToolbarBtn .btn-group {
+    padding-top: 17px;
+    padding-bottom: 0;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .yHybridAction img {
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+  /*toolbars for mobile taking 100% width*/
+  .ySmartEditTitleToolbar nav.leftNav {
+    left: -100%;
+    width: 100%;
+    font-size: 16px;
+  }
+  .nav-expanded-left .ySmartEditTitleToolbar nav {
+    left: 0 !important;
+  }
+  .ySmartEditExperienceSelectorToolbar nav.pageToolMenu {
+    right: -100%;
+    width: 100%;
+  }
+  .nav-expanded-right .ySmartEditExperienceSelectorToolbar nav {
+    right: 0 !important;
+  }
+  /*toolbars for mobile taking 100% width*/
+}
+.yWebsite,
+.yPage {
+  background-color: #FFFFFF;
+}
+.yPage .yToolbarBtn {
+  margin-right: -1.5px;
+}
+/*shift down the old UI*/
+.col-xs-1.form-horizontal,
+body > div > .col-xs-7 {
+  margin-top: 150px;
+}
+@media (max-width: 991px) {
+  .col-xs-1.form-horizontal,
+  body > div > .col-xs-7 {
+    margin-top: 300px;
+  }
+}
+.ySmartEditTemplateBckg {
+  background-color: #32a0ec;
+}
+/*page tool menu animation*/
+.hideLevel1 {
+  margin-left: -200px;
+  opacity: 0;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.showLevel1 {
+  margin-left: 0;
+  opacity: 1;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.hideLevel2 {
+  margin-left: 320px;
+  position: absolute;
+  opacity: 0;
+  top: 40px;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.showLevel2 {
+  margin-left: 0;
+  position: absolute;
+  top: 40px;
+  opacity: 1;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.hide1 {
+  position: fixed;
+  top: 0;
+  right: -200px;
+  transition: right 3s;
+  -webkit-transition: right 3s;
+}
+.yWebsite {
+  margin-left: -15px;
+}
+.ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn button:hover,
+.ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn button:focus,
+.ySmartEditExperienceSelectorToolbar .yToolbarBtn .yWebsiteSelectBtn.btn:hover,
+.ySmartEditExperienceSelectorToolbar .yToolbarBtn .yWebsiteSelectBtn.btn:focus {
+  color: #0486e0;
+}
+.yDddlbResolution.btn-default:active,
+.yDddlbResolution.btn-default:focus {
+  outline: none;
+}
+inflection-point-selector > div.open {
+  background-color: #32a0ec ;
+}
+inflection-point-selector ul.dropdown-menu > li:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+.ySmartEditTitleToolbar .yPageTB {
+  margin-right: 25px;
+}
+.ySEOpenComponent {
+  background-color: #32a0ec;
+}
+.ySEHybridAction .btn-default:active:focus,
+.ySEHybridAction .btn-default:focus {
+  outline-color: #ffffff;
+}
+.ySEHybridAction.ySEOpenComponent .btn-default:active:focus,
+.ySEHybridAction.ySEOpenComponent .btn-default:focus {
+  outline-color: #32a0ec;
+}
+/*page tool menu animation*/
+.ySELeftHideLevel1 {
+  margin-left: -200px;
+  opacity: 0;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.ySELeftShowLevel1 {
+  margin-left: 0;
+  opacity: 1;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.ySELeftHideLevel2 {
+  margin-left: 320px;
+  position: absolute;
+  opacity: 0;
+  top: 125px;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.ySELeftShowLevel2 {
+  margin-left: 0;
+  position: absolute;
+  top: 125px;
+  opacity: 1;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.ySmartEditTitleToolbar .yTemplateToolbar nav.leftNav {
+  overflow: hidden;
+}
+nav.pageToolMenu {
+  overflow: hidden;
+}
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+  cursor: pointer;
+}

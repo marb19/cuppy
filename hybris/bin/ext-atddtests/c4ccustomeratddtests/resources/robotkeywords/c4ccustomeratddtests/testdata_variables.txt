@@ -1,0 +1,8 @@
+*** Variables ***
+${senderInternalID}    senderInternalId
+${senderschemeID}    senderSchemeID
+${senderschemeAgencyID}    000
+${recipientInternalID}    recipientInternalID
+${recipientschemeID}    recipientSchemeID
+${recipientschemeAgencyID}    111
+${rolecode_test}    CRM000

@@ -1,0 +1,58 @@
+<component name="libraryTable">
+  <library name="Common libs">
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/lib" />
+      <root url="file://$PROJECT_DIR$/bin/ext-backoffice/backoffice/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/catalog/lib" />
+      <root url="file://$PROJECT_DIR$/bin/ext-cockpit/cockpit/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/comments/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/commons/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/core/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/deliveryzone/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/europe1/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/hac/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/impex/lib" />
+      <root url="file://$PROJECT_DIR$/bin/ext-platform-optional/ldap/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/maintenanceweb/lib" />
+      <root url="file://$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/mediaweb/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/paymentstandard/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/lib" />
+      <root url="file://$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/lib" />
+      <root url="file://$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/platformservices/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/processing/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/scripting/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/testweb/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/validation/lib" />
+      <root url="file://$PROJECT_DIR$/bin/platform/ext/workflow/lib" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/ext-backoffice/backoffice/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/ext-cockpit/cockpit/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/ext-platform-optional/ldap/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/catalog/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/comments/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/commons/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/core/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/deliveryzone/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/europe1/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/hac/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/impex/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/maintenanceweb/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/mediaweb/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/paymentstandard/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/platformservices/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/processing/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/scripting/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/testweb/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/validation/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/ext/workflow/lib" recursive="true" />
+    <jarDirectory url="file://$PROJECT_DIR$/bin/platform/lib" recursive="true" />
+  </library>
+</component>

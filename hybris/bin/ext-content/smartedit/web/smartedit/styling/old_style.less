@@ -1,0 +1,360 @@
+/* Make iFrame 100% height of the screen by default + fix drag and drop jumping */
+body, html, body[data-ng-app] > div[data-ng-view] {
+    height: 100%;
+}
+
+html.smartedit-html-container {
+    height: auto;
+}
+
+body[data-smartedit-ready] {
+    height: auto;
+    overflow-x: hidden !important;
+}
+
+#js_iFrameWrapper {
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 0;
+    padding-top: 130px; // default offset for the storefront. It will be overwritten with jQuery at runtime in smarteditcontainer.js
+    overflow: hidden;
+}
+/* -- end */
+
+.thumbnail{
+    width:64px;
+    display:inline;
+}
+button.close{
+    margin-right:20px;
+}
+div.synchronize{
+    position:relative;
+}
+img.synchronize{
+    position: absolute;
+    right: 0;
+    z-index: 500
+}
+.contextualMenuOverlay{
+    position: absolute;
+    z-index: 9999;
+    left: 3px;
+    top: 3px;
+    &.editMode{
+        width: 100%;
+        height: 100%;
+    }
+}
+.piled{
+    margin-top:0;
+    margin-bottom:0;
+}
+.minDivHeight{
+    min-height:20px;
+}
+.clickable{
+    cursor:pointer;
+}
+//.btn {
+//    text-transform: lowercase;
+//}
+/*
+input.ng-invalid.ng-dirty {
+    border-color: #FA787E;
+    border-style: solid;
+}
+
+input.ng-valid.ng-dirty {
+    border-color: #78FA89;
+    border-style: solid;
+}*/
+
+//.modal-content {
+//    .modal-footer,
+//    .modal-header{
+//        background-color: rgb(68, 77, 82);
+//    }
+//    background-color: rgb(68, 77, 82);
+//    color: white;
+//    border: 1px solid rgb(255, 255, 255);
+//    -webkit-border-radius: 0px;
+//    -moz-border-radius: 0px;
+//    border-radius: 0px;
+//    .modal-body div textarea{
+//        resize: both;
+//    }
+//}
+
+.toptoolbar {
+    position: absolute;
+    padding: 10px;
+    margin-left:60px;
+    z-index: 100;
+}
+.floating-perspective {
+    position: fixed;
+    padding: 10px;
+    left: 10px;
+    z-index: 700;
+}
+
+.xposed-perspectives,  .xposed-administration{
+    color: white;
+    background: rgb(41, 164, 41);
+    border: 1px solid rgb(255, 255, 255);
+    -webkit-border-radius: 0px;
+    -moz-border-radius: 0px;
+    border-radius: 0px;
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+.xposed-administration{
+    background: blue;
+}
+
+.floating-bg {
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+    background: rgb(68, 77, 82);
+    padding: 5px 20px 0px 20px;
+}
+.overlay {
+    position:absolute;
+    z-index:300
+}
+
+.box {
+}
+
+select, option{
+    color:black;
+}
+
+.contentSlot{
+    background-color:pink;
+}
+
+.form-control{
+    height:auto;
+}
+
+.alert-overlay {
+    position: fixed;
+    margin-top:40px;
+    z-index: 1091;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 8px 20% 8px 20%;
+}
+
+.ySEEmptyMessage{
+    display: none;
+}
+
+/* Fix techne bug for dropdown template */
+.ui-select-container a:hover {
+    color: #555 !important;
+}
+
+
+/*override of bootstrap css*/
+iframe{
+    box-sizing:content-box;
+    border: none;
+}
+iframe.device-vertical.device-iphoneResponsive {
+    background: url(../../../images/devices/iphone_v.png) no-repeat;
+    padding: 140px 80px;
+    overflow-x: hidden;
+}
+
+iframe.device-horizontal.device-iphoneResponsive  {
+    background: url(../../../images/devices/iphone_h.png) no-repeat;
+    padding: 80px 140px;
+    overflow-x: hidden;
+}
+
+iframe.device-vertical.device-ipadResponsive  {
+    background: url(../../../images/devices/ipad_v.png) no-repeat;
+    padding: 40px 42px;
+    overflow-x: hidden;
+    margin-top: 25px;
+}
+
+iframe.device-horizontal.device-ipadResponsive  {
+    background: url(../../../images/devices/ipad_h.png) no-repeat;
+    padding: 42px 42px;
+    overflow-x: hidden;
+    margin-top: 25px;
+}
+
+iframe.device-vertical.device-nexusResponsive  {
+    background: url(../../../images/devices/nexus_v.png) no-repeat;
+    padding: 155px 59px;
+    overflow-x: hidden;
+
+    margin-top: 25px;
+}
+
+iframe.device-horizontal.device-nexusResponsive  {
+    background: url(../../../images/devices/nexus_h.png) no-repeat;
+    padding: 61px 155px;
+    overflow-x: hidden;
+    margin-top: 25px;
+}
+
+iframe.device-vertical.device-samsung4Responsive  {
+    background: url(../../../images/devices/galaxy_v.png) no-repeat;
+    padding: 70px 19px;
+    overflow-x: hidden;
+    margin-top: 25px;
+}
+
+iframe.device-horizontal.device-samsung4Responsive  {
+    background: url(../../../images/devices/galaxy_h.png) no-repeat;
+    padding: 23px 70px;
+    overflow-x: hidden;
+    margin-top: 25px;
+}
+
+.select2 > .select2-choice.ui-select-match {
+    /* Because of the inclusion of Bootstrap */
+    /*height: 29px;*/
+}
+
+.selectize-control > .selectize-dropdown {
+    top: 36px;
+}
+
+.cmsx-ctx-btns,
+.cmsx-ctx-more-btn{
+    border-radius: 0;
+    opacity: 1;
+    border: 0;
+    box-shadow: none;
+    padding: 0px 0px;
+    z-index: 5001;
+}
+
+.cmsx-ctx-btns{
+    margin-right: 2px;
+}
+
+.cmsx-ctx-btns img{
+    opacity: 1;
+}
+/*
+.yCmsComponent:hover,
+.contextualMenuOverlay:hover{
+    -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 198, 255, 0.2);
+    -moz-box-shadow: inset 0 0 0 1000px rgba(0, 198, 255, 0.2);
+    box-shadow: inset 0 0 0 1000px rgba(0, 198, 255, 0.2);
+}
+
+.yWrapperData:hover{
+    -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 198, 255, 0.8);
+    -moz-box-shadow: inset 0 0 0 1000px rgba(0, 198, 255, 0.8);
+    box-shadow: inset 0 0 0 1000px rgba(0, 198, 255, 0.8);
+}
+
+.yWrapperData img:hover{
+    opacity: 0.8;
+}*/
+.cmsx-ctx-wrapper1{
+    overflow: hidden;
+    display: table;
+}
+.cmsx-ctx-wrapper2{
+    display: table-cell;
+    vertical-align: middle;
+}
+.cmsx-ctx-more .dropdown,
+.cmsx-ctx-more{
+    display: inline;
+}
+
+.cmsx-ctx-btns img,
+.cmsx-ctx-more-btn img{
+    max-width: 45px;
+}
+
+.yCmsCtxMenu.dropdown .dropdown-menu {
+    z-index: 1013;
+    border: 0;
+    border-radius: 0;
+    font-family: Dosis;
+}
+.cmsx-ctx-menu-more-icon{
+    max-width: 20px;
+    margin-right: 10px;
+}
+.yCmsCtxMenu.dropdown .dropdown-menu li,
+.yCmsCtxMenu.dropdown .dropdown-menu li a{
+    z-index: 5000;
+    margin-top: 0;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.yCmsCtxMenu.dropdown ul.dropdown-menu{
+    margin-top: 0;
+}
+
+.cmsx-ctx-more-btn .bottom-shadow {
+    box-shadow: 0px 1px 1px 1px rgba(0,0,0,.1);
+    z-index: 1014;
+    position: relative;
+}
+
+.alert.alert-success{
+    background-color: #18BC45;
+    border-color: #18BC45;
+    opacity: 0.95;
+}
+
+.alert.alert-danger{
+    background-color: #FF3B30;
+    border-color: #FF3B30;
+    opacity: 0.95;
+}
+
+.error-input,
+input.has-error{
+    color: #FF3B30;
+}
+
+input.has-error, textarea.has-error{
+    border-color: #FF3B30;
+}
+
+
+.nav-tabs li a.sm-tab-error{
+    color: #FF3B30;
+}
+.nav-tabs li a.sm-tab-error:before{
+    content: "! ";
+}
+
+// for the new components changed by the storefront templates
+//div.smartEditComponent > div:after{
+//    clear: both;
+//    content: " ";
+//    display: block;
+//}
+
+.ySEWaitDialog{
+    margin-top:300px
+}

@@ -1,0 +1,17 @@
+# ImpEx for Importing Product Reviews
+ 
+# Macros / Replacement Parameter definitions
+$catalog-Online=Online
+$product-catalog=financialProductCatalog
+$productCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$product-catalog]),CatalogVersion.version[default=$catalog-Online])[default=$product-catalog:$catalog-Online]
+
+$defaultPassword=password
+
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Online'])[unique=true,default=$productCatalog:Online]
+
+# Reviews from Customers
+
+INSERT_UPDATE Customer;groups(uid);uid[unique=true];name;password[default=$defaultPassword];customerId
+
+
+INSERT_UPDATE CustomerReview;product(code, $productCV)[unique=true]; rating; user(uid)[unique=true];headline;comment;approvalStatus(code)[default='approved'];language(isocode)[default='en']

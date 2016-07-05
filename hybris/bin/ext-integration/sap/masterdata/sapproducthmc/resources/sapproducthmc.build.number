@@ -1,0 +1,11 @@
+#Ant properties
+#Fri Mar 04 22:36:57 CET 2016
+builddate=20160304 2236
+description=sapproducthmc
+group.id=de.hybris.platform
+module.name=platform-module
+name=sapproducthmc
+releasedate=20160303 1600
+vendor=hybris
+version=6.0.0.0-SNAPSHOT
+version.api=6.0.0

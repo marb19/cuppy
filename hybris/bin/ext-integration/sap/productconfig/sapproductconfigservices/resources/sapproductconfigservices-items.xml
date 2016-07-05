@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="items.xsd">
+
+	<itemtypes>
+		<itemtype code="CMSCartConfigurationRestriction" jaloclass="de.hybris.platform.sap.productconfig.services.jalo.CMSCartConfigurationRestriction" extends="AbstractRestriction"
+			autocreate="true" generate="true">
+			<attributes>
+				<attribute qualifier="description" redeclare="true" type="java.lang.String">
+					<persistence type="dynamic" attributeHandler="sapProductConfigCartRestrictionDynamicDescription" />
+					<modifiers write="false" />
+				</attribute>
+			</attributes>
+		</itemtype>
+		
+	</itemtypes>
+</items>

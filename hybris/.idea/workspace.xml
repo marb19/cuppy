@@ -1,0 +1,1457 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ce2ff4ae-5148-4466-ad3b-3ea830822211" name="Default" comment="" />
+    <ignored path="cuppy.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/admincockpit/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/advancedsavedquery/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-backoffice/backoffice/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/catalog/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/cockpit/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/comments/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/commons/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/config/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/config/.settings/" />
+    <ignored path="$PROJECT_DIR$/config/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/config/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/config/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/config/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/config/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/config/classes/" />
+    <ignored path="$PROJECT_DIR$/config/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/config/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/config/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/config/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/config/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/config/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/config/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/config/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/core/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/deliveryzone/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/europe1/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/hac/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/hmc/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/impex/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/ldap/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/maintenanceweb/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-cockpit/mcc/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/mediaconversion/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/mediaweb/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/paymentstandard/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/bootstrap/modelclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/tomcat/work/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-backoffice/platformbackoffice/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/ext-platform-optional/platformhmc/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/platformservices/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/processing/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/scripting/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/testweb/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/validation/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/.externalToolBuilders/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/.settings/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/acceleratoraddon/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/acceleratoraddon/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/acceleratoraddon/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/acceleratoraddon/web/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/backoffice/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/commonweb/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/commonweb/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/commonweb/testclasses/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/eclipsebin/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/hmc/classes/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/web/addonsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/web/commonwebsrc/" />
+    <ignored path="$PROJECT_DIR$/bin/platform/ext/workflow/web/testclasses/" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="cuppy" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" />
+  <component name="JsBuildToolPackageJson" detection-done="true" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1440" />
+    <option name="y" value="23" />
+    <option name="width" value="1680" />
+    <option name="height" value="1027" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cuppy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cuppy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hybris" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cuppy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hybris" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platformservices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cuppy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hybris" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platformservices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cuppy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hybris" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platformservices" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="platform" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="catalog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cuppy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hybris" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advancedsavedquery" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cuppy" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Custom" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewModuleGroupNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/bin/platform/build.xml" />
+  </component>
+  <component name="RunManager" selected="Remote.hybris debug">
+    <configuration default="false" name="DefaultBackofficeRoleDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.hybris.backoffice.daos.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="backoffice" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.hybris.backoffice.daos" />
+      <option name="MAIN_CLASS_NAME" value="com.hybris.backoffice.daos.DefaultBackofficeRoleDaoTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="SearchResultTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="de.hybris.platform.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="de.hybris.platform.core" />
+      <option name="MAIN_CLASS_NAME" value="de.hybris.platform.core.SearchResultTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="HybrisContextFactoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="de.hybris.platform.core.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="core" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="de.hybris.platform.core" />
+      <option name="MAIN_CLASS_NAME" value="de.hybris.platform.core.HybrisContextFactoryTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TARGET_SELECTION_MODE" value="EMULATOR" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="USE_COMMAND_LINE" value="true" />
+      <option name="COMMAND_LINE" value="" />
+      <option name="WIPE_USER_DATA" value="false" />
+      <option name="DISABLE_BOOT_ANIMATION" value="false" />
+      <option name="NETWORK_SPEED" value="full" />
+      <option name="NETWORK_LATENCY" value="none" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="FILTER_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="SELECTED_CLOUD_DEVICE_CONFIGURATION_ID" value="0" />
+      <option name="SELECTED_CLOUD_DEVICE_PROJECT_ID" value="" />
+      <option name="IS_VALID_CLOUD_MATRIX_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_MATRIX_SELECTION_ERROR" value="" />
+      <option name="IS_VALID_CLOUD_DEVICE_SELECTION" value="false" />
+      <option name="INVALID_CLOUD_DEVICE_SELECTION_ERROR" value="" />
+      <option name="CLOUD_DEVICE_SERIAL_NUMBER" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <module />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlashRunConfigurationType" factoryName="Flash App">
+      <option name="BCName" value="" />
+      <option name="IOSSimulatorSdkPath" value="" />
+      <option name="adlOptions" value="" />
+      <option name="airProgramParameters" value="" />
+      <option name="appDescriptorForEmulator" value="Android" />
+      <option name="debugTransport" value="USB" />
+      <option name="debuggerSdkRaw" value="BC SDK" />
+      <option name="emulator" value="NexusOne" />
+      <option name="emulatorAdlOptions" value="" />
+      <option name="fastPackaging" value="true" />
+      <option name="fullScreenHeight" value="0" />
+      <option name="fullScreenWidth" value="0" />
+      <option name="launchUrl" value="false" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="mobileRunTarget" value="Emulator" />
+      <option name="moduleName" value="" />
+      <option name="overriddenMainClass" value="" />
+      <option name="overriddenOutputFileName" value="" />
+      <option name="overrideMainClass" value="false" />
+      <option name="runTrusted" value="true" />
+      <option name="screenDpi" value="0" />
+      <option name="screenHeight" value="0" />
+      <option name="screenWidth" value="0" />
+      <option name="url" value="http://" />
+      <option name="usbDebugPort" value="7936" />
+      <method />
+    </configuration>
+    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" package_name="" scope="Class">
+      <option name="BCName" value="" />
+      <option name="launcherParameters">
+        <LauncherParameters>
+          <option name="browser" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
+          <option name="launcherType" value="OSDefault" />
+          <option name="newPlayerInstance" value="false" />
+          <option name="playerPath" value="/Applications/Flash Player Debugger.app" />
+        </LauncherParameters>
+      </option>
+      <option name="moduleName" value="" />
+      <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
+      <module name="" />
+      <setting name="vmparams" value="" />
+      <setting name="cmdLine" value="run-app" />
+      <setting name="depsClasspath" value="false" />
+      <setting name="passParentEnv" value="true" />
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <setting name="launchBrowser" value="false" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnitTestDiscovery" factoryName="JUnit Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Java Scratch" factoryName="Java Scratch">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="SCRATCH_FILE_ID" value="0" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="admincockpit" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNGTestDiscovery" factoryName="TestNG Test Discovery" changeList="All">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.npm" factoryName="npm">
+      <command value="run-script" />
+      <scripts />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="mocha-javascript-test-runner" factoryName="Mocha">
+      <node-options />
+      <working-directory>$PROJECT_DIR$</working-directory>
+      <pass-parent-env>true</pass-parent-env>
+      <envs />
+      <ui>bdd</ui>
+      <extra-mocha-options />
+      <test-kind>DIRECTORY</test-kind>
+      <test-directory />
+      <recursive>false</recursive>
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Run Launcher">
+      <method />
+    </configuration>
+    <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
+      <method />
+    </configuration>
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="hybris debug" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="8000" />
+      <method />
+    </configuration>
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.DefaultBackofficeRoleDaoTest" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.SearchResultTest" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.HybrisContextFactoryTest" />
+      <item index="3" class="java.lang.String" itemvalue="Remote.hybris debug" />
+    </list>
+    <recent_temporary>
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.HybrisContextFactoryTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.SearchResultTest" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.DefaultBackofficeRoleDaoTest" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SbtLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ce2ff4ae-5148-4466-ad3b-3ea830822211" name="Default" comment="" />
+      <created>1467741929573</created>
+      <option name="number" value="Default" />
+      <updated>1467741929573</updated>
+      <workItem from="1467741951506" duration="2008000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="DefaultBackofficeRoleDaoTest - 2016.07.05 at 13h 08m 56s.xml">
+      <configuration name="DefaultBackofficeRoleDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="HybrisContextFactoryTest - 2016.07.05 at 13h 16m 06s.xml">
+      <configuration name="HybrisContextFactoryTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="SearchResultTest - 2016.07.05 at 13h 14m 14s.xml">
+      <configuration name="SearchResultTest" configurationId="JUnit" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2008000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1440" y="23" width="1680" height="1027" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32893288" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="antWorkspaceConfiguration">
+    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
+    <option name="FILTER_TARGETS" value="false" />
+    <buildFile url="file://$PROJECT_DIR$/bin/platform/build.xml">
+      <expanded value="true" />
+    </buildFile>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/bin/ext-backoffice/backoffice/testsrc/com/hybris/backoffice/daos/DefaultBackofficeRoleDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="48" selection-start-line="42" selection-start-column="48" selection-end-line="42" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/platform/ext/core/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4623656">
+          <caret line="146" column="98" selection-start-line="146" selection-start-column="82" selection-end-line="146" selection-end-column="98" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/platform/ext/core/testsrc/de/hybris/platform/core/SearchResultTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="16" selection-start-line="44" selection-start-column="1" selection-end-line="44" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/platform/ext/platformservices/src/de/hybris/platform/catalog/CatalogService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28350514">
+          <caret line="27" column="17" selection-start-line="27" selection-start-column="17" selection-end-line="27" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/platform/ext/platformservices/src/de/hybris/platform/catalog/ClassificationUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23195876">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/platform/ext/platformservices/src/de/hybris/platform/catalog/DuplicatedItemIdentifier.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18041237">
+          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bin/platform/ext/core/testsrc/de/hybris/platform/core/HybrisContextFactoryTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.30927834">
+          <caret line="48" column="27" selection-start-line="48" selection-start-column="27" selection-end-line="48" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>JavaEE Application</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>cockpit|Unused|Hybris</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Common libs</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

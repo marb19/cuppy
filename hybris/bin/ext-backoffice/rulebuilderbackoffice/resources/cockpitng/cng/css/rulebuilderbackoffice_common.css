@@ -1,0 +1,334 @@
+/* Icons for explorer tree */
+div.yw-explorerTree .y-tree-icon-hmc_typenode_promotion_rules .y-tree-icon {
+	background-image: url("images/089_promotions.png");
+}
+
+div.yw-explorerTree .y-tree-icon-hmc_typenode_promotion_rule_templates .y-tree-icon {
+	background-image: url("images/0133_promotion_templates.png");
+}
+
+.yrb-conditions {
+	background-color: #FFF;
+}
+
+.yrb-conditions .z-treerow .z-treecell,
+.yrb-actions .z-treerow .z-treecell{
+	border-top: 1px solid #FFF;
+    overflow: visible;
+}
+
+.yrb-conditions .z-treerow.z-drag-over .z-treecell {
+	border-top: 1px dashed grey;
+	background-color: #FFF;
+}
+
+.yrb-conditions .z-treerow.z-drag-over .z-treecell .z-treecell-text {
+	color: #555;
+}
+
+/* yrb-drop-placeholder */
+.z-treerow.yrb-drop-placeholder .z-treecell
+{
+	cursor: default;
+	background-color: transparent;
+	border: 0 none;
+    padding: 10px 0 9px;
+}
+
+.z-treerow.yrb-drop-placeholder .z-treecell .z-treecell-content{
+	cursor: default;
+    padding: 0;
+}
+
+.z-treerow.yrb-drop-placeholder .z-treecell-content .z-treecell-text{
+    overflow: hidden;
+    display: block;
+    color: #acbbca;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    height: 50px;
+    line-height: 46px;
+    border: 2px dashed #d5dbe1;
+    background: #fdfdfe;
+    position: relative;
+    padding: 0 55px;
+}
+
+.z-treerow.yrb-drop-placeholder .z-treecell .z-treecell-text:after{
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    content: '';
+    right: 6px;
+    top: 50%;
+    margin-top: -18px;
+    background: url("images/icons_sprite.png") no-repeat 0 100%;
+}
+
+.yrb-drop-placeholder[class*='yrb-treerow-level']:not(.yrb-treerow-level1) .z-treecell{
+    background: #eaedf1;
+    padding: 8px 8px 10px 0;
+}
+
+.yrb-drop-placeholder[class*='yrb-treerow-level']:not(.yrb-treerow-level1) .z-treecell-text{
+    background: none;
+}
+
+.z-treerow .z-treecell-content .z-tree-line.z-tree-spacer {
+	display: none;
+}
+
+.yrb-actions {
+	background-color: #FFF;
+}
+
+.yrb-actions .z-treerow .z-treecell {
+	border-top: 1px solid #FFF;
+}
+
+.z-groupbox-3d>.z-groupbox-header {
+	min-height: 0px;
+	background: #5E94B8;
+}
+
+.z-groupbox-3d>.z-groupbox-header>.z-caption>.z-caption-content {
+	color: white;
+	width: 100%;
+}
+
+.z-tree-body table th, .z-tree-body table td {
+	vertical-align: top;
+}
+
+.yrb-cp-uuid {
+	display: block;
+	font-weight: bold;
+}
+
+.yrb-cp-description {
+	padding-top: 0.5em;
+	display: block;
+}
+
+.yrb-ap-uuid {
+	display: block;
+	font-weight: bold;
+}
+
+.yrb-ap-description {
+	padding-top: 0.5em;
+	display: block;
+}
+
+/* new */
+.yrb-conditions-container.z-panel-noheader.z-panel-noframe .z-panel-body,
+.yrb-actions-container.z-panel-noheader.z-panel-noframe .z-panel-body{
+    padding:15px 0;
+}
+.yrb-conditions-container.z-panel-noheader.z-panel-noframe .z-panelchildren,
+.yrb-actions-container.z-panel-noheader.z-panel-noframe .z-panelchildren {
+	border: 0 none;
+}
+
+.yrb-conditions-container.z-panel-noheader.z-panel-noframe  .z-panelchildren div:not(.z-borderlayout) .z-panelchildren .z-label,
+.yrb-actions-container.z-panel-noheader.z-panel-noframe  .z-panelchildren div:not(.z-borderlayout) .z-panelchildren .z-label{
+    font-size: 12px;
+    padding-left: 24px;
+}
+
+.yrb-conditions-container .z-tree,
+.yrb-actions-container .z-tree
+{
+	border: 0 none;
+}
+
+.yrb-conditions .z-tree-body,
+.yrb-actions .z-tree-body,
+.yrb-conditions .z-tree-header,
+.yrb-actions .z-tree-header
+{
+	padding-right: 15px;
+    padding-left: 24px;
+}
+
+.yrb-conditions-container .z-center-header,
+.yrb-actions-container .z-center-header
+{
+	border: 0 none;
+	font-size: 16px;
+	color: #263950;
+	font-weight: 600;
+	padding-bottom: 25px;
+    padding-left: 24px;
+	height: auto;
+}
+
+.yrb-conditions-container .z-east-header,
+.yrb-actions-container .z-east-header
+{
+	font-size: 16px;
+}
+
+.yw-editor-area-main-content .yw-editorarea-tabbox-tabpanels-tabpanel .yrb-conditions-container .z-groupbox-header,
+.yw-editor-area-main-content .yw-editorarea-tabbox-tabpanels-tabpanel .yrb-conditions-container .z-groupbox,
+.yw-editor-area-main-content .yw-editorarea-tabbox-tabpanels-tabpanel .yrb-actions-container .z-groupbox-header,
+.yw-editor-area-main-content .yw-editorarea-tabbox-tabpanels-tabpanel .yrb-actions-container .z-groupbox
+{
+	border: 0 none;
+}
+
+.yrb-conditions-container .z-groupbox-3d > .z-groupbox-header,
+.yrb-actions-container .z-groupbox-3d > .z-groupbox-header
+{
+	background: #eaedf1;
+	padding: 10px 20px 10px 10px;
+}
+
+.yrb-conditions-container .z-groupbox-3d > .z-groupbox-header:hover,
+.yrb-actions-container .z-groupbox-3d > .z-groupbox-header:hover
+{
+	background: #dae1ea;
+}
+
+
+.yw-editorarea-tabbox-tabpanels-tabpanel .yrb-treerow.z-treerow .z-groupbox-header  .z-label {
+	color: #263950;
+	font-size: 15px;
+	margin: 0;
+	padding:0 6px 0 0;
+}
+
+.yw-editorarea-tabbox-tabpanels-tabpanel .yrb-treerow.z-treerow .z-groupbox-content {
+	background: #eaedf1;
+	padding: 0 25px 25px;
+}
+
+.yrb-delete-btn {
+	float: right;
+	color: #314359;
+	font-size: 20px;
+}
+
+.yrb-conditions-container .yrb-treerow .z-groupbox-header .yrb-delete-btn,
+.yrb-actions-container .yrb-treerow .z-groupbox-header .yrb-delete-btn{
+    width: 23px;
+    height: 22px;
+    background: url("images/icons_sprite.png") no-repeat 50% 0;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    margin-top: -11px;
+}
+
+.yrb-conditions-container .yrb-treerow .yrb-delete-btn:before,
+.yrb-actions-container .yrb-treerow .yrb-delete-btn:before{
+    display: none;
+}
+
+.z-treerow[class*='yrb-treerow-level']:not(.yrb-treerow-level1) .z-treecell-content > .z-tree-line.z-tree-spacer {
+    display: block;
+	float: left;
+    width: 25px;
+}
+
+.yrb-treerow[class*='yrb-treerow-level'] .z-treecell-content  .z-tree-icon{
+    float: left;
+}
+
+.yrb-treerow.yrb-treerow-level1 .z-treecell-content  .z-tree-icon{
+    margin-left: -24px;
+}
+
+.yrb-treerow[class*='yrb-treerow-level'] .z-treecell-content  .z-groupbox.z-groupbox-3d{
+    overflow: hidden;
+}
+
+.yrb-treerow .z-groupbox-header .z-icon-caret-right,
+.yrb-treerow .z-groupbox-header .z-icon-caret-down,
+.yrb-treerow .z-treecell-content .z-tree-icon
+{
+	color: #000000;
+    font-size: 16px;
+}
+
+.yrb-treerow.z-treerow:hover>.z-treecell {
+	background: transparent;
+}
+
+.yw-editorarea-tabbox-tabpanels-tabpanel .yrb-treerow.z-treerow .z-groupbox-content .z-label {
+	color: #6e7b91;
+}
+
+.yrb-condition-container,
+.yrb-action-container
+{
+	max-width: 700px;
+	width: auto;
+}
+
+.yrb-condition-parameter,
+.yrb-action-parameter
+{
+	width: 50%;
+	display: inline-block;
+	vertical-align: top;
+	max-width: 335px;
+	margin: 15px 15px 0 0;
+}
+
+.yrb-conditions-container .yrb-treerow .z-treecell-content,
+.yrb-actions-container .yrb-treerow .z-treecell-content{
+    padding: 0;
+    overflow: visible;
+}
+
+.yrb-condition-container .attribute-label-description,
+.yrb-actions-container .attribute-label-description{
+    margin-top:0;
+    margin-bottom: -2px;
+}
+
+.yrb-treerow[class*='yrb-treerow-level']:not(.yrb-treerow-level1) .z-groupbox-3d > .z-groupbox-header{
+    background: #dae1ea;
+}
+
+.yrb-treerow[class*='yrb-treerow-level']:not(.yrb-treerow-level1) .z-treecell{
+    background: #eaedf1;
+    border-top:none;
+    padding-bottom: 1px;
+}
+
+@media screen and (max-width: 900px)  {
+	.yrb-condition-parameter,
+	.yrb-action-parameter {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 600px) {
+    .z-treerow.yrb-drop-placeholder .z-treecell-content .z-treecell-text:after {
+        display: none;
+    }
+
+    .yrb-conditions .z-treerow.yrb-drop-placeholder .z-treecell-content .z-treecell-text,
+    .yrb-actions .z-treerow.yrb-drop-placeholder .z-treecell-content .z-treecell-text{
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .yrb-conditions-container .z-groupbox-3d > .z-groupbox-header,
+    .yrb-actions-container .z-groupbox-3d > .z-groupbox-header{
+        padding-left:15px;
+    }
+
+    .yw-editorarea-tabbox-tabpanels-tabpanel .yrb-treerow.z-treerow .z-groupbox-content{
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .z-treerow[class*='yrb-treerow-level']:not(.yrb-treerow-level1) .z-treecell-content > .z-tree-line.z-tree-spacer,
+    .yrb-treerow[class*='yrb-treerow-level']:not(.yrb-treerow-level1) .z-treecell-content .z-tree-icon{
+        width: 15px;
+    }
+}

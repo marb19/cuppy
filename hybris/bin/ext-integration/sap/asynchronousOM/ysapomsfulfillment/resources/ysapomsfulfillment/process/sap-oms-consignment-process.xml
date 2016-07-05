@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<process xmlns="http://www.hybris.de/xsd/processdefinition" start="redirectSapConsignmentByDeliveryMode"
+	name="sap-oms-consignment-process" processClass="de.hybris.platform.sap.ysapomsfulfillment.model.SapConsignmentProcessModel">
+	
+	<action id="redirectSapConsignmentByDeliveryMode" bean="sapOmsRedirectConsignmentByDeliveryModeAction">
+		<transition name="OK" to="waitForDeliveryConfirmation" />
+	</action>
+		
+	<wait id="waitForDeliveryConfirmation" then="waitForGoodsIssue" prependProcessCode="false">
+		<event>DeliveryEvent_${process.parentProcess.order.code}_${process.consignment.code}</event>
+	</wait>
+	
+	<wait id="waitForGoodsIssue" then="verifySapConsignmentCompletion" prependProcessCode="false">
+		<event>GoodsIssueEvent_${process.parentProcess.order.code}_${process.consignment.code}</event>
+	</wait>
+
+	<action id="verifySapConsignmentCompletion" bean="sapOmsVerifyConsignmentCompletionAction">
+        <transition name="OK" to="consignmentProcessEnd"/>
+        <transition name="WAIT" to="waitForGoodsIssue"/>
+    </action>
+
+	<action id="consignmentProcessEnd" bean="sapOmsConsignmentProcessEndAction">
+		<transition name="OK" to="success" />
+	</action>
+
+   	<end id="success" state="SUCCEEDED">Consignment process completed.</end> 
+		
+</process>

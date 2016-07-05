@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ [y] hybris Platform
+  ~
+  ~ Copyright (c) 2000-2016 hybris AG
+  ~ All rights reserved.
+  ~
+  ~ This software is the confidential and proprietary information of hybris
+  ~ ("Confidential Information"). You shall not disclose such Confidential
+  ~ Information and shall use it only in accordance with the terms of the
+  ~ license agreement you entered into with hybris.
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/util
+		http://www.springframework.org/schema/util/spring-util.xsd
+        http://www.springframework.org/schema/security
+        http://www.springframework.org/schema/security/spring-security.xsd">
+
+	<bean class="de.hybris.platform.webservicescommons.setup.WebservicesCommonsSetup" >
+		<property name="clientDetailsDao" ref="oauthClientDetailsDao" />
+		<property name="modelService" ref="modelService" />
+	</bean>
+
+	<alias alias="subclassRegistry" name="defaultSubclassRegistry" />
+	<bean name="defaultSubclassRegistry" class="de.hybris.platform.webservicescommons.mapping.impl.DefaultSubclassRegistry" init-method="init" />
+
+	<alias alias="abstractSubtypeValidator" name="defaultSubtypeValidator" />
+	<bean id="defaultSubtypeValidator" class="de.hybris.platform.webservicescommons.validators.SubtypeValidator" abstract="true" />
+
+
+	<alias name="defaultOauthClientDetailsDao" alias="oauthClientDetailsDao"/>
+	<bean id="defaultOauthClientDetailsDao" class="de.hybris.platform.webservicescommons.oauth2.client.impl.DefaultClientDetailsDao" />	
+
+	<alias name="defaultHttpMessageConverter" alias="httpMessageConverter"/>
+	<bean id="defaultHttpMessageConverter" class="de.hybris.platform.webservicescommons.jaxb.Jaxb2HttpMessageConverter" abstract="true">
+		<property name="jaxbContextFactory" ref="jaxbContextFactory" />
+		<property name="marshallerProperties">
+			<map>
+				<entry key="jaxb.formatted.output">
+					<value type="java.lang.Boolean">${webservicescommons.messageconverters.formatted.output}</value>
+				</entry>
+				<entry key="jaxb.encoding" value="UTF-8" />
+				<entry key="eclipselink.json.marshal-empty-collections">
+					<value type="java.lang.Boolean">${webservicescommons.messageconverters.json.marshal-empty-collections}</value>
+				</entry>
+				<entry key="eclipselink.json.wrapper-as-array-name">
+					<value type="java.lang.Boolean">${webservicescommons.messageconverters.json.wrapper-as-array-name}</value>
+				</entry>
+				<entry key="eclipselink.json.include-root">
+					<value type="java.lang.Boolean">${webservicescommons.messageconverters.json.include-root}</value>
+				</entry>
+			</map>
+		</property>
+		<property name="unmarshallerProperties">
+			<map>
+				<entry key="eclipselink.json.wrapper-as-array-name">
+					<value type="java.lang.Boolean">${webservicescommons.messageconverters.json.wrapper-as-array-name}</value>
+				</entry>
+				<entry key="eclipselink.json.include-root">
+					<value type="java.lang.Boolean">${webservicescommons.messageconverters.json.include-root}</value>
+				</entry>
+			</map>
+		</property>
+	</bean>
+
+	<alias name="defaultXmlHttpMessageConverter" alias="xmlHttpMessageConverter"/>
+	<bean id="defaultXmlHttpMessageConverter" class="de.hybris.platform.webservicescommons.jaxb.Jaxb2HttpMessageConverter" parent="httpMessageConverter">
+		<property name="marshallerProperties">
+			<map merge="true">
+				<entry key="eclipselink.media-type" value="application/xml" />
+			</map>
+		</property>
+		<property name="unmarshallerProperties">
+			<map merge="true">
+				<entry key="eclipselink.media-type" value="application/xml" />
+			</map>
+		</property>
+		<property name="supportedMediaTypes">
+			<list>
+				<util:constant id="xml" static-field="org.springframework.http.MediaType.APPLICATION_XML" />
+			</list>
+		</property>
+	</bean>
+
+	<alias name="defaultJsonHttpMessageConverter" alias="jsonHttpMessageConverter"/>
+	<bean id="defaultJsonHttpMessageConverter" class="de.hybris.platform.webservicescommons.jaxb.Jaxb2HttpMessageConverter" parent="httpMessageConverter">
+		<property name="marshallerProperties">
+			<map merge="true">
+				<entry key="eclipselink.media-type" value="application/json" />
+			</map>
+		</property>
+		<property name="unmarshallerProperties">
+			<map merge="true">
+				<entry key="eclipselink.media-type" value="application/json" />
+			</map>
+		</property>
+		<property name="supportedMediaTypes">
+			<list>
+				<util:constant id="json" static-field="org.springframework.http.MediaType.APPLICATION_JSON" />
+			</list>
+		</property>
+	</bean>
+
+	<alias name="defaultJaxbContextFactory" alias="jaxbContextFactory"/>
+	<bean id="defaultJaxbContextFactory" class="de.hybris.platform.webservicescommons.jaxb.MoxyJaxbContextFactoryImpl">
+		<property name="wrapCollections" value="${webservicescommons.messageconverters.context.wrapCollections}" />
+		<property name="analysisDepth" value="${webservicescommons.messageconverters.context.analysisDepth}" />
+		<property name="typeAdapters" ref="jaxbTypeAdaptersList" />
+		<property name="subclassRegistry" ref="subclassRegistry" />
+		<property name="otherClasses" ref="jaxbContextClasses" />
+		<property name="metadataSourceFactory" ref="metadataSourceFactory" />
+	</bean>
+	
+	<util:list id="jaxbContextClasses" />
+	
+	<util:list id="jaxbTypeAdaptersList">
+		<value>de.hybris.platform.webservicescommons.jaxb.adapters.DateAdapter</value>
+		<value>de.hybris.platform.webservicescommons.jaxb.adapters.StringMapAdapter</value>
+		<value>de.hybris.platform.webservicescommons.jaxb.adapters.XSSStringAdapter</value>
+	</util:list>
+
+
+	<alias name="defaultMetadataSourceFactory" alias="metadataSourceFactory"/>
+	<bean name="defaultMetadataSourceFactory" class="de.hybris.platform.webservicescommons.jaxb.metadata.impl.DefaultMetadataSourceFactory" >
+		<property name="nameProvider" ref="metadataNameProvider" />	
+	</bean>
+	
+	<alias name="defaultMetadataNameProvider" alias="metadataNameProvider"/>
+	<bean name="defaultMetadataNameProvider" class="de.hybris.platform.webservicescommons.jaxb.metadata.impl.DefaultMetadataNameProvider" />
+	
+	<util:list id="jaxbMessageConverters">
+		<ref bean="defaultJsonHttpMessageConverter" />
+		<ref bean="defaultXmlHttpMessageConverter" />
+	</util:list>
+
+
+	<bean id="xmlMetadataHttpMessageConverter" parent="defaultXmlHttpMessageConverter">
+		<property name="jaxbContextFactory" ref="metadataJaxbContextFactory" />
+	</bean>
+
+	<bean id="jsonMetadataHttpMessageConverter" parent="defaultJsonHttpMessageConverter">
+		<property name="jaxbContextFactory" ref="metadataJaxbContextFactory" />
+	</bean>
+
+
+	<bean id="metadataJaxbContextFactory" class="de.hybris.platform.webservicescommons.jaxb.MetadataJaxbContextFactoryImpl">
+		<property name="metadataSources" ref="jaxbMetadataSourcesMap" />
+		<property name="typeAdapters" ref="jaxbTypeAdaptersList" />
+	</bean>
+	
+	<util:map id="jaxbMetadataSourcesMap" key-type="java.lang.Class" value-type="org.eclipse.persistence.jaxb.metadata.MetadataSource">
+	</util:map>
+
+	<alias alias="exceptionConverter" name="defaultExceptionConverter" />
+	<bean name="defaultExceptionConverter" class="de.hybris.platform.webservicescommons.errors.converters.ExceptionConverter" />
+
+	<!-- cache  -->
+	
+	<bean id="wsCacheKeyGenerator" class="de.hybris.platform.webservicescommons.cache.CacheKeyGenerator">
+		<property name="commonI18NService" ref="commonI18NService"/>
+		<property name="userService" ref="userService"/>
+	</bean>
+	
+	<!-- DTO mapping mechanism -->
+
+	<bean id="abstractCustomMapper"
+	      class="de.hybris.platform.webservicescommons.mapping.mappers.AbstractCustomMapper"
+	      abstract="true">
+		<property name="fieldSelectionStrategy" ref="fieldSelectionStrategy"/>
+	</bean>
+
+	<!-- DTO MAPPING -->
+	<alias alias="fieldSelectionStrategy" name="defaultFieldSelectionStrategy"/>
+	<bean id="defaultFieldSelectionStrategy"
+	      class="de.hybris.platform.webservicescommons.mapping.impl.DefaultFieldSelectionStrategy"/>
+	
+	<alias alias="fieldSetLevelMapping" name="defaultFieldSetLevelMapping"/>
+	<bean name="defaultFieldSetLevelMapping"
+      class="de.hybris.platform.webservicescommons.mapping.config.FieldSetLevelMapping"
+      abstract="true"/>
+
+	<!-- Support for using fields from subclasses -->
+	<alias alias="subclassMapping" name="defaultSubclassMapping"/>
+	<bean name="defaultSubclassMapping"
+	      class="de.hybris.platform.webservicescommons.mapping.config.SubclassMapping"
+	      abstract="true"/>
+	
+	<!-- Field Mappings -->
+	<alias alias="fieldMapper" name="defaultFieldMapper"/>
+	<bean name="defaultFieldMapper"
+	      class="de.hybris.platform.webservicescommons.mapping.config.FieldMapper"
+	      abstract="true"/>
+	
+	<!-- OAuth configuration -->
+	<alias alias="oauthTokenDao" name="defaultOAuthTokenDao"/>
+	<bean id="defaultOAuthTokenDao" class="de.hybris.platform.webservicescommons.oauth2.token.dao.impl.DefaultOAuthTokenDao"
+	      parent="abstractItemDao"/>
+
+	<alias alias="oauthTokenService" name="defaultOAuthTokenService" />
+	<bean id="defaultOAuthTokenService"
+		class="de.hybris.platform.webservicescommons.oauth2.token.impl.DefaultOAuthTokenService"
+		parent="abstractBusinessService">
+		<property name="oauthTokenDao" ref="oauthTokenDao" />
+		<property name="searchRestrictionService" ref="searchRestrictionService"/>
+	</bean>
+
+	<alias name="defaultWsAuthenticationProvider" alias="wsAuthenticationProvider" />
+	<bean id="defaultWsAuthenticationProvider"
+		class="de.hybris.platform.spring.security.CoreAuthenticationProvider">
+		<property name="userDetailsService" ref="wsUserDetailsService" />
+	</bean>
+
+	<alias name="defaultWsUserDetailsService" alias="wsUserDetailsService" />
+	<bean id="defaultWsUserDetailsService"
+		class="de.hybris.platform.spring.security.CoreUserDetailsService" />	
+
+	<alias name="standartPasswordEncoder" alias="clientSecretEncoder" />
+	<bean id="standartPasswordEncoder" class="org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder" />
+             
+	<bean id="oauthClientDetailsInterceptor" class="de.hybris.platform.webservicescommons.interceptors.OAuthClientInterceptor" >
+		<property name="clientSecretEncoder" ref="clientSecretEncoder" />
+	</bean>
+	
+	<bean id="oauthClientDetailsInterceptorMapping" class="de.hybris.platform.servicelayer.interceptor.impl.InterceptorMapping">
+		<property name="interceptor" ref="oauthClientDetailsInterceptor" />
+		<property name="typeCode" value="OAuthClientDetails" />
+	</bean>
+
+	<!-- Converters and Populators -->
+		
+	<alias name="defaultPopulatingConverter" alias="populatingConverter" />
+	<bean id="defaultPopulatingConverter" class="de.hybris.platform.converters.impl.AbstractPopulatingConverter" abstract="true" />
+
+    <!-- Integration tests -->
+
+	<bean id="embeddedServerTaskRunListener" class="de.hybris.platform.webservicescommons.testsupport.server.EmbeddedServerTestRunListener" scope="prototype">
+		<property name="embeddedServerController" ref="embeddedServerController" />
+	</bean>
+	
+	<bean id="embeddedServerController" class="de.hybris.platform.webservicescommons.testsupport.server.EmbeddedServerController">
+		<property name="embeddedServerBuilder" ref="embeddedServerBuilder" />
+	</bean>
+</beans>

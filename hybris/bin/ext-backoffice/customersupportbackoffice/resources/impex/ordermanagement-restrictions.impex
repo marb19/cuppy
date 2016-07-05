@@ -1,0 +1,6 @@
+# Filter orders snapshot
+INSERT_UPDATE SearchRestriction;code[unique=true];name[lang=de];name[lang=en];query;principal(UID);restrictedType(code);active;generate
+;PoS2StoreGroup_Visibility;PoS2StoreGroup_Visibility;PoS2StoreGroup_Visibility;{pk} in ({{SELECT {pos:pk} FROM {PointOfService as pos JOIN StoreEmployeeGroup AS empgroup ON {empgroup:store} = {pos:PK} } WHERE {empgroup:PK} in (?session.user.allGroups)}});instoreEmployeeGroup;PointOfService;true;true
+
+
+SELECT {orders:pk} FROM {Orders as orders} WHERE {orders:p_code} NOT IN (SELECT {duplicatedOrders:p_code} FROM {(SELECT {p_code}, count(*) as nbOrders FROM {Orders as orders} GROUP BY {orders:p_code}) as duplicatedOrders} WHERE duplicatedOrders.nbOrders > 1) UNION SELECT orders.* FROM oms.Orders as orders WHERE orders.p_originalversion IS NOT NULL AND orders.p_code IN (SELECT duplicatedOrders.p_code FROM (SELECT p_code, count(*) as nbOrders FROM oms.orders as orders GROUP BY p_code) as duplicatedOrders WHERE duplicatedOrders.nbOrders > 1)

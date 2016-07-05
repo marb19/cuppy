@@ -1,0 +1,11 @@
+#Ant properties
+#Thu Mar 17 14:02:57 CET 2016
+builddate=20160317 1402
+description=c4ccustomeratddtests
+group.id=de.hybris.platform
+module.name=platform-module
+name=c4ccustomeratddtests
+releasedate=20160311 1754
+vendor=hybris
+version=6.0.0.0-SNAPSHOT
+version.api=6.0.0

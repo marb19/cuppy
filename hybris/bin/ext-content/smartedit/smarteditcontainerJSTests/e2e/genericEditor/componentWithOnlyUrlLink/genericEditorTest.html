@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="../../../../../../" />
+
+    <!--3rd prty libs-->
+
+    <script src="web/webroot/static-resources/thirdparties/jquery/dist/jquery.min.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/tinymce-dist/tinymce.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/angular/angular.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/angular-cookies/angular-cookies.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/angular-route/angular-route.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/angular-resource/angular-resource.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/angular-mocks/angular-mocks.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/angular-translate/angular-translate.min.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/angular-sanitize/angular-sanitize.min.js"></script>
+
+    <script src="web/webroot/static-resources/thirdparties/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/ui-select/dist/select.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/angular-ui-tinymce/src/tinymce.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/moment/min/moment.min.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="web/webroot/static-resources/thirdparties/moment/min/moment.min.js"></script>
+
+    <!-- 3rd party css -->
+    <link rel="stylesheet" href="web/webroot/static-resources/thirdparties/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="web/webroot/css/style.css">
+    <link rel="stylesheet" href="web/webroot/static-resources/thirdparties/ui-select/dist/select.js" />
+    <link rel="stylesheet" href="web/webroot/static-resources/thirdparties/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+
+    <link rel="stylesheet" href="web/webroot/static-resources/thirdparties/select2/select2.css">
+    <link rel="stylesheet" href="web/webroot/static-resources/thirdparties/selectize/dist/css/selectize.default.css">
+    <style type="text/css">
+    .selectize-control > .selectize-dropdown {
+        top: 36px;
+    }
+    
+    .ui-select-focusser {
+        display: none;
+    }
+    
+    .select2-container .select2-choice {
+        height: auto;
+    }
+    
+    .thumbnail {
+        width: 64px;
+        display: inline;
+    }
+    
+    body {
+        margin: 20px;
+    }
+    </style>
+    <script>
+    window.smartedit = {
+        i18nAPIRoot: "somepath"
+    };
+
+    angular.module('decoratortemplates', []);
+
+    angular.module('renderServiceModule', [])
+        .factory('renderService', function() {
+            return {
+                renderComponent: function() {
+
+                }
+            };
+        });
+    </script>
+
+    <script src="jsTarget/templates.js"></script>
+    <script src="web/common/core/services/sharedDataServiceInterface.js"></script>
+    <script src="web/common/services/functions.js"></script>
+    <script src="web/common/services/languageService.js"></script>
+    <script src="web/common/services/i18nInterceptor.js"></script>
+    <script src="web/common/services/translateService.js"></script>
+    <script src="web/common/services/restServiceFactory.js"></script>
+    <script src="web/common/services/eventservice.js"></script>
+    <script src="web/common/services/resourceLocations.js"></script>
+    <script src="web/common/services/gatewayFactory.js"></script>
+    <script src="web/common/services/gatewayProxy.js"></script>
+    <script src="web/common/services/tabset/yTabset.js"></script>
+    <script src="web/common/services/localizedElement/localizedElement.js"></script>
+    <script src="web/common/services/genericEditor/genericEditorField.js"></script>
+    <script src="web/common/services/genericEditor/genericEditor.js"></script>
+    <script src="web/common/services/genericEditor/dateTimePicker/dateTimePicker.js"></script>
+    <script src="web/common/services/experienceInterceptor.js"></script>
+    <script src="web/common/services/genericEditor/adapters/fetchDataHandlerInterface.js"></script>
+    <script src="web/common/services/genericEditor/adapters/fetchMediaDataHandler.js"></script>
+    <script src="web/common/services/genericEditor/adapters/fetchEnumDataHandler.js"></script>
+    <script src="web/smarteditcontainer/services/languageService.js"></script>
+    <script src="web/smarteditcontainer/services/sharedDataService.js"></script>
+    <script src="smarteditcontainerJSTests/e2e/genericEditor/genericEditorApp.js"></script>
+    <script src="smarteditcontainerJSTests/e2e/genericEditor/componentWithOnlyUrlLink/backendMocks.js"></script>
+</head>
+
+<body data-ng-app="genericEditorApp" data-ng-controller="defaultController as cont">
+    <generic-editor data-smartedit-component-id="cont.thesmarteditComponentId" data-smartedit-component-type="cont.thesmarteditComponentType" data-structure-api="cont.structureApi" data-content-api="cont.contentApi" display-submit="cont.displaySubmit" display-cancel="cont.displayCancel">
+    </generic-editor>
+
+</body>
+
+</html>

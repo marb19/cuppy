@@ -1,0 +1,61 @@
+.cts-msg-history {
+  margin-top: @grid-gutter-width;
+
+  &-item {
+    margin-top: @grid-gutter-width;
+    display: none;
+
+    &-info {
+      font-size: @font-size-large-1;
+      margin-bottom: (@grid-gutter-width / 2);
+      padding: 0 @grid-gutter-width;
+
+      @media (max-width: @screen-xs-max) {
+        padding: 0 @grid-gutter-width/2;
+      }
+
+      .author {
+        font-weight: bold;
+      }
+    }
+
+    .well {
+      border-radius: 3px;
+      border: 1px solid @border-color-2;
+
+      @media (max-width: @screen-xs-max) {
+        border-radius: 0;
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+
+    &-msg {
+      font-size: @font-size-large-1;
+    }
+
+    &.ct-msg-visible {
+      display: block;
+    }
+
+    &-agent {
+      .well,
+      .cts-msg-history-item-info {
+        text-align: right;
+      }
+    }
+  }
+
+  #ct-toggle-all-messages {
+    display: block;
+    text-align: center;
+    margin-top: @grid-gutter-width;
+
+  }
+}
+
+#supportTicketForm {
+  textarea.form-control {
+    height: 240px;
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <!--3rd prty libs-->
+    <script src="../../../web/webroot/static-resources/thirdparties/jquery/dist/jquery.min.js"></script>
+    <script src="../../../web/webroot/static-resources/thirdparties/angular/angular.js"></script>
+    <script src="../../../web/webroot/static-resources/thirdparties/angular-cookies/angular-cookies.js"></script>
+    <script src="../../../web/webroot/static-resources/thirdparties/angular-animate/angular-animate.js"></script>
+    <script src="../../../web/webroot/static-resources/thirdparties/angular-route/angular-route.js"></script>
+    <script src="../../../web/webroot/static-resources/thirdparties/angular-resource/angular-resource.js"></script>
+    <script src="../../../web/webroot/static-resources/thirdparties/angular-bootstrap/ui-bootstrap-tpls.min.js"></script>
+    <script src="../../../web/webroot/static-resources/thirdparties/angular-mocks/angular-mocks.js"></script>
+    <script src="../../../web/webroot/static-resources/thirdparties/angular-translate/angular-translate.min.js"></script>
+    <script src="../../../web/webroot/static-resources/thirdparties/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+    <script src="../../../web/webroot/static-resources/thirdparties/scriptjs/script.js"></script>
+
+    <!-- 3rd party css -->
+
+    <!--libs-->
+    <script src="../../../web/common/services/functions.js"></script>
+    <script src="../../../web/common/services/restServiceFactory.js"></script>
+    <script src="../../../web/common/services/resourceLocations.js"></script>
+    <script src="../../../web/common/services/loadConfigurationsService.js"></script>
+    <script src="../../../web/common/services/authorizationService.js"></script>
+    <script>
+    angular.module('sharedDataServiceModule', []).factory('sharedDataService', function() {
+        return {
+            set: function() {}
+        }
+    })
+    </script>
+    <script src="app.js"></script>
+</head>
+
+
+
+<body data-ng-app="authorizationApp" data-ng-controller="defaultController">
+
+    <div data-has-read-permission="component1">
+        <div id="elementWithPermission">has read permission for {{component1}}</div>
+    </div>
+
+    <div data-has-update-permission="component2">
+        <div id="elementWithoutPermission">has update permission for {{component2}}</div>
+    </div>
+
+    <div data-has-delete-permission="component3">
+        <div id="elementWithoutDeletePermission">has not got delete permission for {{component3}}</div>
+    </div>
+
+    <button id="toggle" data-ng-click="toggle();">toggle</button>
+</body>
+
+</html>

@@ -1,0 +1,206 @@
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.over-slot-enabled {
+  border: solid #00c6ff 1px;
+  opacity: 0.65;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.over-slot-disabled {
+  border: solid #ff3b30 1px;
+  background-color: #ff3b30;
+  opacity: 0.65;
+  cursor: no-drop;
+}
+.over-slot-disabled:after {
+  text-align: center;
+  color: #ffffff;
+  content: 'NOT ALLOWED';
+  display: block;
+  z-index: 500;
+}
+.eligible-slot {
+  border: dashed #b7c1cd 1px;
+}
+.ui-sortable-handle {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.over-slot-enabled .ySEDnDPlaceHolder {
+  border: 1px dashed #00c6ff;
+  background-color: #7ac1f3;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: Dosis, sans-serif;
+  color: black;
+  opacity: 0.65;
+  margin: 4px;
+}
+.ySEDirtyHeight.over-slot-enabled .ySEDnDPlaceHolder {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .ySEDirtyHeight.over-slot-enabled .ySEDnDPlaceHolder {
+    float: left;
+    width: 25%;
+  }
+}
+.over-slot-enabled .ySEDnDPlaceHolder:after {
+  content: 'DROP HERE';
+}
+.ySEemptySlot {
+  min-height: 72px;
+  border: 1px dashed #b7c1cd;
+}
+.ySEDnDImageRed {
+  background-color: #ff3b30;
+}
+.ySEDnDImageBlue {
+  background-color: #7ac1f3;
+}
+body[data-smartedit-ready].UIhintsVisible {
+  padding-top: 65px;
+  transition: .5s padding;
+}
+.UIhintDragAndDrop {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(86, 86, 86, 0.7);
+  text-align: center;
+  z-index: -999;
+  height: 0;
+  opacity: 0;
+  display: table !important;
+  transition: 1s all;
+}
+.UIhintDragAndDrop span {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  display: table-cell;
+  vertical-align: middle;
+}
+.UIhintDragAndDrop.top {
+  top: 0;
+}
+.UIhintDragAndDrop.top-firefox-fix {
+  top: 0;
+}
+.UIhintDragAndDrop.top-firefox-fix.visible {
+  z-index: 999;
+  height: 25px;
+  opacity: 1;
+  transition: .6s all;
+}
+.UIhintDragAndDrop.bottom {
+  bottom: 0;
+  height: 65px !important;
+}
+.UIhintDragAndDrop.bottom.firefox-fix-applied {
+  visibility: hidden !important;
+}
+.UIhintDragAndDrop.bottom-firefox-fix {
+  bottom: 0;
+  height: 65px !important;
+}
+.UIhintDragAndDrop.visible {
+  z-index: 999;
+  height: 130px;
+  opacity: 1;
+  transition: .6s all;
+}
+body .ySmartEditToolbars .dropdown-menu {
+  overflow: auto !important;
+}
+#_sm_helper {
+  position: absolute !important;
+  z-index: 999999 !important;
+  width: 91px !important;
+  height: 57px !important;
+}
+body[data-smartedit-ready] [class^="col-"] {
+  position: inherit !important;
+}
+body[data-smartedit-ready].is-dragging .cmsx-ctx-wrapper2.active,
+body[data-smartedit-ready].is-sorting .cmsx-ctx-wrapper2.active {
+  border: none !important;
+}
+body[data-smartedit-ready].is-dragging .contextualMenuOverlay,
+body[data-smartedit-ready].is-sorting .contextualMenuOverlay {
+  display: none !important;
+}

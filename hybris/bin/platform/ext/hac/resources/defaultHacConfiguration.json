@@ -1,0 +1,133 @@
+[ {
+  "basePath" : "/platform",
+  "mainTabLabel" : "platform",
+  "subTabs" : [ {
+    "path" : "/tenants/",
+    "label" : "tenants",
+    "skipPrefix" : true
+  }, {
+    "path" : "/config",
+    "label" : "configuration",
+    "skipPrefix" : false
+  }, {
+    "path" : "/system",
+    "label" : "system",
+    "skipPrefix" : false
+  }, {
+    "path" : "/log4j",
+    "label" : "logging",
+    "skipPrefix" : false
+  }, {
+    "path" : "/extensions",
+    "label" : "extensions",
+    "skipPrefix" : false
+  }, {
+    "path" : "/init",
+    "label" : "initialization",
+    "skipPrefix" : false
+  }, {
+    "path" : "/update",
+    "label" : "update",
+    "skipPrefix" : false
+  }, {
+    "path" : "/dryrun",
+    "label" : "SQL scripts",
+    "skipPrefix" : false
+  }, {
+    "path" : "/license",
+    "label" : "license",
+    "skipPrefix" : false
+  }, {
+    "path" : "/support",
+    "label" : "support",
+    "skipPrefix" : false
+  }, {
+    "path" : "/pkanalyzer",
+    "label" : "PK analyzer",
+    "skipPrefix" : false
+  }, {
+    "path" : "/jars",
+    "label" : "classpath analyzer",
+    "skipPrefix" : false
+  } ]
+}, {
+  "basePath" : "/monitoring",
+  "mainTabLabel" : "monitoring",
+  "subTabs" : [ {
+    "path" : "/cache",
+    "label" : "cache",
+    "skipPrefix" : false
+  }, {
+    "path" : "/cluster",
+    "label" : "cluster",
+    "skipPrefix" : false
+  }, {
+    "path" : "/database",
+    "label" : "database",
+    "skipPrefix" : false
+  }, {
+    "path" : "/cronjobs",
+    "label" : "cron jobs",
+    "skipPrefix" : false
+  }, {
+    "path" : "/jmx",
+    "label" : "JMX MBeans",
+    "skipPrefix" : false
+  }, {
+    "path" : "/memory",
+    "label" : "memory",
+    "skipPrefix" : false
+  }, {
+    "path" : "/threaddump",
+    "label" : "thread dump",
+    "skipPrefix" : false
+  }, {
+    "path" : "/performance",
+    "label" : "performance",
+    "skipPrefix" : false
+  }, {
+    "path" : "/dynatrace",
+    "label" : "transaction tracing",
+    "skipPrefix" : false
+  } ]
+}, {
+  "basePath" : "/maintain",
+  "mainTabLabel" : "maintenance",
+  "subTabs" : [ {
+    "path" : "/cleanup",
+    "label" : "cleanup",
+    "skipPrefix" : false
+  }, {
+    "path" : "/keys",
+    "label" : "encryption keys",
+    "skipPrefix" : false
+  }, {
+    "path" : "/deployments",
+    "label" : "deployment",
+    "skipPrefix" : false
+  } ]
+}, {
+  "basePath" : "/console",
+  "mainTabLabel" : "console",
+  "subTabs" : [ {
+    "path" : "/scripting/",
+    "label" : "scripting languages",
+    "skipPrefix" : false
+  }, {
+    "path" : "/flexsearch/",
+    "label" : "flexibleSearch",
+    "skipPrefix" : false
+  }, {
+    "path" : "/impex/import",
+    "label" : "ImpEx import",
+    "skipPrefix" : false
+  }, {
+    "path" : "/impex/export",
+    "label" : "ImpEx export",
+    "skipPrefix" : false
+  }, {
+    "path" : "/ldap",
+    "label" : "LDAP",
+    "skipPrefix" : false
+  } ]
+} ]

@@ -1,0 +1,18 @@
+INSERT_UPDATE UserGroup;uid[unique=true];groups(uid)
+;marketingManagerGroup;
+
+$START_USERRIGHTS;;;;;;;;;
+Type;UID;MemberOfGroups;Password;Target;read;change;create;remove;change_perm
+UserGroup;marketingManagerGroup;;;;;;;;
+;;;;PromotionSourceRule;+;+;+;+;;
+;;;;PromotionSourceRuleTemplate;+;+;+;+;;
+;;;;PromotionGroup;+;+;+;+;;
+;;;;BTGConfig;+;+;+;+;;
+;;;;Voucher;+;+;+;+;;
+;;;;ProductReference;+;+;+;+;;
+;;;;AbstractOrder;+;+;;;;
+;;;;AbstractOrderEntry;+;+;;;;
+;;;;CustomerReview;+;+;+;+;;
+;;;;RuleGroup;+;+;+;+;;
+;;;;RuleStatus;+;+;+;+;;
+$END_USERRIGHTS;;;;;;;;;

@@ -1,0 +1,144 @@
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.modal-dialog .modal-footer,
+.ySEGenericEditor .modal-footer {
+  padding: 0 0 2px 0;
+}
+experience-selector .ySEGenericEditor .modal-footer {
+  padding-bottom: 0px;
+  margin-top: 95px;
+  border-top: 1px solid #7ac1f3;
+}
+.modal-dialog .modal-footer > span,
+.ySEGenericEditor .modal-footer > span {
+  display: inline-block;
+}
+.modal-dialog .modal-footer .btn,
+.ySEGenericEditor .modal-footer .btn {
+  font-size: 23px;
+  font-family: Dosis, sans-serif;
+  padding: 20px 50px 20px 50px;
+}
+.modal-dialog .modal-footer {
+  border-top: 1px solid #ebeef1;
+  background: inherit;
+}
+.modal-dialog .modal-header {
+  background: inherit;
+  border-bottom: 1px solid #ebeef1;
+}
+.modal-dialog .modal-header .hyicon.hyicon-close {
+  color: #7f90a4;
+  font-size: 25px;
+}
+.modal-dialog .modal-header .close {
+  margin-top: -9px;
+}
+.modal-dialog .modal-header h4 {
+  font-family: Dosis, sans-serif;
+  font-size: 33px;
+  margin: 0;
+}
+.modal-dialog .modal-header {
+  padding-left: 50px;
+  padding-top: 35px;
+  padding-right: 30px;
+}
+experience-selector .ySEGenericEditor form {
+  padding-right: 0;
+}
+experience-selector .ySEGenericEditor .btn-subordinate {
+  color: #ffffff;
+}
+generic-editor-field .select2-container .select2-choice .select2-arrow,
+generic-editor-field .select2-container .select2-choice div {
+  background: none;
+  border-left: none;
+}
+generic-editor-field .select2-container .select2-choice .select2-arrow b,
+generic-editor-field .select2-container .select2-choice abbr,
+generic-editor-field .select2-container-multi .select2-choices .select2-search-field input.select2-active,
+generic-editor-field .select2-more-results.select2-active,
+.select2-search input,
+generic-editor-field .select2-search input.select2-active,
+.select2-search-choice-close,
+generic-editor-field .select2-container .select2-choice .select2-arrow b,
+generic-editor-field .select2-container .select2-choice div b {
+  color: #27394f;
+  margin-top: 5px;
+}
+generic-editor-field .ui-select-dropdown .ui-select-choices-group .select2-result-label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+localized-element generic-editor-field .select2-container.select2-allowclear .select2-choice abbr {
+  display: none;
+}

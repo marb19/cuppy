@@ -1,0 +1,148 @@
+<html xmlns:string="xalan://java.lang.String" xmlns:lxslt="http://xml.apache.org/xslt">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Output from YLongSetTests</title>
+</head>
+<body>
+<pre>&gt;&gt;&gt; No SAP licenses found in the system. Trying fallback to hybris license.
+[32mINFO  [main] [DefaultClusterNodeManagementService] Automatic cluster ID discovery disabled. Configured ID: 0
+[m[32mINFO  [main] (junit) [AbstractTenant] Created master data source DataSourceImpl&lt;&lt;junit/master&gt;&gt;
+[m[32mINFO  [main] (junit) [AbstractTenant] Created alternative data source "alt1"
+[m[32mINFO  [main] (junit) [AbstractTenant] Created alternative data source "alt2"
+[m[32mINFO  [main] (junit) [AbstractTenant] Created alternative data source "a"
+[m[32mINFO  [main] (junit) [AbstractTenant] Created alternative data source "b"
+[m[32mINFO  [main] (junit) [AbstractTenant] Created alternative data source "c"
+[m[32mINFO  [main] (junit) [DefaultBroadcastService] Started message broadcast service:
+clustering (enabled:false)
+sending synchronously - no queue
+methods [&lt;loopback&gt;::de.hybris.platform.cluster.LoopBackBroadcastMethod@3624da92]
+[m[32mINFO  [main] (junit) [hybrisserver] 
+[m[32mINFO  [main] (junit) [hybrisserver] *****************************************************************
+[m[32mINFO  [main] (junit) [hybrisserver] 
+[m[32mINFO  [main] (junit) [hybrisserver] Starting up hybris server
+[m[32mINFO  [main] (junit) [hybrisserver] 
+[m[32mINFO  [main] (junit) [hybrisserver] Configuration:
+[m[32mINFO  [main] (junit) [hybrisserver] 
+[m[32mINFO  [main] (junit) [hybrisserver] Cluster:     disabled
+[m[32mINFO  [main] (junit) [hybrisserver] Tenant:      junit
+[m[32mINFO  [main] (junit) [hybrisserver] Mode:        development
+[m[32mINFO  [main] (junit) [hybrisserver] OS:          Mac OS X 10.11, x86_64
+[m[32mINFO  [main] (junit) [hybrisserver] Database:    Pool: hybris - hsqldb, table prefix: junit_
+[m[32mINFO  [main] (junit) [hybrisserver]              SA - jdbc:hsqldb:file:/Users/mrangel/git/training/cuppy/hybris/data/hsqldb/mydb;shutdown=true;hsqldb.cache_rows=100000;hsqldb.cache_size=20000;hsqldb.write_delay_millis=1000;hsqldb.inc_backup=true;hsqldb.defrag_limit=2;hsqldb.nio_data_file=false
+[m[32mINFO  [main] (junit) [hybrisserver] Platform:    6.0.0.0-SNAPSHOT
+[m[32mINFO  [main] (junit) [hybrisserver] Java:        Oracle Corporation
+[m[32mINFO  [main] (junit) [hybrisserver]              Java(TM) SE Runtime Environment, 1.8.0_65-b17
+[m[32mINFO  [main] (junit) [hybrisserver]              /Library/Java/JavaVirtualMachines/jdk1.8.0_65.jdk/Contents/Home/jre
+[m[32mINFO  [main] (junit) [hybrisserver] VM Locale:   language=en,country=US,region=null
+[m[32mINFO  [main] (junit) [hybrisserver] Cache:       RegionCache is not yet initialized. [de.hybris.platform.cache.impl.RegionCacheAdapter]
+[m[32mINFO  [main] (junit) [hybrisserver] Server type: tomcat
+[m[32mINFO  [main] (junit) [hybrisserver] 
+[m[32mINFO  [main] (junit) [hybrisserver] *****************************************************************
+[m[32mINFO  [main] (junit) [hybrisserver] 
+[m[32mINFO  [main] (junit) [hybrisserver] ---------------------------------------------------------------
+[m[32mINFO  [main] (junit) [hybrisserver] --- Extensions in dependency order ( options: 
+[m[32mINFO  [main] (junit) [hybrisserver] ---  @deprecated: is deprecated, p: platform extension,*: auto-required 
+[m[32mINFO  [main] (junit) [hybrisserver] ---  ?: lazy-loaded, i: got items.xml, b: got beans.xml, c: got core module 
+[m[32mINFO  [main] (junit) [hybrisserver] ---  w: got web module, h: got HMC module ) 
+[m[32mINFO  [main] (junit) [hybrisserver] ---------------------------------------------------------------
+[m[32mINFO  [main] (junit) [hybrisserver] core 6.0.0.0-SNAPSHOT [p*cib]
+[m[32mINFO  [main] (junit) [hybrisserver] testweb 6.0.0.0-SNAPSHOT [p*w]
+[m[32mINFO  [main] (junit) [hybrisserver] scripting 6.0.0.0-SNAPSHOT [p*ci]
+[m[32mINFO  [main] (junit) [hybrisserver] paymentstandard 6.0.0.0-SNAPSHOT [p*ci]
+[m[32mINFO  [main] (junit) [hybrisserver] mediaweb 6.0.0.0-SNAPSHOT [p*cw]
+[m[32mINFO  [main] (junit) [hybrisserver] maintenanceweb 6.0.0.0-SNAPSHOT [p*w]
+[m[32mINFO  [main] (junit) [hybrisserver] deliveryzone 6.0.0.0-SNAPSHOT [p*ci]
+[m[32mINFO  [main] (junit) [hybrisserver] commons 6.0.0.0-SNAPSHOT [p*ci]
+[m[32mINFO  [main] (junit) [hybrisserver] processing-&gt;(scripting,commons) 6.0.0.0-SNAPSHOT [p*ci]
+[m[32mINFO  [main] (junit) [hybrisserver] impex-&gt;processing 6.0.0.0-SNAPSHOT [p*ci]
+[m[32mINFO  [main] (junit) [hybrisserver] validation-&gt;impex 6.0.0.0-SNAPSHOT [p*ci]
+[m[32mINFO  [main] (junit) [hybrisserver] catalog-&gt;(validation,commons) 6.0.0.0-SNAPSHOT [p*cib]
+[m[32mINFO  [main] (junit) [hybrisserver] europe1-&gt;(impex,catalog) 6.0.0.0-SNAPSHOT [p*ci]
+[m[32mINFO  [main] (junit) [hybrisserver] platformservices-&gt;(paymentstandard,impex,deliveryzone,europe1,processing) 6.0.0.0-SNAPSHOT [p*cb]
+[m[32mINFO  [main] (junit) [hybrisserver] workflow-&gt;(catalog,platformservices,processing,commons) 6.0.0.0-SNAPSHOT [p*ci]
+[m[32mINFO  [main] (junit) [hybrisserver] hac-&gt;(impex,catalog,processing,platformservices) 6.0.0.0-SNAPSHOT [p*cw]
+[m[32mINFO  [main] (junit) [hybrisserver] comments-&gt;(workflow,impex,catalog,processing) 6.0.0.0-SNAPSHOT [p*ci]
+[m[32mINFO  [main] (junit) [hybrisserver] advancedsavedquery-&gt;(impex,catalog,processing) 6.0.0.0-SNAPSHOT [p*ci]
+[m[32mINFO  [main] (junit) [hybrisserver] ldap-&gt;(impex,catalog,processing) &lt;-?-platformhmc 6.0.0.0-SNAPSHOT [?ci] path:/Users/mrangel/git/training/cuppy/hybris/bin/ext-platform-optional/ldap
+[m[32mINFO  [main] (junit) [hybrisserver] hmc-&gt;scripting 6.0.0.0-SNAPSHOT [ciw] path:/Users/mrangel/git/training/cuppy/hybris/bin/ext-platform-optional/hmc
+[m[32mINFO  [main] (junit) [hybrisserver] mediaconversion-&gt;hmc 6.0.0.0-SNAPSHOT [ciwh] path:/Users/mrangel/git/training/cuppy/hybris/bin/ext-platform-optional/mediaconversion
+[m[32mINFO  [main] (junit) [hybrisserver] platformhmc-&gt;(ldap,hmc) 6.0.0.0-SNAPSHOT [cibh] path:/Users/mrangel/git/training/cuppy/hybris/bin/ext-platform-optional/platformhmc
+[m[32mINFO  [main] (junit) [hybrisserver] cockpit-&gt;(comments,workflow,impex,catalog,processing,validation) 6.0.0.0-SNAPSHOT [ci] path:/Users/mrangel/git/training/cuppy/hybris/bin/ext-cockpit/cockpit
+[m[32mINFO  [main] (junit) [hybrisserver] mcc-&gt;(impex,processing,cockpit) 6.0.0.0-SNAPSHOT [ciw] path:/Users/mrangel/git/training/cuppy/hybris/bin/ext-cockpit/mcc
+[m[32mINFO  [main] (junit) [hybrisserver] backoffice 6.0.0.0-SNAPSHOT [ciw] path:/Users/mrangel/git/training/cuppy/hybris/bin/ext-backoffice/backoffice
+[m[32mINFO  [main] (junit) [hybrisserver] platformbackoffice-&gt;backoffice 6.0.0.0-SNAPSHOT [cib] path:/Users/mrangel/git/training/cuppy/hybris/bin/ext-platform-backoffice/platformbackoffice
+[m[32mINFO  [main] (junit) [hybrisserver] admincockpit-&gt;(impex,processing,validation,cockpit) 6.0.0.0-SNAPSHOT [ciw] path:/Users/mrangel/git/training/cuppy/hybris/bin/ext-cockpit/admincockpit
+[m[32mINFO  [main] (junit) [hybrisserver] ---------------------------------------------------------------
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;global&gt;&gt; spring config from extension (core) located in (global-core-spring.xml,core-cache.xml,global-servicelayer-spring.xml,global-core-jmx-spring.xml,global-statistics-spring.xml) took: (205.4 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;global&gt;&gt; spring config from extension (mediaconversion) located in (/mediaconversion-global-context.xml) took: (12.59 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;global&gt;&gt; spring config from extension (cockpit) located in (global-cockpit-spring.xml) took: (9.555 ms)
+[m[32mINFO  [main] (junit) [DefaultRMIRegistryService] Creating Registry on port 2198.
+[m[32mINFO  [main] (junit) [LocalRMISocketFactory] Creating server socket at '/127.0.0.1:2198'.
+[m[32mINFO  [main] (junit) [HybrisContextFactory] - Refreshing SpringContext (Global context) took: (204.6 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Initializing &lt;&lt;global&gt;&gt; Spring ApplicationContext took: (449.8 ms)
+[m[33mWARN  [main] (junit) [AutowiredAnnotationBeanPostProcessor] Inconsistent constructor declaration on bean with name 'defaultCacheController': single autowire-marked constructor flagged as optional - this constructor is effectively required since there is no default constructor to fall back to: public de.hybris.platform.regioncache.DefaultCacheController(de.hybris.platform.regioncache.CacheConfiguration)
+[m[32mINFO  [main] (junit) [EHCacheRegion] EHCacheRegion entityCacheRegion, eviction policy FIFO, size 100000
+[m[32mINFO  [main] (junit) [EHCacheRegion] EHCacheRegion queryCacheRegion, eviction policy FIFO, size 20000
+[m[32mINFO  [main] (junit) [DefaultCacheController] Regioncache initialized with region count 5
+[m[32mINFO  [main] (junit) [DefaultCacheController] Cache region: Name: typesystemCacheRegion, size: 0, types: [81, 82, 83, 84, 87], statistics: true, class: class de.hybris.platform.regioncache.region.impl.UnlimitedCacheRegion
+[m[32mINFO  [main] (junit) [DefaultCacheController] Cache region: Name: entityCacheRegion, size: 100000, types: [__ALL_TYPES__, __NO_QUERY__], exclusive computation: false, statistics: true, class: class de.hybris.platform.regioncache.region.impl.EHCacheRegion
+[m[32mINFO  [main] (junit) [DefaultCacheController] Cache region: Name: queryCacheRegion, size: 20000, types: [__QUERY_CACHE__], exclusive computation: false, statistics: true, class: class de.hybris.platform.regioncache.region.impl.EHCacheRegion
+[m[32mINFO  [main] (junit) [DefaultCacheController] Cache region: Name: mediaCacheRegion, size: 0, types: [__MEDIA__cache], statistics: true, class: class de.hybris.platform.media.storage.impl.MediaCacheRegion
+[m[32mINFO  [main] (junit) [DefaultCacheController] Cache region: Name: scriptsCacheRegion, size: 0, types: [__SCRIPT__], statistics: true, class: class de.hybris.platform.scripting.engine.internal.cache.impl.ScriptsCacheRegion
+[m[32mINFO  [main] (junit) [DefaultCacheController] Registered Listener RegionCacheAdapter(963014241) - &lt;&lt;junit&gt;&gt; on cache controller. Currently registered 1
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (core) located in (core-spring.xml,core-media-spring.xml,persistence-spring.xml,core-profiling-spring.xml,core-jmx-spring.xml,core-filter-spring.xml,servicelayer-spring.xml,user-spring.xml,security-spring.xml,media-spring.xml,i18n-spring.xml,interceptor-spring.xml,event-spring.xml,test/test-core-spring.xml,test/test-impex-spring.xml) took: (191.2 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (scripting) located in (scripting-spring.xml) took: (10.29 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (commons) located in (commons-spring.xml) took: (6.793 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (processing) located in (processing-spring.xml,cronjob-spring.xml,task-spring.xml,processengine-spring.xml,processing-jmx-spring.xml,processing-distributed-spring.xml,test/test-processing-spring.xml) took: (49.80 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (impex) located in (impex-spring.xml) took: (7.491 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (validation) located in (validation-spring.xml) took: (12.32 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (europe1) located in (europe1-spring.xml) took: (7.028 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (platformservices) located in (catalog-spring.xml,order-spring.xml,product-spring.xml,category-spring.xml,classification-spring.xml,jobs-spring.xml,converters-spring.xml) took: (56.19 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (workflow) located in (workflow-spring.xml) took: (7.378 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (hac) located in (hac-spring.xml) took: (5.580 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (comments) located in (comments-spring.xml) took: (6.497 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (ldap) located in (ldap-spring.xml) took: (6.957 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (mediaconversion) located in (mediaconversion-spring.xml) took: (7.248 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (platformhmc) located in (platformhmc-spring.xml) took: (5.965 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (cockpit) located in (cockpit-spring.xml) took: (10.02 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (mcc) located in (mcc-spring.xml) took: (5.901 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (backoffice) located in (backoffice-spring.xml) took: (5.779 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (platformbackoffice) located in (platformbackoffice-spring.xml) took: (7.604 ms)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Loading &lt;&lt;application&gt;&gt; spring config &lt;junit&gt; from extension (admincockpit) located in (admincockpit-spring.xml) took: (5.754 ms)
+[m[32mINFO  [main] (junit) [DefaultCacheController] Registered Listener de.hybris.platform.media.storage.impl.DefaultLocalMediaFileCacheService$MediaCacheLifecycleCallback@20171cdc on cache controller. Currently registered 2
+[m[32mINFO  [main] (junit) [Reflections] Reflections took 52 ms to scan 1 urls, producing 9 keys and 16 values 
+[m[32mINFO  [main] (junit) [Reflections] Reflections took 0 ms to scan 1 urls, producing 2 keys and 5 values 
+[m[33mWARN  [main] (junit) [PersistentKeyGenerator] cockpitSavedQuery generator is using deprecated 'numeric' property! Initializing as alphanumeric
+[m[32mINFO  [main] (junit) [StatisticsService] adding chart memoryChart
+[m[32mINFO  [main] (junit) [StatisticsService] adding chart threadsChart
+[m[32mINFO  [main] (junit) [StatisticsService] adding chart osChart
+[m[32mINFO  [main] (junit) [StatisticsService] adding chart sessionsChart
+[m[32mINFO  [main] (junit) [StatisticsService] adding chart taskQueueSizeChart_junit
+[m[32mINFO  [main] (junit) [StatisticsService] adding chart taskQueuePoolingSizeChart_junit
+[m[32mINFO  [main] (junit) [StatisticsService] adding chart dbConnectionsInUseChart_junit
+[m[32mINFO  [main] (junit) [HybrisContextFactory] - Refreshing SpringContext (hybris Application context - junit) took: (5.425 s)
+[m[32mINFO  [main] (junit) [HybrisContextFactory] Initializing application Spring ApplicationContext for tenant junit  took: (5.849 s)
+[m[33mWARN  [AfterSaveEventPublisher-junit] (junit) [DefaultTaskService] System not initialized. Not starting task module.
+[mINFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.containsShouldReturnFalseForNotExistingValue succeeded. Time taken: 2.553 ms
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.shouldReturnZeroSizeForEmptySet succeeded. Time taken: 116.9 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.shouldBeAbleToCreateWithInitialCapacity succeeded. Time taken: 102.5 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.shouldBeAbleToAddMultipleDistinctValues succeeded. Time taken: 106.7 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.shouldBeAbleToCompareTwoSets succeeded. Time taken: 803.4 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.addingExistingValueShouldNotModifySet succeeded. Time taken: 135.8 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.shouldBeAbleToCreateByDefaultConstructor succeeded. Time taken: 67.06 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.shouldReturnEmptyArrayForEmptySet succeeded. Time taken: 2.634 ms
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.shouldBeAbleToAddValue succeeded. Time taken: 78.34 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.containsShouldReturnTrueForExistingValue succeeded. Time taken: 66.34 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.shouldReturnArrayWithValues succeeded. Time taken: 722.4 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.removingOfNotExistingValueShouldNotModifySet succeeded. Time taken: 149.7 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.removingOfExistingObjectShouldModifySet succeeded. Time taken: 95.70 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.shouldBeAbleToRemoveNotExistingValue succeeded. Time taken: 93.69 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.shouldBeAbleToRemoveExistingValue succeeded. Time taken: 76.93 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.shouldReturnProperSizeOfNonEmptySet succeeded. Time taken: 67.46 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.shouldBeAbleToAddTheSameValueMultipleTimes succeeded. Time taken: 57.92 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.setWithAnyValueShoulNotdBeEmpty succeeded. Time taken: 64.12 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.addingNotExistingValueShouldModifySet succeeded. Time taken: 55.01 μs
+INFO  [main] [SimpleLog4jPerformanceMeasurement] Test method de.hybris.platform.util.collections.fast.YLongSetTests.setWithoutValuesShouldBeEmpty succeeded. Time taken: 53.60 μs
+</pre>
+</body>
+</html>

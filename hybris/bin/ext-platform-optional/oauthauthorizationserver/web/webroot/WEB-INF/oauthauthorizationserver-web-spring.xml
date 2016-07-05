@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ [y] hybris Platform
+
+ Copyright (c) 2000-2016 hybris AG
+ All rights reserved.
+
+ This software is the confidential and proprietary information of hybris
+ ("Confidential Information"). You shall not disclose such Confidential
+ Information and shall use it only in accordance with the terms of the
+ license agreement you entered into with hybris.
+-->
+
+
+<!-- 
+  WARNING: This is the Spring WEB configuration file. If you want to replace
+  items or managers you have to do this from the extensions core configuration 
+  file (oauthauthorizationserver/resources/oauthauthorizationserver-spring.xml) 
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:security="http://www.springframework.org/schema/security" 
+	xmlns:oauth="http://www.springframework.org/schema/security/oauth2"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd
+           http://www.springframework.org/schema/util
+		   http://www.springframework.org/schema/util/spring-util.xsd
+		   http://www.springframework.org/schema/security 
+		   http://www.springframework.org/schema/security/spring-security.xsd
+		   http://www.springframework.org/schema/security/oauth2 
+     	   http://www.springframework.org/schema/security/spring-security-oauth2.xsd">
+
+	<!-- Security OAuth2 -->
+	
+	<!-- This is the token endpoint, e.g. used for exhanging an authorization 
+		grant into an access token or for direct token response using the resource 
+		owner password grant. NOTICE: require the HTTPS channel for production! -->
+
+	<http name="httpToken"
+		  xmlns="http://www.springframework.org/schema/security" 
+		  entry-point-ref="oauthAuthenticationEntryPoint"
+		  authentication-manager-ref="clientAuthenticationManager" 
+		  create-session="stateless" 
+		  pattern="/oauth/token">
+		  		  
+		<!-- for PRODUCTION make sure that webservicescommons.required.channel=https -->		
+		<intercept-url pattern="/oauth/token" access="IS_AUTHENTICATED_FULLY" requires-channel="#{configurationService.configuration.getString('webservicescommons.required.channel', 'https')}"/>
+
+		<port-mappings>
+			<port-mapping http="#{configurationService.configuration.getProperty('tomcat.http.port')}" https="#{configurationService.configuration.getProperty('tomcat.ssl.port')}" />
+			<port-mapping http="#{configurationService.configuration.getProperty('embeddedserver.http.port')}" https="#{configurationService.configuration.getProperty('embeddedserver.ssl.port')}" />
+		</port-mappings>
+		
+		<anonymous enabled="false" />
+		<http-basic entry-point-ref="oauthAuthenticationEntryPoint" />
+		<!-- include this only if you need to authenticate clients via request 	parameters -->
+		<custom-filter before="BASIC_AUTH_FILTER" ref="oauthClientCredentialsTokenEndpointFilter" />
+	</http>
+
+	<http name="httpOAuth"
+		  xmlns="http://www.springframework.org/schema/security"
+	      access-denied-page="/login.jsp?authorization_error=true" 
+		  disable-url-rewriting="true">
+		<intercept-url pattern="/oauth/**" access="IS_AUTHENTICATED_FULLY" requires-channel="#{configurationService.configuration.getString('webservicescommons.required.channel', 'https')}"/>
+		<intercept-url pattern="/**" access="IS_AUTHENTICATED_ANONYMOUSLY" />
+		
+		<port-mappings>
+			<port-mapping http="#{configurationService.configuration.getProperty('tomcat.http.port')}" https="#{configurationService.configuration.getProperty('tomcat.ssl.port')}" />
+			<port-mapping http="#{configurationService.configuration.getProperty('embeddedserver.http.port')}" https="#{configurationService.configuration.getProperty('embeddedserver.ssl.port')}" />
+		</port-mappings>
+		
+		<form-login authentication-failure-url="/login.jsp?authentication_error=true"  default-target-url="/index.jsp"
+			login-page="/login.jsp" login-processing-url="/login.do" />
+		<logout logout-success-url="/index.jsp" logout-url="/logout.do" />
+		<anonymous />
+		<session-management session-authentication-strategy-ref="fixation" />
+	</http>
+	
+	<oauth:authorization-server client-details-service-ref="oauthClientDetails" token-services-ref="oauthTokenServices">
+		<oauth:authorization-code />
+		<oauth:implicit />
+		<oauth:refresh-token />
+		<oauth:client-credentials />
+		<oauth:password />
+	</oauth:authorization-server>
+	
+	<bean id="fixation" class="de.hybris.platform.servicelayer.security.spring.HybrisSessionFixationProtectionStrategy" />
+		
+	<authentication-manager alias="authenticationManager" xmlns="http://www.springframework.org/schema/security">
+       <authentication-provider ref="wsAuthenticationProvider" />
+   </authentication-manager>
+
+	<!-- Spring managed FilterChain for hybris Filter stack -->
+	<bean id="oauthAuthorizationServerFilterChain" class="de.hybris.platform.servicelayer.web.PlatformFilterChain">
+		<constructor-arg>
+			<ref bean="oauthAuthorizationServerFilterChainList" />
+		</constructor-arg>
+	</bean>
+
+	<bean id="anonymousClientFilter" class="de.hybris.platform.webservicescommons.filter.AnonymousClientFilter" />
+
+
+	<alias name="defaultOauthAuthorizationServerFilterChainList" alias="oauthAuthorizationServerFilterChainList" />
+	<util:list id="defaultOauthAuthorizationServerFilterChainList">
+		<!-- generic platform filters -->
+		<ref bean="log4jFilter" />
+		<ref bean="tenantActivationFilter" />
+		<ref bean="sessionFilter" />
+
+		<!-- Security -->
+		<ref bean="anonymousClientFilter" />
+		<ref bean="springSecurityFilterChain" />
+	</util:list>
+
+</beans>

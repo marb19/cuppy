@@ -1,0 +1,10 @@
+#Ant properties
+#Thu Apr 07 17:35:58 CEST 2016
+builddate=20160407 1735
+description=catalog
+group.id=de.hybris.platform
+module.name=platform-module
+name=catalog
+vendor=hybris
+version=6.0.0.0-SNAPSHOT
+version.api=6.0.0

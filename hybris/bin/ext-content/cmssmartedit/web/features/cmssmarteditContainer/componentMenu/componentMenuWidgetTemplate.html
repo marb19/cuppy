@@ -1,0 +1,14 @@
+<div dropdown is-open="status.isopen" auto-close="disabled">
+    <button type="button" class="btn btn-default yHybridAction" dropdown-toggle ng-disabled="disabled " aria-pressed="false">
+        <img data-ng-src="{{imageRoot}}{{menuIcon}}"/>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-right btn-block ySEComponentMenu" role="menu" ng-click="preventDefault($event);" >
+        <li role="menuitem " class="item ">
+            <component-search></component-search>
+        </li>
+        <li class="divider "></li>
+        <li role="menuitem " class="item ">
+            <component-tabs></component-tabs>
+        </li>
+    </ul>
+</div>

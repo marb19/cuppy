@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+  ~ [y] hybris Platform
+  ~
+  ~ Copyright (c) 2000-2016 hybris AG
+  ~ All rights reserved.
+  ~
+  ~ This software is the confidential and proprietary information of hybris
+  ~ ("Confidential Information"). You shall not disclose such Confidential
+  ~ Information and shall use it only in accordance with the terms of the
+  ~ license agreement you entered into with hybris.
+  -->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:security="http://www.springframework.org/schema/security"
+       xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context.xsd
+		http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc.xsd
+		http://www.springframework.org/schema/security 
+		http://www.springframework.org/schema/security/spring-security.xsd
+		http://www.springframework.org/schema/util
+		http://www.springframework.org/schema/util/spring-util.xsd">
+		
+	<context:annotation-config />
+	<context:component-scan base-package="de.hybris.platform.oauthauthorizationserver" scope-resolver="de.hybris.platform.spring.IgnoreTenantScopeMetadataResolver" />
+
+	<util:map id="jsonMapping" key-type="java.lang.Class" value-type="org.eclipse.persistence.jaxb.metadata.MetadataSource">
+		<entry key="org.springframework.security.oauth2.common.DefaultOAuth2AccessToken" >
+			<bean class="de.hybris.platform.oauthauthorizationserver.jaxb.JsonAuthTokenMetadataProvider" />
+		</entry>
+	</util:map>
+	
+	<util:map id="xmlMapping" key-type="java.lang.Class" value-type="org.eclipse.persistence.jaxb.metadata.MetadataSource">
+		<entry key="org.springframework.security.oauth2.common.DefaultOAuth2AccessToken" >
+			<bean class="de.hybris.platform.oauthauthorizationserver.jaxb.XmlAuthTokenMetadataProvider" />
+		</entry>
+	</util:map>
+
+	<bean id="xmlJaxbContextFactory" parent="metadataJaxbContextFactory">
+		<property name="metadataSources" ref="xmlMapping" />
+	</bean>
+	
+	<bean id="jsonJaxbContextFactory" parent="metadataJaxbContextFactory">
+		<property name="metadataSources" ref="jsonMapping" />
+	</bean>
+
+	<bean id="xmlAuthHttpMessageConverter" parent="xmlMetadataHttpMessageConverter">
+		<property name="jaxbContextFactory" ref="#{configurationService.configuration.getProperty('oauthauthorizationserver.web.mvc.xmlJaxbContextFactory')}" />
+	</bean>
+
+	<bean id="jsonAuthHttpMessageConverter" parent="jsonMetadataHttpMessageConverter">
+		<property name="jaxbContextFactory" ref="#{configurationService.configuration.getProperty('oauthauthorizationserver.web.mvc.jsonJaxbContextFactory')}" />
+	</bean>
+	
+	<bean id="xmlHttpErrorConverter" parent="defaultXmlHttpMessageConverter" class="de.hybris.platform.webservicescommons.jaxb.Jaxb2HttpErrorConverter">
+		<property name="webserviceErrorFactory" ref="oauthWebserviceErrorFactory" />
+	</bean>
+
+	<bean id="jsonHttpErrorConverter" parent="defaultJsonHttpMessageConverter" class="de.hybris.platform.webservicescommons.jaxb.Jaxb2HttpErrorConverter">
+		<property name="webserviceErrorFactory" ref="oauthWebserviceErrorFactory" />
+	</bean>
+
+	<mvc:annotation-driven>
+		<mvc:message-converters>
+			<ref bean="jsonHttpErrorConverter" />
+			<ref bean="xmlHttpErrorConverter" />
+			<ref bean="jsonAuthHttpMessageConverter" />
+			<ref bean="xmlAuthHttpMessageConverter" />
+			<ref bean="jsonHttpMessageConverter" />
+			<ref bean="xmlHttpMessageConverter" />
+		</mvc:message-converters>
+	</mvc:annotation-driven>
+	
+	
+	<!-- This tag allows for mapping the DispatcherServlet to "/" (thus overriding the mapping of the container's default Servlet), while 
+		still allowing static resource requests to be handled by the container's default Servlet. It configures a DefaultServletHttpRequestHandler 
+		with a URL mapping (given a lowest precedence order) of "/**". This handler will forward all requests to the default Servlet. -->
+	<mvc:default-servlet-handler />
+
+	<security:global-method-security secured-annotations="enabled" />
+
+	<!-- Load additional configuration -->
+
+	<bean id="jspViewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+		<property name="viewClass" value="org.springframework.web.servlet.view.JstlView" />
+		<property name="prefix" value="/WEB-INF/jsp/" />
+		<property name="suffix" value=".jsp" />
+	</bean>
+
+</beans>

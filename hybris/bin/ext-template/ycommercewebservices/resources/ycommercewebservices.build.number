@@ -1,0 +1,11 @@
+#Ant properties
+#Fri Feb 26 23:44:21 CET 2016
+builddate=20160226 2344
+description=ycommercewebservices
+group.id=de.hybris.platform
+module.name=platform-module
+name=ycommercewebservices
+releasedate=20160226 1643
+vendor=hybris
+version=6.0.0.0-SNAPSHOT
+version.api=6.0.0

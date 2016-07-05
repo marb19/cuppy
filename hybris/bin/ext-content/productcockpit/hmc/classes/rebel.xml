@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://www.zeroturnaround.com">
+  <classpath>
+    <dir name="/home/hybris/workspace/1-stage-pcm/source/productcockpit/hmc/classes" />
+  </classpath>
+</application>

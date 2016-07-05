@@ -1,0 +1,11 @@
+#Ant properties
+#Thu Jan 28 19:38:36 CET 2016
+builddate=20160128 1938
+description=ondemandcommon
+group.id=de.hybris.platform
+module.name=platform-module
+name=ondemandcommon
+releasedate=20150707 1328
+vendor=hybris
+version=5.7.0.0-SNAPSHOT
+version.api=5.7.0

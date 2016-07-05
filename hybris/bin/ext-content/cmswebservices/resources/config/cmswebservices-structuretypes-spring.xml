@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- [y] hybris Platform Copyright (c) 2000-2016 hybris AG All rights reserved. This software is the confidential and proprietary information 
+	of hybris ("Confidential Information"). You shall not disclose such Confidential Information and shall use it only in accordance with 
+	the terms of the license agreement you entered into with hybris. -->
+
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context" xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop.xsd
+		http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util-4.0.xsd">
+
+	<alias name="defaultComponentStructureTypes" alias="componentStructureTypes" />
+	<bean id="defaultComponentStructureTypes" class="org.springframework.beans.factory.config.MapFactoryBean">
+		<property name="targetMapClass">
+			<value>java.util.HashMap</value>
+		</property>
+		<property name="sourceMap">
+			<map merge="true">
+				<entry key="SimpleBannerComponent" value-ref="simpleBannerComponentStructureType"></entry>
+				<entry key="CMSLinkComponent" value-ref="cmsLinkComponentStructureType"></entry>
+				<entry key="CMSParagraphComponent" value-ref="cmsParagraphComponentStructureType"></entry>
+				<entry key="BannerComponent" value-ref="bannerComponentStructureType"></entry>
+				<entry key="SimpleResponsiveBannerComponent" value-ref="simpleResponsiveBannerComponentStructureType"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<alias name="defaultSimpleBannerComponentStructureType" alias="simpleBannerComponentStructureType" />
+	<bean id="defaultSimpleBannerComponentStructureType" class="org.springframework.beans.factory.config.MapFactoryBean">
+		<property name="targetMapClass">
+			<value>java.util.HashMap</value>
+		</property>
+		<property name="sourceMap">
+			<map merge="true">
+				<entry key="urlLink" value="ShortString"></entry>
+				<entry key="external" value="Boolean"></entry>
+				<entry key="media" value="Media"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<alias name="defaultCmsLinkComponentStructureType" alias="cmsLinkComponentStructureType" />
+
+	<bean id="defaultCmsLinkComponentStructureType" class="org.springframework.beans.factory.config.MapFactoryBean">
+		<property name="targetMapClass">
+			<value>java.util.HashMap</value>
+		</property>
+		<property name="sourceMap">
+			<map merge="true">
+				<entry key="linkName" value="ShortString"></entry>
+				<entry key="url" value="ShortString"></entry>
+				<entry key="external" value="Boolean"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<alias name="defaultCmsParagraphComponentStructureType" alias="cmsParagraphComponentStructureType" />
+	<bean id="defaultCmsParagraphComponentStructureType" class="org.springframework.beans.factory.config.MapFactoryBean">
+		<property name="targetMapClass">
+			<value>java.util.HashMap</value>
+		</property>
+		<property name="sourceMap">
+			<map merge="true">
+				<entry key="content" value="RichText"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<alias name="defaultBannerComponentStructureType" alias="bannerComponentStructureType" />
+	<bean id="defaultBannerComponentStructureType" class="org.springframework.beans.factory.config.MapFactoryBean">
+		<property name="targetMapClass">
+			<value>java.util.HashMap</value>
+		</property>
+		<property name="sourceMap">
+			<map merge="true">
+				<entry key="headline" value="ShortString"></entry>
+				<entry key="content" value="RichText"></entry>
+				<entry key="urlLink" value="ShortString"></entry>
+				<entry key="external" value="Boolean"></entry>
+				<entry key="media" value="Media"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<alias name="defaultSimpleResponsiveBannerComponentStructureType" alias="simpleResponsiveBannerComponentStructureType" />
+	<bean id="defaultSimpleResponsiveBannerComponentStructureType" class="org.springframework.beans.factory.config.MapFactoryBean">
+		<property name="targetMapClass">
+			<value>java.util.HashMap</value>
+		</property>
+		<property name="sourceMap">
+			<map merge="true">
+				<entry key="urlLink" value="ShortString"></entry>
+				<entry key="media" value="MediaContainer"></entry>
+			</map>
+		</property>
+	</bean>
+
+	<!-- Structure Enum Type Configuration -->
+	<alias name="defaultComponentEnumStructureTypes" alias="componentEnumStructureTypes" />
+	<bean id="defaultComponentEnumStructureTypes" class="org.springframework.beans.factory.config.MapFactoryBean">
+		<property name="targetMapClass">
+			<value>java.util.HashMap</value>
+		</property>
+		<property name="sourceMap">
+			<map merge="true">
+			</map>
+		</property>
+	</bean>
+
+</beans>

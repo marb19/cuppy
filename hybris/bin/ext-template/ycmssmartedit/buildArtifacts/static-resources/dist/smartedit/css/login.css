@@ -1,0 +1,342 @@
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.ySEWaitDialog .modal-content {
+  background-color: #233243;
+  border-color: #233243;
+  color: #fff;
+}
+.ySEWaitDialog .modal-content .spinner {
+  margin: 0 !important;
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+.ySEWaitDialog .modal-content .spinner-container1 > div,
+.ySEWaitDialog .modal-content .spinner-container2 > div,
+.ySEWaitDialog .modal-content .spinner-container3 > div {
+  width: 3px;
+  height: 3px;
+}
+.smartEditLogin,
+.smartEditLoginModal {
+  background: -webkit-linear-gradient(#0486e0, #1c9aed);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0486e0, #1c9aed);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0486e0, #1c9aed);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0486e0, #1c9aed);
+  /* Standard syntax (must be last) */
+  color: #fff;
+}
+.smartEditLogin input,
+.smartEditLoginModal input {
+  background: -webkit-linear-gradient(#0486e0, #1c9aed);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0486e0, #1c9aed);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0486e0, #1c9aed);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0486e0, #1c9aed);
+  /* Standard syntax (must be last) */
+  color: #fff;
+}
+.smartEditLogin .signinForm,
+.smartEditLoginModal .signinForm {
+  padding-top: 20px;
+}
+.smartEditLogin .ySELoginLabel,
+.smartEditLoginModal .ySELoginLabel {
+  color: #fff;
+}
+.smartEditLogin .alert,
+.smartEditLoginModal .alert {
+  margin-bottom: 0;
+}
+.smartEditLogin .form-group input,
+.smartEditLoginModal .form-group input {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+.smartEditLogin ::-webkit-input-placeholder,
+.smartEditLoginModal ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff;
+}
+.smartEditLogin :-moz-placeholder,
+.smartEditLoginModal :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+}
+.smartEditLogin ::-moz-placeholder,
+.smartEditLoginModal ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+.smartEditLogin :-ms-input-placeholder,
+.smartEditLoginModal :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #fff;
+}
+.smartEditLogin .top-buffer,
+.smartEditLoginModal .top-buffer {
+  margin-top: 20px;
+}
+.smartEditLogin .top-buffer2,
+.smartEditLoginModal .top-buffer2 {
+  margin-top: 40px;
+}
+.smartEditLogin .ySELoginLanguage,
+.smartEditLoginModal .ySELoginLanguage {
+  padding-left: 0;
+}
+.smartEditLogin .ySELoginLanguage li,
+.smartEditLoginModal .ySELoginLanguage li {
+  color: #000000;
+}
+.smartEditLogin .btn,
+.smartEditLoginModal .btn {
+  text-transform: uppercase;
+}
+.smartEditLogin .select2-container .select2-choice,
+.smartEditLoginModal .select2-container .select2-choice,
+.smartEditLogin .select2-container .select2-choices,
+.smartEditLoginModal .select2-container .select2-choices,
+.smartEditLogin .select2-container .select2-choices .select2-search-field input,
+.smartEditLoginModal .select2-container .select2-choices .select2-search-field input {
+  font-family: Dosis, sans-serif;
+}
+.smartEditLogin .js-example-placeholder-single,
+.smartEditLoginModal .js-example-placeholder-single {
+  padding-left: 0;
+  padding-right: 0;
+  font-family: Dosis, sans-serif;
+}
+.smartEditLogin .select2-container .select2-choice,
+.smartEditLoginModal .select2-container .select2-choice {
+  border-radius: 0;
+  height: 46px;
+  font-size: 18px;
+}
+.smartEditLogin .select2-container .select2-choice .select2-arrow,
+.smartEditLoginModal .select2-container .select2-choice .select2-arrow {
+  background: none;
+  border-left: none;
+}
+.smartEditLogin .select2-container .select2-choice .select2-arrow b,
+.smartEditLoginModal .select2-container .select2-choice .select2-arrow b {
+  margin-top: 18px;
+  border-top: 6px dashed #000000;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.smartEditLogin .select2-dropdown-open .select2-choice .select2-arrow b,
+.smartEditLoginModal .select2-dropdown-open .select2-choice .select2-arrow b {
+  border-top: 0;
+  border-bottom: 6px dashed #000000;
+}
+.smartEditLogin .select2-drop,
+.smartEditLoginModal .select2-drop {
+  border-radius: 0;
+  color: #5f7084;
+}
+.smartEditLogin .select2-results,
+.smartEditLoginModal .select2-results {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+.smartEditLogin .select2-results .select2-highlighted,
+.smartEditLoginModal .select2-results .select2-highlighted {
+  background-color: #d2dbe6;
+  color: #5f7084;
+}
+.smartEditLogin .select2-results .select2-result-label,
+.smartEditLoginModal .select2-results .select2-result-label {
+  padding: 7px 7px 7px 14px;
+}
+.smartEditLogin .select2-default,
+.smartEditLoginModal .select2-default {
+  color: #5f7084!important;
+  font-weight: normal;
+}
+.smartEditLogin.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.ySELoginNotInit div.modal-dialog {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+.ySELoginNotInit div.modal-dialog .modal-dialog {
+  width: 100%;
+  height: 100%;
+}
+.ySELoginNotInit div.modal-dialog .modal-content {
+  border: 0;
+  height: 100%;
+}
+.ySELoginNotInit div.modal-dialog .modal-body {
+  padding: 0;
+}
+.smartEditLoginModal {
+  overflow: hidden;
+}
+.smartEditLoginModal .ySELoginAuthMessage {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+.smartEditLogin,
+.smartEditLoginModal {
+  color: #fff;
+  font-family: Dosis, sans-serif;
+}
+.smartEditLogin .alert,
+.smartEditLoginModal .alert {
+  box-shadow: none;
+}
+.smartEditLogin .form-group input,
+.smartEditLoginModal .form-group input {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  box-shadow: none;
+}
+.smartEditLogin .alert.alert-error-bluebg,
+.smartEditLoginModal .alert.alert-error-bluebg {
+  background-color: tomato;
+  border-color: #fff;
+}
+.smartEditLoginModal {
+  padding: 150px 0;
+}
+.ySELoginInit .modal-body {
+  padding: 0;
+}
+.smartEditLogin .ySELogo {
+  padding-bottom: 30px;
+}
+.smartEditLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ySELoginNotInit {
+  height: 100%;
+}
+.ySELoginNotInit .modal-dialog {
+  height: 100%;
+}
+.ySELoginNotInit .modal-dialog .modal-content {
+  height: 100%;
+}
+.ySELoginNotInit .modal-dialog .modal-content .modal-body {
+  height: 100%;
+}
+.ySELoginNotInit .modal-dialog .modal-content .modal-body > div {
+  height: 100%;
+}
+.ySELoginNotInit .modal-dialog .modal-content .modal-body > div .smartEditLogin {
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .smartEditLogin .ySELoginContent {
+    width: 400px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .smartEditLogin .ySELoginContent {
+    width: 500px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .smartEditLogin .ySELoginContent {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .smartEditLogin .ySELoginContent {
+    width: 900px;
+  }
+}

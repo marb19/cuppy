@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://www.zeroturnaround.com">
+  <classpath>
+    <dir name="/srv/jenkins/workspace/02-package/source/b2bcommerce/hmc/classes" />
+  </classpath>
+</application>

@@ -1,0 +1,6 @@
+#
+# Import new Warehousing backoffice role
+#
+INSERT_UPDATE BackofficeRole;UID[unique=true];locname[lang=de];locname[lang=en];backOfficeLoginDisabled;authorities
+;warehousemanagerrole;Warehouse Manager-Role;Warehouse Manager Role;FALSE;warehousemanagerrole
+;warehouseagentrole;Warehouse Agent-Role;Warehouse Agent Role;FALSE;warehouseagentrole

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+  ~ [y] hybris Platform
+  ~
+  ~ Copyright (c) 2000-2016 hybris AG
+  ~ All rights reserved.
+  ~
+  ~ This software is the confidential and proprietary information of hybris
+  ~ ("Confidential Information"). You shall not disclose such Confidential
+  ~ Information and shall use it only in accordance with the terms of the
+  ~ license agreement you entered into with hybris.
+  --><widgets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://www.hybris.com/schema/cockpitng/widgets.xsd">
+
+    
+
+    <widget-connection inputId="input" outputId="nodeSelected" sourceWidgetId="webservicescommonsbackoffice-explorer-tree" targetWidgetId="webservicescommonsbackoffice-tree-node-adapter"/>
+    <widget-connection inputId="genericInput" outputId="true" sourceWidgetId="webservicescommonsbackoffice-tree-node-adapter" targetWidgetId="webservicescommonsbackoffice-typecode-extractor"/>
+    <widget-connection inputId="genericInput" outputId="true" sourceWidgetId="webservicescommonsbackoffice-tree-node-adapter" targetWidgetId="webservicescommonsbackoffice-search-enabler"/>
+    <widget-connection inputId="genericInput" outputId="false" sourceWidgetId="webservicescommonsbackoffice-tree-node-adapter" targetWidgetId="webservicescommonsbackoffice-search-disabler"/>
+    <widget-connection inputId="type" outputId="genericOutput" sourceWidgetId="webservicescommonsbackoffice-typecode-extractor" targetWidgetId="webservicescommonsbackoffice-search-logic"/>
+    <widget-connection inputId="enabled" outputId="genericOutput" sourceWidgetId="webservicescommonsbackoffice-search-enabler" targetWidgetId="webservicescommonsbackoffice-text-search"/>
+    <widget-connection inputId="enabled" outputId="genericOutput" sourceWidgetId="webservicescommonsbackoffice-search-disabler" targetWidgetId="webservicescommonsbackoffice-text-search"/>
+    <widget-connection inputId="searchtext" outputId="query" sourceWidgetId="webservicescommonsbackoffice-text-search" targetWidgetId="webservicescommonsbackoffice-search-logic"/>
+    <widget-connection inputId="pageable" outputId="pageable" sourceWidgetId="webservicescommonsbackoffice-search-logic" targetWidgetId="webservicescommonsbackoffice-simple-list"/>
+
+</widgets>

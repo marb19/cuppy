@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ [y] hybris Platform
+
+ Copyright (c) 2000-2016 hybris AG
+ All rights reserved.
+
+ This software is the confidential and proprietary information of hybris
+ ("Confidential Information"). You shall not disclose such Confidential
+ Information and shall use it only in accordance with the terms of the
+ license agreement you entered into with hybris.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:security="http://www.springframework.org/schema/security" 
+	xmlns:util="http://www.springframework.org/schema/util"
+	xmlns:oauth="http://www.springframework.org/schema/security/oauth2"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/security 
+		http://www.springframework.org/schema/security/spring-security.xsd
+		http://www.springframework.org/schema/security/oauth2 
+     	http://www.springframework.org/schema/security/spring-security-oauth2.xsd
+     	http://www.springframework.org/schema/util
+ 	    http://www.springframework.org/schema/util/spring-util.xsd">
+
+		
+		<alias name="defaultOauthClientDetails" alias="oauthClientDetails"/>
+		<bean id="defaultOauthClientDetails" class="de.hybris.platform.webservicescommons.oauth2.client.impl.DefaultClientDetailsService">
+			<property name="clientDetailsDao" ref="oauthClientDetailsDao" />
+		</bean>
+
+		<alias name="defaultOauthClientCredentialsTokenEndpointFilter" alias="oauthClientCredentialsTokenEndpointFilter"/>
+		<bean id="defaultOauthClientCredentialsTokenEndpointFilter" class="org.springframework.security.oauth2.provider.client.ClientCredentialsTokenEndpointFilter">
+			<property name="authenticationManager" ref="clientAuthenticationManager" />
+			<property name="authenticationEntryPoint" ref="oauthAuthenticationEntryPoint" />
+			<property name="filterProcessesUrl" value="/oauth/token" />
+		</bean>
+		
+		<alias name="defaultClientAuthenticationManager" alias="clientAuthenticationManager"/>
+		<authentication-manager id="defaultClientAuthenticationManager" xmlns="http://www.springframework.org/schema/security">
+			<authentication-provider user-service-ref="oauthClientDetailsUserService" >
+				<password-encoder ref="clientSecretEncoder"/>
+			</authentication-provider>
+		</authentication-manager>
+
+		<alias name="defaultOauthAuthenticationEntryPoint" alias="oauthAuthenticationEntryPoint"/>
+		<bean id="defaultOauthAuthenticationEntryPoint" class="org.springframework.security.oauth2.provider.error.OAuth2AuthenticationEntryPoint">
+			<property name="realmName" value="hybris" />
+			<property name="exceptionRenderer" ref="oAuth2ExceptionRenderer"/>
+		</bean>
+
+		<alias name="defaultOAuthExceptionRenderer" alias="oAuth2ExceptionRenderer"/>
+		<bean id="defaultOAuthExceptionRenderer" class="de.hybris.platform.webservicescommons.oauth2.OAuth2ExceptionRenderer">
+			<property name="exceptionConverter" ref="exceptionConverter"/>
+			<property name="messageConverters">			<list>
+				<ref bean="jsonHttpMessageConverter" />
+				<ref bean="xmlHttpMessageConverter" />
+			</list>
+			</property>
+		</bean>
+
+		<alias name="defaultOauthClientDetailsUserService" alias="oauthClientDetailsUserService"/>
+		<bean id="defaultOauthClientDetailsUserService" class="org.springframework.security.oauth2.provider.client.ClientDetailsUserDetailsService">
+			<constructor-arg ref="oauthClientDetails" />
+			<property name="passwordEncoder" ref="clientSecretEncoder"/>
+		</bean>
+
+		<alias name="defaultOauthTokenServices" alias="oauthTokenServices"/>
+		<bean id="defaultOauthTokenServices" class="de.hybris.platform.webservicescommons.oauth2.token.provider.HybrisOAuthTokenServices">
+			<property name="tokenStore" ref="oauthTokenStore" />
+			<property name="reuseRefreshToken" value="${oauthauthorizationserver.tokenServices.reuseRefreshToken}" /> 
+			<property name="clientDetailsService" ref="oauthClientDetails" />
+			<property name="supportRefreshToken" value="true" />
+			<property name="refreshTokenValiditySeconds" value="2592000" />
+			<!-- 60*60*24*30 = 30d -->
+			<property name="accessTokenValiditySeconds" value="43200" />
+			<!-- 60*60*12 = 12h -->
+		</bean>
+
+		<alias name="defaultOauthTokenStore" alias="oauthTokenStore"/>
+		<bean id="defaultOauthTokenStore" class="de.hybris.platform.webservicescommons.oauth2.token.provider.HybrisOAuthTokenStore">
+			<property name="oauthTokenService" ref="oauthTokenService"/>
+		</bean>
+
+		<!-- Preventing brute force attack -->
+		<alias name="defaultBruteForceAttackCounter" alias="bruteForceAttackCounter"/>
+		<bean id="defaultBruteForceAttackCounter" class="de.hybris.platform.oauthauthorizationserver.security.impl.DefaultBruteForceAttackCounter">
+        	<constructor-arg name="maxFailedLogins" value="5" />
+        	<constructor-arg name="cacheExpiration" value="60" />
+        	<constructor-arg name="cacheSizeLimit" value="1000" />
+    	</bean>
+
+		<alias name="defaultAuthenticationFailureListener" alias="authenticationFailureListener"/>
+    	<bean id="defaultAuthenticationFailureListener" class="de.hybris.platform.oauthauthorizationserver.security.AuthenticationFailureListener">
+    		<property name="bruteForceAttackCounter" ref="bruteForceAttackCounter"/>
+    		<property name="userService" ref="userService"/>
+    		<property name="modelService" ref="modelService"/>
+    	</bean>
+
+		<alias name="defaultAuthenticationSuccessListener" alias="authenticationSuccessListener"/>
+    	<bean id="defaultAuthenticationSuccessListener" class="de.hybris.platform.oauthauthorizationserver.security.AuthenticationSuccessListener">
+    		<property name="bruteForceAttackCounter" ref="bruteForceAttackCounter"/>
+    	</bean>
+
+	<!-- Error converters -->
+	<alias alias="oauthWebserviceErrorFactory" name="defaultOauthWebserviceErrorFactory" />
+	<bean id="defaultOauthWebserviceErrorFactory" class="de.hybris.platform.webservicescommons.errors.factory.impl.DefaultWebserviceErrorFactory">
+		<property name="converters">
+			<list>
+				<ref bean="exceptionConverter" />
+			</list>
+		</property>
+	</bean>
+
+	<bean id="oAuth2ExceptionHandlerExceptionResolver"
+		class="de.hybris.platform.webservicescommons.oauth2.resolver.OAuth2ExceptionHandlerExceptionResolver">
+		<property name="webserviceErrorFactory" ref="oauthWebserviceErrorFactory" />
+		<property name="messageConverters">
+			<list>
+				<ref bean="jsonHttpMessageConverter" />
+				<ref bean="xmlHttpMessageConverter" />
+			</list>
+		</property>
+	</bean>
+
+</beans>

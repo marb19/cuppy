@@ -1,0 +1,14 @@
+#
+# Import new Customer Support Groups
+#
+INSERT_UPDATE BackofficeRole;UID[unique=true];locname[lang=en];backOfficeLoginDisabled;authorities
+;customersupportadministratorrole;Customer Support Administrator Role;FALSE;customersupportadministratorrole
+;customersupportmanagerrole;Customer Support Manager Role;FALSE;customersupportmanagerrole
+;customersupportagentrole;Customer Support Agent Role;FALSE;customersupportagentrole
+;;;;;
+INSERT_UPDATE UserGroup;UID[unique=true];locname[lang=en];groups(uid);description
+;customersupportadministratorgroup;Customer Support Administrator Group;backofficeadmingroup,employeegroup,customersupportadministratorrole,customersupportmanagerrole,customersupportagentrole,csagentmanagergroup;The Customer Support Administrator Group has access to the Customer Support Backoffice's Customer Support Administrator Group and Customer Support Agent Group views AND/OR the Assisted Service Module.
+
+INSERT_UPDATE CsAgentGroup;UID[unique=true];locname[lang=en];groups(uid);description
+;customersupportmanagergroup;Customer Support Manager Group;employeegroup,customersupportmanagerrole,customersupportagentrole,csagentmanagergroup;The Customer Support Manager Group has access to the Customer Support Backoffice's Customer Support Manager Group and Customer Support Agent Group views AND/OR the Assisted Service Module.
+;customersupportagentgroup;Customer Support Agent Group;employeegroup,customersupportagentrole;The Customer Support Agent Group has access to the Customer Support Backoffice's Customer Support Agent Group views and AND/OR the Assisted Service Module.

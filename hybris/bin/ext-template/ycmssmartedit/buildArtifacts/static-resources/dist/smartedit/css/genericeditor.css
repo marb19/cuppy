@@ -1,0 +1,312 @@
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after,
+.ySErow:before,
+.ySErow:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after,
+.ySErow:after {
+  clear: both;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#experience-selector-btn {
+  font-family: "Open Sans", sans-serif;
+}
+.ySEGenericEditor {
+  padding: 30px 0 0 0;
+}
+.ySEGenericEditor:before,
+.ySEGenericEditor:after {
+  content: " ";
+  display: table;
+}
+.ySEGenericEditor:after {
+  clear: both;
+}
+.ySEGenericEditor:before,
+.ySEGenericEditor:after {
+  content: " ";
+  display: table;
+}
+.ySEGenericEditor:after {
+  clear: both;
+}
+.ySErow {
+  padding-bottom: 30px;
+}
+localized-element .nav-tabs > li {
+  border-top: 1px solid #a1aebd;
+  border-bottom: 1px solid #a1aebd;
+  border-left: 1px solid #a1aebd;
+  font-weight: bold;
+}
+localized-element .nav-tabs > li:last-of-type {
+  border-right: 1px solid #a1aebd;
+}
+localized-element .nav-tabs > li.active {
+  background-color: #0486E0;
+  border-color: #0486E0;
+}
+localized-element .nav-tabs > li.active a {
+  color: #ffffff;
+}
+localized-element .nav-tabs > li.active a.sm-tab-error {
+  color: #FF3B30;
+}
+localized-element ul.nav-tabs > .dropdown ul > li {
+  background-color: #ffffff;
+}
+localized-element ul.nav-tabs > .dropdown ul > li a {
+  color: #0486E0;
+}
+localized-element ul.nav-tabs > .dropdown a.sm-tab-error {
+  color: #FF3B30;
+}
+.ySErow {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+experience-selector label {
+  color: #ffffff;
+  font-weight: normal;
+}
+experience-selector .ySEGenericEditor {
+  padding: 0;
+}
+experience-selector .ySEGenericEditor form {
+  padding-bottom: 0;
+  padding-left: 0;
+}
+experience-selector .ySEGenericEditor form .modal-header {
+  background-color: inherit;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+experience-selector .ySErow {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100px;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  experience-selector .ySErow {
+    float: left;
+    width: 50%;
+  }
+}
+experience-selector .ySErow:nth-of-type(even) {
+  padding-left: 50px;
+  padding-right: 30px;
+}
+experience-selector .ySErow:nth-of-type(odd) {
+  padding-left: 30px;
+  padding-right: 50px;
+}
+experience-selector .ySEBtnRow {
+  background: inherit;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  experience-selector .ySEBtnRow {
+    float: left;
+    width: 100%;
+  }
+}
+.ySEDateField {
+  width: 100%;
+}
+.ySEDateField input {
+  border-right: none;
+}
+.ySEDateField .input-group-addon {
+  background-color: #ffffff;
+  color: #32a0ec;
+  border-bottom: 1px solid #d4d7dc;
+  border-top: 1px solid #d4d7dc;
+  margin-top: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-radius: 0;
+}
+.ySEDateField span.glyphicon {
+  font-size: 1.1em;
+}
+.ySEDateField .bootstrap-datetimepicker-widget.dropdown-menu {
+  background-color: #ffffff;
+  color: #000000;
+  color: initial;
+}
+.ySEDateField.ySEDataDisabled .form-control {
+  border-right: 1px solid #d4d7dc;
+  border-radius: 0;
+}
+.ySmartEditToolbars experience-selector-button .dropdown-menu.yDdResolution {
+  margin-top: 1px;
+  border-top: none;
+  padding-bottom: 0px;
+  border-bottom: 0;
+  border-right: 0;
+}
+experience-selector-button > div.open {
+  background-color: #32a0ec;
+  color: #ffffff;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  margin: -18px 0px -22px 0px;
+  padding-left: 0px;
+}
+experience-selector-button > div.open #experience-selector-btn span {
+  color: #ffffff;
+}
+experience-selector-button > div {
+  text-align: left;
+}
+generic-editor-field input.form-control,
+generic-editor-field .select2-container .select2-choice,
+generic-editor-field .select2-container .select2-choices,
+generic-editor-field .select2-container .select2-choices .select2-search-field input {
+  border-radius: 0;
+}
+generic-editor-field .select2-container .select2-choice.ui-select-match {
+  height: auto;
+  /*overwrite techne*/
+}
+generic-editor form label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+smartedit-tabset ul.nav.nav-tabs > li > a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+smartedit-tabset ul.nav.nav-tabs > li {
+  min-width: 30px;
+}
+localized-element smartedit-tabset ul.nav.nav-tabs > li.dropdown {
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+localized-element smartedit-tabset ul.nav.nav-tabs > li.dropdown a {
+  color: #0486e0;
+}
+localized-element smartedit-tabset ul.nav.nav-tabs > li.dropdown a .caret {
+  margin-left: 10px;
+  border-top: 6px dashed;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+localized-element smartedit-tabset ul.nav.nav-tabs > li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+localized-element smartedit-tabset ul.nav.nav-tabs > li ul.dropdown {
+  margin-top: 0;
+}
+generic-editor-field .ySEField .ySEFieldPrefix {
+  padding-bottom: 10px;
+}
+generic-editor-field .ySEField .ySEFieldPostfix {
+  padding-top: 20px;
+}
+.modal-dialog .modal-body {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+experience-selector-button experience-selector .modal-header h4.modal-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+}
+experience-selector-button experience-selector .ySErow label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+experience-selector .ySErow generic-editor-field .select2-container .select2-choice,
+experience-selector .ySErow generic-editor-field .select2-container .select2-choices,
+experience-selector .ySErow generic-editor-field .select2-container .select2-choices .select2-search-field input,
+experience-selector .ySErow generic-editor-field .ySEDateField .form-control {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #27394f;
+}

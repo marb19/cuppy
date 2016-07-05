@@ -1,0 +1,38 @@
+# -----------------------------------------------------------------------
+# [y] hybris Platform
+#
+# Copyright (c) 2000-2015 hybris AG
+# All rights reserved.
+# 
+# This software is the confidential and proprietary information of hybris
+# ("Confidential Information"). You shall not disclose such Confidential
+# Information and shall use it only in accordance with the terms of the
+# license agreement you entered into with hybris.
+# -----------------------------------------------------------------------
+$contentCatalog=electronicsContentCatalog
+$contentCV=catalogVersion(CatalogVersion.catalog(Catalog.id[default=$contentCatalog]),CatalogVersion.version[default=Staged])[default=$contentCatalog:Staged]
+$jarResourceCms=jar:de.hybris.platform.chineseprofile.constants.ChineseprofileaddonConstants&/chineseprofileaddon/import/cockpit/cmscockpit
+
+###### Account Address Book
+# Component
+INSERT_UPDATE ChineseAccountAddressBookComponent;$contentCV[unique=true];uid[unique=true];name;&componentRef
+;;ChineseAccountAddressBookComponent;Chinese Account Address Book Component;ChineseAccountAddressBookComponent
+
+INSERT_UPDATE ChineseAccountAddEditAddressComponent;$contentCV[unique=true];uid[unique=true];name;&componentRef
+;;ChineseAccountAddEditAddressComponent;Chinese Account Add Edit Address Component;ChineseAccountAddEditAddressComponent
+
+INSERT_UPDATE ChineseUpdateEmailComponent;$contentCV[unique=true];uid[unique=true];name;&componentRef
+;;ChineseUpdateEmailComponent;Chinese Update Email Component;ChineseUpdateEmailComponent
+
+# ContentSlot
+INSERT_UPDATE ContentSlot;$contentCV[unique=true];uid[unique=true];name;active;cmsComponents(&componentRef);;;
+;;BodyContent-address-book;Body Content Slot for Account Address Book;true;ChineseAccountAddressBookComponent;;;
+;;BodyContent-add-edit-address;Body Content Slot for Add Edit Address;true;ChineseAccountAddEditAddressComponent;;;
+;;BodyContent-update-email;Body Content Slot for Update Email;true;ChineseUpdateEmailComponent;;;
+
+
+# ContentSlotForPage
+INSERT_UPDATE ContentSlotForPage;$contentCV[unique=true];uid[unique=true];position[unique=true];page(uid,$contentCV)[unique=true];contentSlot(uid,$contentCV)[unique=true];;;
+;;BodyContent-address-book;BodyContent;address-book;BodyContent-address-book;;;
+;;BodyContent-add-edit-address;BodyContent;add-edit-address;BodyContent-add-edit-address;;;
+;;BodyContent-update-email;BodyContent;update-email;BodyContent-update-email;;;

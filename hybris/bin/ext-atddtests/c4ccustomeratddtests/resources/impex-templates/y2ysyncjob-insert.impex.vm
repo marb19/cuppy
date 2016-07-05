@@ -1,0 +1,2 @@
+INSERT_UPDATE Y2YSyncJob;code[unique=true];streamConfigurationContainer(id);springId;syncType(code);dataHubUrl
+;${jobCode};${configurationContainerId};${springBeanId};${syncType};http://${host}:${port}/datahub/v1/data-feeds/${feed}

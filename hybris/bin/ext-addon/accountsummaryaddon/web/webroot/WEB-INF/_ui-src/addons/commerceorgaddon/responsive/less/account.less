@@ -1,0 +1,156 @@
+.account-section {
+  .account-section-content {
+    .label-value {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 15px;
+
+      @media (min-width: @screen-sm-min){
+        margin-top: 10px;
+      }
+    }
+
+    .accountActions-row {
+      @media (min-width: @screen-sm-min){
+        .row();
+      }
+    }
+
+    .accountActions-bottom {
+      clear: both;
+      margin-top: 35px;
+    }
+
+    .accountActions-link {
+      clear: both;
+      margin: (@grid-gutter-width + 5) 0;
+
+      .disable-link, .enable-link {
+        margin:0;
+
+        @media (max-width:@screen-xs-max) {
+          margin:8px 0;
+        }
+      }
+    }
+  }
+
+  .account-list {
+    .account-cards {
+      .card {
+        .glyphicon-ok {
+          font-size: 20px;
+          color: @text-color-secondary;
+          padding-right: 15px;
+          padding-top: 15px;
+        }
+
+        .roles-wrapper {
+          margin: 8px 0 5px;
+
+          > ul {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+
+      .selected {
+        background-color: @list-active-bg;
+
+        .glyphicon-ok {
+          color: @link-color;
+        }
+
+        &:first-child {
+          border-left: 1px solid @border-color-3;
+        }
+      }
+    }
+    .search-empty {
+      margin: 0;
+      padding: @grid-gutter-width;
+      border-bottom: 1px solid @border-color-3;
+      border-right: 1px solid @border-color-3;
+    }
+    .remove-item,
+    .edit-item {
+      color: @border-color-2;
+    }
+  }
+  .account-header-done-btn {
+    margin-top: 15px;
+  }
+}
+.account-status-inactive {
+  color:@text-color-secondary;
+}
+
+@media (max-width: @screen-xs-max){
+  .account-section {
+    .account-section-content {
+      #addNewPermissionForm {
+        form {
+          .confirm {
+            margin-bottom: @grid-gutter-width;
+          }
+        }
+      }
+
+      .accountActions-bottom {
+        .btn-default {
+          margin-top: @grid-gutter-width * 1.5;
+        }
+
+        .btn.confirm {
+          margin-bottom: 30px;
+        }
+      }
+    }
+
+    .pagination-bar.top + .account-list .account-cards {
+      margin-top: -1px;
+    }
+
+    .account-list {
+      .account-list-header {
+        padding-left: @grid-gutter-width;
+        padding-right: @grid-gutter-width;
+      }
+
+      .add-user-action-menu {
+        .add-user-action-buttons {
+          display: none;
+        }
+
+        &.open {
+          .add-user-action {
+            background-color: @btn-primary-bg;
+            color: @btn-primary-color;
+            padding: 16px 20px;
+            text-transform: uppercase;
+          }
+
+          .add-user-action-buttons {
+            display: block;
+            position: absolute;
+            right: 0;
+            width: 120px;
+            top: 38px;
+            z-index: 9000;
+          }
+        }
+      }
+    }
+
+    #unittree {
+      padding-left: @grid-gutter-width/2;
+      padding-right: @grid-gutter-width/2;
+    }
+
+    .account-header-done-btn {
+      padding-left: @grid-gutter-width;
+      padding-right: @grid-gutter-width;
+    }
+  }
+}

@@ -1,0 +1,3 @@
+# Media Folders
+INSERT_UPDATE MediaFolder;qualifier[unique=true];path[unique=true]
+;customersupportattachments;customersupportattachments

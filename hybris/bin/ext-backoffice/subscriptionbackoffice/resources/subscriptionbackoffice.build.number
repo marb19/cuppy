@@ -1,0 +1,11 @@
+#Ant properties
+#Wed Mar 09 10:34:45 CET 2016
+builddate=20160309 1034
+description=subscriptionbackoffice
+group.id=de.hybris.platform
+module.name=platform-module
+name=subscriptionbackoffice
+releasedate=20160304 1912
+vendor=hybris
+version=6.0.0.0-SNAPSHOT
+version.api=6.0.0

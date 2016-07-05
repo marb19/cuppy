@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ [y] hybris Platform
+
+ Copyright (c) 2000-2016 hybris AG
+ All rights reserved.
+
+ This software is the confidential and proprietary information of hybris
+ ("Confidential Information"). You shall not disclose such Confidential
+ Information and shall use it only in accordance with the terms of the
+ license agreement you entered into with hybris.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:util="http://www.springframework.org/schema/util"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/aop
+           http://www.springframework.org/schema/aop/spring-aop.xsd
+           http://www.springframework.org/schema/util 
+           http://www.springframework.org/schema/util/spring-util.xsd">
+
+	<alias name="defaultRuleModuleFinderStrategy" alias="ruleModuleFinderStrategy" />
+	<bean id="defaultRuleModuleFinderStrategy" class="de.hybris.platform.ruleengine.strategies.impl.DefaultRuleModuleFinderStrategy">
+		<property name="rulesModuleDao" ref="rulesModuleDao" />
+	</bean>
+	
+	<alias name="defaultDroolsKIEBaseFinderStrategy" alias="droolsKIEBaseFinderStrategy" />
+	<bean id="defaultDroolsKIEBaseFinderStrategy" class="de.hybris.platform.ruleengine.strategies.impl.DefaultDroolsKIEBaseFinderStrategy" />
+
+	<alias name="defaultPlatformRuleEngineService" alias="platformRuleEngineService" />
+	<bean id="defaultPlatformRuleEngineService" class="de.hybris.platform.ruleengine.impl.DefaultPlatformRuleEngineService" >
+		<property name="ruleExecutionCounterClass" value="de.hybris.platform.ruleengine.impl.RuleMatchCountListener" />
+		<property name="eventService" ref="eventService" />
+		<property name="modelService" ref="modelService" />
+		<property name="configurationService" ref="configurationService" />
+		<property name="engineRuleDao" ref="engineRuleDao"/>
+		<property name="rulesModuleDao" ref="rulesModuleDao"/>
+		<property name="ruleModuleFinderStrategy" ref="ruleModuleFinderStrategy"/>
+		<property name="droolsKIEBaseFinderStrategy" ref="droolsKIEBaseFinderStrategy"/>
+	</bean> 
+
+	<bean id="onTenantStartupProcessor"
+		class="de.hybris.platform.ruleengine.event.OnTenantStartupProcessor"
+		parent="abstractEventListener">
+		<property name="platformRuleEngineService" ref="platformRuleEngineService" />
+		<property name="configurationService" ref="configurationService" />
+		<property name="excludedTenants" ref="onTenantStartupProcessorExcludedTenants"/>
+	</bean>
+	
+	<util:set id="onTenantStartupProcessorExcludedTenants" value-type="java.lang.String">
+		<value>junit</value>
+	</util:set>
+	
+	<bean id="onRuleEngineInitializedProcessor" class="de.hybris.platform.ruleengine.event.OnRuleEngineInitializedProcessor"
+		parent="abstractEventListener">
+		<property name="platformRuleEngineService" ref="platformRuleEngineService" />
+		<property name="rulesModuleDao" ref="rulesModuleDao" />
+		<property name="configurationService" ref="configurationService" />
+	</bean>
+	
+	<alias name="defaultEngineRuleDao" alias="engineRuleDao" />
+	<bean id="defaultEngineRuleDao" class="de.hybris.platform.ruleengine.dao.impl.DefaultEngineRuleDao" parent="abstractItemDao">
+		<property name="timeService" ref="timeService" />
+	</bean>
+
+	<alias name="defaultRuleEngineContextDao" alias="ruleEngineContextDao" />
+    <bean id="defaultRuleEngineContextDao" class="de.hybris.platform.ruleengine.dao.impl.DefaultRuleEngineContextDao" parent="abstractItemDao"/>
+
+	<alias name="defaultRulesModuleDao" alias="rulesModuleDao" />
+    <bean id="defaultRulesModuleDao" class="de.hybris.platform.ruleengine.dao.impl.DefaultRulesModuleDao" parent="abstractItemDao"/>
+
+	<alias name="defaultDroolsKIEBaseDao" alias="droolsKIEBaseDao" />
+	<bean id="defaultDroolsKIEBaseDao" class="de.hybris.platform.ruleengine.dao.impl.DefaultDroolsKIEBaseDao" parent="abstractItemDao" />
+
+</beans>

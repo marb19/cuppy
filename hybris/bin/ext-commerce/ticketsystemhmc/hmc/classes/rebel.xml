@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://www.zeroturnaround.com">
+  <classpath>
+    <dir name="/srv/jenkins/workspace/customerservice-module_release-6.0.0.0/source/ticketsystemhmc/hmc/classes" />
+  </classpath>
+</application>

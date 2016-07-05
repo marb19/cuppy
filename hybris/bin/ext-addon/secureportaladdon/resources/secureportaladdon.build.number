@@ -1,0 +1,11 @@
+#Ant properties
+#Tue Mar 15 18:21:12 CET 2016
+builddate=20160315 1821
+description=secureportaladdon
+group.id=de.hybris.platform
+module.name=platform-module
+name=secureportaladdon
+releasedate=20160304 1912
+vendor=hybris
+version=6.0.0.0-SNAPSHOT
+version.api=6.0.0

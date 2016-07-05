@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--
+ [y] hybris Platform
+
+ Copyright (c) 2000-2016 hybris AG
+ All rights reserved.
+
+ This software is the confidential and proprietary information of hybris
+ ("Confidential Information"). You shall not disclose such Confidential
+ Information and shall use it only in accordance with the terms of the
+ license agreement you entered into with hybris.
+
+  
+-->
+<items xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="items.xsd">
+
+	<enumtypes>
+
+		<enumtype code="RuleType" autocreate="false" generate="true" dynamic="true">
+			<value code="PROMOTION" />
+		</enumtype>
+
+		<enumtype code="FactContextType" autocreate="false" generate="false">
+			<value code="PROMOTION_ORDER" />
+			<value code="PROMOTION_PRODUCT" />
+		</enumtype>
+
+	</enumtypes>
+	
+	<itemtypes>
+		<itemtype code="RuleBasedPromotion" 
+				jaloclass="de.hybris.platform.promotionengineservices.jalo.RuleBasedPromotion" 
+				extends="AbstractPromotion">
+			<attributes>
+				<attribute redeclare="true" qualifier="code" type="java.lang.String" >
+					<modifiers unique="true"/>
+				</attribute>
+				<attribute 
+					qualifier="messageFired"
+					autocreate="true"
+					type="localized:java.lang.String">
+					<description>Message for fired promotion.</description>
+					<persistence type="property">
+						<columntype database="oracle">
+							<value>CLOB</value>
+						</columntype>
+						<columntype database="mysql">
+							<value>TEXT</value>
+						</columntype>
+						<columntype database="sqlserver">
+							<value>TEXT</value>
+						</columntype>
+						<columntype database="sap">
+							<value>NCLOB</value>
+						</columntype>
+						<columntype>
+							<value>HYBRIS.LONG_STRING</value>
+						</columntype>
+					</persistence>
+				</attribute>
+				<attribute 
+					qualifier="rule"
+					autocreate="true"
+					type="AbstractRuleEngineRule">
+					<description>The rule for this promotion.</description>
+					<persistence type="property" />
+				</attribute>
+			</attributes>
+		</itemtype>
+		
+		<itemtype code="AbstractRuleEngineRule" autocreate="false" generate="false">
+			<attributes>
+				<attribute qualifier="promotion" type="RuleBasedPromotion"> 
+					<modifiers optional="true" partof="true" />
+					<persistence type="property" />
+					<description>Promotion created for this rule.</description>
+				</attribute>
+			</attributes>
+		</itemtype>
+		
+		<itemtype code="AbstractRuleBasedPromotionAction" abstract="true"
+				jaloclass="de.hybris.platform.promotionengineservices.jalo.AbstractRuleBasedPromotionAction" 
+				extends="AbstractPromotionAction">
+			<attributes>
+				<attribute 
+					qualifier="rule"
+					autocreate="true"
+					type="AbstractRuleEngineRule">
+					<description>The rule that created this promotion action.</description>
+					<persistence type="property" />
+				</attribute>
+				<attribute 
+					qualifier="strategyId"
+					autocreate="true"
+					type="java.lang.String">
+					<description>the strategyId (i.e. spring bean id) this action was created by.</description>
+					<persistence type="property"/>
+				</attribute>
+
+			</attributes>
+		</itemtype>
+
+		<itemtype code="RuleBasedOrderAdjustTotalAction"
+			extends="AbstractRuleBasedPromotionAction"
+			jaloclass="de.hybris.platform.promotionengineservices.jalo.RuleBasedOrderAdjustTotalAction"
+			autocreate="true"
+			generate="true">
+			<attributes>
+				<attribute
+					qualifier="amount"
+					autocreate="true"
+					type="java.math.BigDecimal">
+					<defaultvalue>java.math.BigDecimal.ZERO</defaultvalue>
+					<description>The amount to adjust the cart total by.</description>
+					<modifiers read="true" write="true" />
+					<persistence type="property"/>
+				</attribute>
+			</attributes>
+		</itemtype>
+		<itemtype code="RuleBasedOrderEntryAdjustAction"
+			extends="AbstractRuleBasedPromotionAction"
+			jaloclass="de.hybris.platform.promotionengineservices.jalo.RuleBasedOrderEntryAdjustAction"
+			autocreate="true"
+			generate="true">
+			<attributes>
+				<attribute
+					qualifier="amount"
+					autocreate="true"
+					type="java.math.BigDecimal">
+					<defaultvalue>java.math.BigDecimal.ZERO</defaultvalue>
+					<description>The amount to adjust the order entry by.</description>
+					<persistence type="property"/>
+				</attribute>
+
+				<attribute
+					qualifier="orderEntryProduct"
+					autocreate="true"
+					type="Product">
+					<description>The product of the order entry to adjust</description>
+					<persistence type="property" />
+				</attribute>
+
+				<attribute
+					qualifier="orderEntryQuantity"
+					autocreate="true"
+					type="java.lang.Long">
+					<description>The quantity of the order entry to adjust</description>
+					<persistence type="property" />
+				</attribute>
+
+				<attribute
+					qualifier="orderEntryNumber"
+					autocreate="true"
+					type="java.lang.Integer">
+					<description>The entry number in the order</description>
+					<persistence type="property" />
+				</attribute>
+
+			</attributes>
+		</itemtype>
+
+		<itemtype code="RuleBasedOrderAddProductAction"
+			extends="AbstractRuleBasedPromotionAction"
+			jaloclass="de.hybris.platform.promotionengineservices.jalo.RuleBasedOrderAddProductAction"
+			autocreate="true"
+			generate="true">
+			<attributes>
+				<attribute
+					qualifier="product"
+					autocreate="true"
+					type="Product">
+					<description>The product to be added</description>
+					<modifiers optional="false" />
+					<persistence type="property" />
+				</attribute>
+				<attribute
+					qualifier="quantity"
+					autocreate="true"
+					type="java.lang.Long">
+					<description>The quantity to be added</description>
+					<modifiers optional="false" />
+					<persistence type="property" />
+				</attribute>
+			</attributes>
+		</itemtype>
+
+		<itemtype code="RuleBasedOrderChangeDeliveryModeAction"
+			extends="AbstractRuleBasedPromotionAction"
+			jaloclass="de.hybris.platform.promotionengineservices.jalo.RuleBasedOrderChangeDeliveryModeAction"
+			autocreate="true"
+			generate="true">
+			<attributes>
+				<attribute
+					qualifier="deliveryMode"
+					autocreate="true"
+					type="DeliveryMode">
+					<description>The delivery mode to apply to the order</description>
+					<modifiers optional="false" />
+					<persistence type="property" />
+				</attribute>
+				<attribute
+					qualifier="deliveryCost"
+					autocreate="true"
+					type="java.math.BigDecimal">
+					<description>The delivery cost to apply to the order</description>
+					<modifiers optional="false" />
+					<persistence type="property" />
+				</attribute>
+				<attribute
+					qualifier="replacedDeliveryMode"
+					autocreate="true"
+					type="DeliveryMode">
+					<description>The delivery mode that was set to order before a promotion was applied</description>
+					<modifiers optional="true" />
+					<persistence type="property" />
+				</attribute>
+				<attribute
+					qualifier="replacedDeliveryCost"
+					autocreate="true"
+					type="java.math.BigDecimal">
+					<description>The delivery cost that was set to order before a promotion was applied</description>
+					<modifiers optional="true" />
+					<persistence type="property" />
+				</attribute>
+			</attributes>
+		</itemtype>
+		
+		<itemtype code="RuleBasedPotentialPromotionMessageAction"
+			extends="AbstractRuleBasedPromotionAction"
+			jaloclass="de.hybris.platform.promotionengineservices.jalo.RuleBasedPotentialPromotionMessageAction"
+			autocreate="true"
+			generate="true">
+		</itemtype>
+		
+		<itemtype code="PromotionSourceRuleTemplate"
+			extends="SourceRuleTemplate"
+			jaloclass="de.hybris.platform.promotionengineservices.jalo.PromotionSourceRuleTemplate"
+			autocreate="true"
+			generate="true">
+		</itemtype>
+		
+		<itemtype code="PromotionSourceRule"
+			extends="SourceRule"
+			jaloclass="de.hybris.platform.promotionengineservices.jalo.PromotionSourceRule"
+			autocreate="true"
+			generate="true">
+			<attributes>
+				<attribute qualifier="website" autocreate="true" type="PromotionGroup">
+					<description>The website to which the promotion is associated.</description>
+					<persistence type="property" />
+				</attribute>
+			</attributes>
+		</itemtype>
+   </itemtypes>
+</items>

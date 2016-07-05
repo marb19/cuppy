@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="FacetManager">
+    <facet type="Spring" name="spring">
+      <configuration>
+        <fileset id="platformspring" name="platformspring" removed="false">
+          <file>file://$MODULE_DIR$/ext/comments/resources/comments-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/core-filter-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/security-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/core-jmx-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/core-cache.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/global-core-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/global-core-jmx-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/servicelayer-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/i18n-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/global-statistics-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/event-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/core-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/core-media-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/global-servicelayer-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/interceptor-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/core-profiling-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/user-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/persistence-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/media-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/europe1/resources/europe1-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/hac/resources/hac-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/impex/resources/impex-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/core-filter-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/impex/resources/impex-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/security-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/core-jmx-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/core-cache.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/global-core-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/global-core-jmx-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/servicelayer-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/i18n-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/global-statistics-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/event-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/core-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/comments/resources/comments-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/core-media-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/europe1/resources/europe1-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/hac/resources/hac-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/global-servicelayer-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/interceptor-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/core-profiling-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/user-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/persistence-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/core/resources/media-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/platformservices/resources/converters-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/platformservices/resources/jobs-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/platformservices/resources/classification-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/platformservices/resources/catalog-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/platformservices/resources/order-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/platformservices/resources/product-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/platformservices/resources/category-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/processing/resources/processing-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/processing/resources/processing-jmx-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/processing/resources/task-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/processing/resources/processing-distributed-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/processing/resources/cronjob-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/processing/resources/processengine-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/scripting/resources/scripting-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/validation/resources/validation-spring.xml</file>
+          <file>file://$MODULE_DIR$/ext/workflow/resources/workflow-spring.xml</file>
+        </fileset>
+      </configuration>
+    </facet>
+    <facet type="javaeeApplication" name="javaEEApplication">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="application.xml" url="file://$MODULE_DIR$/resources/ear/META-INF/application.xml" />
+        </descriptors>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/resources/configtemplates/production/tcServer/conf/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/resources/configtemplates/production/tcServer/conf" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src" />
+          <root url="file://$MODULE_DIR$/gensrc" />
+          <root url="file://$MODULE_DIR$/resources" />
+          <root url="file://$MODULE_DIR$/hmc/src" />
+          <root url="file://$MODULE_DIR$/hmc/resources" />
+          <root url="file://$MODULE_DIR$/web/src" />
+          <root url="file://$MODULE_DIR$/web/gensrc" />
+          <root url="file://$MODULE_DIR$/commonweb/src" />
+          <root url="file://$MODULE_DIR$/commonweb/gensrc" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/web/src" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/web/gensrc" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/hmc/src" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/hmc/resources" />
+          <root url="file://$MODULE_DIR$/backoffice/src" />
+          <root url="file://$MODULE_DIR$/backoffice/resources" />
+          <root url="file://$MODULE_DIR$/bootstrap/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web2">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/resources/configtemplates/develop/tcServer/conf/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/resources/configtemplates/develop/tcServer/conf" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src" />
+          <root url="file://$MODULE_DIR$/gensrc" />
+          <root url="file://$MODULE_DIR$/resources" />
+          <root url="file://$MODULE_DIR$/hmc/src" />
+          <root url="file://$MODULE_DIR$/hmc/resources" />
+          <root url="file://$MODULE_DIR$/web/src" />
+          <root url="file://$MODULE_DIR$/web/gensrc" />
+          <root url="file://$MODULE_DIR$/commonweb/src" />
+          <root url="file://$MODULE_DIR$/commonweb/gensrc" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/web/src" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/web/gensrc" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/hmc/src" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/hmc/resources" />
+          <root url="file://$MODULE_DIR$/backoffice/src" />
+          <root url="file://$MODULE_DIR$/backoffice/resources" />
+          <root url="file://$MODULE_DIR$/bootstrap/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web3">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/tomcat/conf/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/tomcat/conf" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src" />
+          <root url="file://$MODULE_DIR$/gensrc" />
+          <root url="file://$MODULE_DIR$/resources" />
+          <root url="file://$MODULE_DIR$/hmc/src" />
+          <root url="file://$MODULE_DIR$/hmc/resources" />
+          <root url="file://$MODULE_DIR$/web/src" />
+          <root url="file://$MODULE_DIR$/web/gensrc" />
+          <root url="file://$MODULE_DIR$/commonweb/src" />
+          <root url="file://$MODULE_DIR$/commonweb/gensrc" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/web/src" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/web/gensrc" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/hmc/src" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/hmc/resources" />
+          <root url="file://$MODULE_DIR$/backoffice/src" />
+          <root url="file://$MODULE_DIR$/backoffice/resources" />
+          <root url="file://$MODULE_DIR$/bootstrap/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web4">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/resources/configtemplates/develop/tomcat/conf/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/resources/configtemplates/develop/tomcat/conf" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src" />
+          <root url="file://$MODULE_DIR$/gensrc" />
+          <root url="file://$MODULE_DIR$/resources" />
+          <root url="file://$MODULE_DIR$/hmc/src" />
+          <root url="file://$MODULE_DIR$/hmc/resources" />
+          <root url="file://$MODULE_DIR$/web/src" />
+          <root url="file://$MODULE_DIR$/web/gensrc" />
+          <root url="file://$MODULE_DIR$/commonweb/src" />
+          <root url="file://$MODULE_DIR$/commonweb/gensrc" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/web/src" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/web/gensrc" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/hmc/src" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/hmc/resources" />
+          <root url="file://$MODULE_DIR$/backoffice/src" />
+          <root url="file://$MODULE_DIR$/backoffice/resources" />
+          <root url="file://$MODULE_DIR$/bootstrap/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+    <facet type="web" name="Web5">
+      <configuration>
+        <descriptors>
+          <deploymentDescriptor name="web.xml" url="file://$MODULE_DIR$/resources/configtemplates/production/tomcat/conf/web.xml" />
+        </descriptors>
+        <webroots>
+          <root url="file://$MODULE_DIR$/resources/configtemplates/production/tomcat/conf" relative="/WEB-INF" />
+        </webroots>
+        <sourceRoots>
+          <root url="file://$MODULE_DIR$/src" />
+          <root url="file://$MODULE_DIR$/gensrc" />
+          <root url="file://$MODULE_DIR$/resources" />
+          <root url="file://$MODULE_DIR$/hmc/src" />
+          <root url="file://$MODULE_DIR$/hmc/resources" />
+          <root url="file://$MODULE_DIR$/web/src" />
+          <root url="file://$MODULE_DIR$/web/gensrc" />
+          <root url="file://$MODULE_DIR$/commonweb/src" />
+          <root url="file://$MODULE_DIR$/commonweb/gensrc" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/web/src" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/web/gensrc" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/hmc/src" />
+          <root url="file://$MODULE_DIR$/acceleratoraddon/hmc/resources" />
+          <root url="file://$MODULE_DIR$/backoffice/src" />
+          <root url="file://$MODULE_DIR$/backoffice/resources" />
+          <root url="file://$MODULE_DIR$/bootstrap/resources" />
+        </sourceRoots>
+      </configuration>
+    </facet>
+  </component>
+  <component name="NewModuleRootManager" inherit-compiler-output="false">
+    <output url="file://$MODULE_DIR$/eclipsebin" />
+    <output-test url="file://$MODULE_DIR$/eclipsebin" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/hmc/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/hmc/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/web/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/web/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/web/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/commonweb/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/commonweb/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/commonweb/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/acceleratoraddon/web/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/acceleratoraddon/web/gensrc" isTestSource="false" generated="true" />
+      <sourceFolder url="file://$MODULE_DIR$/acceleratoraddon/web/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/acceleratoraddon/hmc/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/acceleratoraddon/hmc/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/backoffice/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/backoffice/resources" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/backoffice/testsrc" isTestSource="true" />
+      <sourceFolder url="file://$MODULE_DIR$/bootstrap/resources" type="java-resource" />
+      <excludeFolder url="file://$MODULE_DIR$/.externalToolBuilders" />
+      <excludeFolder url="file://$MODULE_DIR$/.settings" />
+      <excludeFolder url="file://$MODULE_DIR$/acceleratoraddon/hmc/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/acceleratoraddon/web/addonsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/acceleratoraddon/web/commonwebsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/acceleratoraddon/web/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/backoffice/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/bootstrap/modelclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/commonweb/addonsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/commonweb/commonwebsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/commonweb/testclasses" />
+      <excludeFolder url="file://$MODULE_DIR$/eclipsebin" />
+      <excludeFolder url="file://$MODULE_DIR$/hmc/classes" />
+      <excludeFolder url="file://$MODULE_DIR$/tomcat/work" />
+      <excludeFolder url="file://$MODULE_DIR$/web/addonsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/web/commonwebsrc" />
+      <excludeFolder url="file://$MODULE_DIR$/web/testclasses" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="library" name="Common libs" level="project" />
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/resources/ant/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/resources/ant/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/resources/tanukiwrapper/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/resources/tanukiwrapper/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/resources/tanukiwrapper/bin" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/resources/tanukiwrapper/bin" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/bootstrap/bin" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$MODULE_DIR$/bootstrap/gensrc" />
+        </SOURCES>
+        <jarDirectory url="file://$MODULE_DIR$/bootstrap/bin" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/tomcat/bin" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/tomcat/bin" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library" exported="">
+      <library>
+        <CLASSES>
+          <root url="file://$MODULE_DIR$/tomcat/lib" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$MODULE_DIR$/tomcat/lib" recursive="true" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module" module-name="paymentstandard" exported="" />
+    <orderEntry type="module" module-name="comments" exported="" />
+    <orderEntry type="module" module-name="workflow" exported="" />
+    <orderEntry type="module" module-name="impex" exported="" />
+    <orderEntry type="module" module-name="catalog" exported="" />
+    <orderEntry type="module" module-name="advancedsavedquery" exported="" />
+    <orderEntry type="module" module-name="hac" exported="" />
+    <orderEntry type="module" module-name="commons" exported="" />
+    <orderEntry type="module" module-name="core" exported="" />
+    <orderEntry type="module" module-name="scripting" exported="" />
+    <orderEntry type="module" module-name="maintenanceweb" exported="" />
+    <orderEntry type="module" module-name="testweb" exported="" />
+    <orderEntry type="module" module-name="deliveryzone" exported="" />
+    <orderEntry type="module" module-name="europe1" exported="" />
+    <orderEntry type="module" module-name="platformservices" exported="" />
+    <orderEntry type="module" module-name="processing" exported="" />
+    <orderEntry type="module" module-name="config" exported="" />
+    <orderEntry type="module" module-name="validation" exported="" />
+    <orderEntry type="module" module-name="mediaweb" exported="" />
+  </component>
+</module>

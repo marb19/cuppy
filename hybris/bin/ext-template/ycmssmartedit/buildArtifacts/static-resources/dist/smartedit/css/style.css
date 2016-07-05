@@ -1,0 +1,3132 @@
+.leftnavitemlist {
+  text-transform: uppercase;
+}
+.main-toolbar {
+  font-size: 16px !important;
+  padding-top: 0;
+}
+.main-toolbar-li {
+  padding: 12px 12px 36px 48px;
+}
+.main-toolbar-li-divider {
+  border-bottom: 1px solid #172535;
+  margin-left: 48px;
+  height: 1px;
+}
+.ySmartEditBlueToolbar .left-toolbar li.divider.leftnavdivider {
+  padding: 0;
+  margin-bottom: 36px;
+}
+.main-toolbar-li-yUserData .yUserInfo p {
+  color: #dbe3eb;
+}
+.main-toolbar-li-yUserData .yUserInfo a {
+  color: #808fa1;
+}
+.main-toolbar-li-a {
+  color: #808fa1;
+  text-decoration: none;
+}
+.main-toolbar-li-a-hover {
+  color: #dbe3eb;
+  text-decoration: none;
+}
+.main-toolbar-li-yCloseToolbar {
+  padding-bottom: 0;
+  padding-right: 0;
+}
+.main-toolbar-li-sub-nav {
+  border-bottom: 0;
+  padding: 4px;
+}
+.main-toolbar-a-caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+  content: "";
+  margin-top: 8px;
+}
+.main-toolbar-a-hover-caret {
+  border-top-color: #4f5963;
+}
+.main-toolbar-li-open-a-caret {
+  border-top: none;
+  border-bottom: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+}
+.main-toolbar-li-open-a-hover-caret {
+  border-bottom-color: #4f5963;
+}
+.main-toolbar-li-a-span-icon {
+  float: right;
+  margin: -2px 24px -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.main-toolbar-li-a-hover-span-icon {
+  float: right;
+  margin: -2px 24px -0.1em 0;
+  opacity: 1;
+}
+.leftNav .ySEUser {
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+.leftNav .ySEUser .yUserData {
+  padding-bottom: 20px;
+}
+.leftNav .ySEUser .divider.leftnavdivider {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.landingPageWrapper h1.landing-page-title {
+  font-family: Dosis, sans-serif;
+  color: #212120;
+  font-size: 25px;
+  font-weight: 500;
+  text-align: center;
+}
+.landingPageWrapper h4.landing-page-label {
+  font-family: "Open Sans", sans-serif;
+  color: #8592a2;
+  font-size: 19px;
+  text-align: center;
+}
+.landingPageWrapper .catalog-header h4 {
+  font-family: "Open Sans", sans-serif;
+  color: #313440;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.landingPageWrapper .catalog-version-info {
+  font-family: "Roboto", sans-serif;
+  color: #ffffff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.landingPageWrapper .ySELastSync,
+.landingPageWrapper .catalog-last-synced {
+  font-family: Dosis, sans-serif;
+  color: #8592a2;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.landingPageWrapper .ySECatalogStatus .label-error {
+  font-family: Dosis, sans-serif;
+  color: #ff3b30;
+  font-size: 13px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.landingPageWrapper .ySECatalogSync .ySESyncProgress {
+  font-family: Dosis, sans-serif;
+  color: #18bc33;
+  font-size: 16px;
+  font-weight: bolder;
+  text-transform: uppercase;
+}
+.ySECatalogEntry:nth-of-type(odd) .ySECatalog {
+  padding-left: 50px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+.ySECatalogEntry:nth-of-type(even) .ySECatalog {
+  padding-left: 5px;
+  padding-right: 50px;
+  padding-bottom: 10px;
+}
+.landingPageWrapper {
+  height: 100%;
+  padding-top: 115px;
+}
+.ySELandingTitle {
+  padding-bottom: 50px;
+}
+.catalog-header {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.ySECatalogDivider {
+  border-top: 1px solid #cedcec;
+  margin: 15px 20px 25px 20px;
+}
+.catalog-container {
+  background-color: #fff;
+}
+.catalog-container .catalog-version-item:nth-of-type(even) {
+  padding-left: 10px;
+  padding-right: 20px;
+}
+.catalog-container .catalog-version-item:nth-of-type(odd) {
+  padding-left: 20px;
+  padding-right: 10px;
+}
+.catalog-container .catalog-version-container {
+  width: 100%;
+  margin: 0;
+  height: 250px;
+  position: relative;
+}
+.catalog-container .catalog-version-container:hover {
+  cursor: pointer;
+}
+.catalog-container .catalog-version-info {
+  width: 100%;
+  padding: 10px 0px 10px 20px;
+  opacity: 0.7;
+  background-color: #000000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.catalog-container .catalog-version-info:after {
+  content: ' \276F';
+}
+.catalog-container .catalog-thumbnail-default-img {
+  background: url('../../../../static-resources/images/icon_site_placeholder.jpg');
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-size: cover;
+  border: 1px solid #cedcec;
+}
+.catalog-container .catalog-thumbnail-default-img .catalog-thumbnail {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-size: cover;
+}
+.catalog-container .catalog-footer {
+  overflow: auto;
+  padding: 0 0 20px 0;
+}
+.catalog-container .catalog-footer label {
+  font-weight: normal;
+}
+.catalog-body {
+  overflow: auto;
+}
+.pagination-container {
+  margin-top: 2em;
+  text-align: center;
+}
+.ySECatalogStatus {
+  padding-left: 20px;
+  display: table;
+}
+.ySECatalogStatus * {
+  display: table-cell;
+  vertical-align: middle;
+}
+.ySECatalogSync,
+.ySECatalogStatus {
+  height: 40px;
+}
+.catalog-body > .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.ySECatalogSync {
+  padding-right: 20px;
+}
+.ySECatalogSync label {
+  padding-top: 10px;
+}
+catalog-details > div {
+  padding-top: 10px;
+}
+.ySELastSync,
+.catalog-last-synced {
+  padding-right: 5px;
+}
+
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.ySEComponentMenu > li.item:first-of-type {
+  padding: 50px 50px 30px 50px;
+}
+.ySEComponentMenu .ySEComTypeTab {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.ySEComponentMenu .ySECompSearchField {
+  font-family: "Open Sans", sans-serif;
+}
+.ySEComponentMenu .ySEComTypeTab.active {
+  opacity: 1;
+}
+.ySEComponentMenu .ySEBottomLabel {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: none;
+  font-weight: normal;
+}
+.ySEComponentMenu .ySECustCompName,
+.ySEComponentMenu .ySECustCompType {
+  font-family: "Open Sans", sans-serif;
+}
+.ySEComponentMenu .ySECustCompType {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.ySEComponentMenu .ySECustCompName {
+  font-size: 13px;
+  font-weight: bold;
+}
+.ySEComponentMenu .ySECompTypeTitle .ySECustCompType {
+  line-height: 45px;
+}
+.ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem .ySECustomCompTitle.ySECompTypeTitle {
+  padding-top: 0;
+}
+.ySEComponentMenu .smartEditComponent:hover {
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+.ySEComponentMenu .ySEComponentSearch {
+  background-color: #ffffff;
+  border: 1px solid #d4d7dc;
+  margin-top: 5px;
+}
+.ySEComponentMenu .ySEComponentSearch .ySESearchIcon {
+  background-color: #ffffff;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  top: 0;
+  font-size: large;
+}
+.ySEComponentMenu .ySEComponentSearch .ySECompSearchField {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+.ySEComponentMenu .ySEComponentsResult {
+  padding: 20px 50px 50px 50px;
+}
+.ySEComponentMenu .ySEComponentsResult span.ySEBottomLabel {
+  display: block;
+  padding-left: 0px;
+  margin-top: 30px;
+  text-align: left;
+}
+.ySEComponentMenu .ySEComponentsResult ul.nav.nav-tabs li {
+  float: none;
+  display: inline-block;
+}
+.ySEComponentMenu .ySEComponentsResult ul.nav.nav-tabs li a {
+  color: #ffffff;
+  background-color: #32A0EB;
+  border-bottom: inherit;
+}
+.ySEComponentMenu .ySEComponentsResult ul.nav.nav-tabs li.active a {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #ffffff;
+}
+.ySEComponentMenu .ySEComponents {
+  padding: 30px 0 0px;
+  text-align: center;
+}
+.ySEComponentMenu .ySEComponents .ySEComponentType {
+  max-width: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  float: left;
+}
+.ySEComponentMenu .ySEComponents .ySEComponentType img,
+.ySEComponentMenu .ySEComponents .ySEComponentType div {
+  width: 100%;
+}
+.ySEComponentMenu .ySEComponents .ySEComponentType div.control-label {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.ySEComponentMenu .ySEComponents .ySEComponentType :after {
+  float: none;
+}
+@media (min-width: 992px) {
+  .ySEComponentMenu {
+    width: 780px;
+    -webkit-transition: width 0.3s;
+    /* Safari */
+    transition: width 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane {
+    -ms-scrollbar-base-color: #32a0ec;
+    -ms-scrollbar-arrow-color: #327fec;
+    -ms-scrollbar-highlight-color: #32a0ec;
+    -ms-scrollbar-shadow-color: #327fec;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents {
+    overflow-y: scroll;
+    max-height: 240px;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentType div.control-label {
+    display: block;
+    /* Fallback for non-webkit */
+    display: -webkit-box;
+    height: 33.6px;
+    /* Fallback for non-webkit */
+    font-size: 12px;
+    line-height: 1.4;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    word-break: break-all;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem {
+    height: 55px;
+    vertical-align: middle;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem .smartEditComponent {
+    vertical-align: middle;
+    float: left;
+    width: 70px;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem .ySECustomCompTitle {
+    float: right;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 4px;
+    width: calc(100% - 70px);
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem .smartEditComponent img {
+    width: 70px;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem .ySECustCompName,
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem .ySECustCompType {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0.6px;
+  }
+}
+@media (max-width: 991px) {
+  .ySEComponentMenu {
+    position: fixed;
+    top: 300px;
+    left: 0;
+    right: 0;
+    -webkit-transition: width 0.3s;
+    /* Safari */
+    transition: width 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentType {
+    max-width: 100px;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentType img {
+    height: 65px;
+  }
+}
+#experience-selector-btn:focus,
+#experience-selector-btn:active {
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+}
+
+.ySECfgTableHeader {
+  padding-top: 10px;
+}
+.ySECfgTableHeader label {
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+}
+.ySECfgAddEntity {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 20px 0 20px 0;
+}
+.ySECfgAddEntity button {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  font-weight: bold;
+  color: #a4a9b9;
+  background-color: #d2dae4;
+}
+.ySECfgEntity {
+  padding-bottom: 10px;
+}
+.ySECfgEntity .hyicon {
+  font-size: 20px;
+}
+.ySECfgEntity textarea {
+  resize: both;
+  overflow: auto;
+  height: 4em;
+}
+.warning-check-msg {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+.not-checked {
+  color: red;
+}
+
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.cmsx-ctx-more-btn img {
+  -webkit-box-shadow: -1px 5px 12px -2px rgba(117, 117, 117, 0.44);
+  -moz-box-shadow: -1px 5px 12px -2px rgba(117, 117, 117, 0.44);
+  box-shadow: -1px 5px 12px -2px rgba(117, 117, 117, 0.44);
+}
+.noboxshadow {
+  -webkit-box-shadow: none !important;
+  -moz-box-shadow: none !important;
+  box-shadow: none !important;
+}
+.yCmsCtxMenu.btn-group {
+  box-shadow: none !important;
+  display: block;
+  position: relative;
+}
+.yCmsCtxMenu.btn-group ul.dropdown-menu {
+  top: 41px;
+  padding-top: 0;
+  right: 0 !important;
+  border: none !important;
+  min-width: 73% !important;
+  max-width: 73% !important;
+  left: inherit !important;
+}
+.yCmsCtxMenu.btn-group ul.dropdown-menu li a {
+  padding-left: 26px;
+  padding-right: 26px;
+}
+.yCmsCtxMenu.btn-group ul.dropdown-menu li a:hover {
+  background-color: #00c6ff;
+  color: #fff;
+}
+.yCmsCtxMenu.btn-group ul.dropdown-menu .icontext {
+  font-size: 15px;
+}
+.yCmsCtxMenu.btn-group ul.dropdown-menu .labeltext {
+  font-size: 11px;
+}
+.cmsx-ctx-wrapper1 {
+  overflow: hidden;
+  display: table;
+  width: 100%;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .yWrapperData {
+  min-width: 51px;
+  min-height: 49px;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .decorative-border {
+  background-color: #00c6ff;
+  position: absolute;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .decorative-top-border {
+  height: 3px;
+  top: 0;
+  width: 100%;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .decorative-right-border {
+  width: 3px;
+  left: 0;
+  height: 100%;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .decorative-bottom-border {
+  height: 3px;
+  bottom: 0;
+  width: 100%;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .decorative-left-border {
+  width: 3px;
+  right: 0;
+  height: 100%;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .contextualmenuBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+  /* IE 5-7 */
+  filter: alpha(opacity=30);
+  /* Netscape */
+  -moz-opacity: 0.30;
+  /* Safari 1.x */
+  -khtml-opacity: 0.30;
+  /* Good browsers */
+  opacity: 0.30;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .contextualmenuBackground.editMode {
+  background-color: #00c6ff;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-btns,
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-more-btn {
+  position: relative;
+  border-radius: 0;
+  opacity: 1;
+  border: 0;
+  box-shadow: none;
+  padding: 0px 0px;
+  z-index: 5001;
+  width: auto;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-btns:focus,
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-more-btn:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-btns {
+  margin-right: 2px;
+  background-color: transparent;
+  width: auto;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-btns .hySEIcon {
+  max-width: 45px;
+  display: block;
+  max-height: 45px;
+  color: #ffffff;
+  background-color: tomato;
+  font-size: 26px;
+  padding-bottom: 6px;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-btns img {
+  opacity: 1;
+  -webkit-box-shadow: -1px 5px 12px -2px rgba(117, 117, 117, 0.44);
+  -moz-box-shadow: -1px 5px 12px -2px rgba(117, 117, 117, 0.44);
+  box-shadow: -1px 5px 12px -2px rgba(117, 117, 117, 0.44);
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-more {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  right: 0;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-more .dropdown,
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-more {
+  display: inline;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-btns img,
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-more-btn img {
+  max-width: 45px;
+  -webkit-box-shadow: -1px 5px 12px -2px rgba(117, 117, 117, 0.44);
+  -moz-box-shadow: -1px 5px 12px -2px rgba(117, 117, 117, 0.44);
+  box-shadow: -1px 5px 12px -2px rgba(117, 117, 117, 0.44);
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .yCmsCtxMenu.dropdown .dropdown-menu {
+  z-index: 1013;
+  border: 0;
+  border-radius: 0;
+  font-family: Dosis;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-menu-more-icon {
+  max-width: 20px;
+  margin-right: 10px;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .yCmsCtxMenu.dropdown .dropdown-menu li,
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .yCmsCtxMenu.dropdown .dropdown-menu li a {
+  z-index: 5000;
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .yCmsCtxMenu.dropdown ul.dropdown-menu {
+  margin-top: 0;
+}
+.cmsx-ctx-wrapper1 .cmsx-ctx-wrapper2 .cmsx-ctx-more-btn .bottom-shadow {
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1014;
+  position: relative;
+}
+
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.over-slot-enabled {
+  border: solid #00c6ff 1px;
+  opacity: 0.65;
+  cursor: -moz-grabbing;
+  cursor: -webkit-grabbing;
+  cursor: grabbing;
+}
+.over-slot-disabled {
+  border: solid #ff3b30 1px;
+  background-color: #ff3b30;
+  opacity: 0.65;
+  cursor: no-drop;
+}
+.over-slot-disabled:after {
+  text-align: center;
+  color: #ffffff;
+  content: 'NOT ALLOWED';
+  display: block;
+  z-index: 500;
+}
+.eligible-slot {
+  border: dashed #b7c1cd 1px;
+}
+.ui-sortable-handle {
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+.over-slot-enabled .ySEDnDPlaceHolder {
+  border: 1px dashed #00c6ff;
+  background-color: #7ac1f3;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: Dosis, sans-serif;
+  color: black;
+  opacity: 0.65;
+  margin: 4px;
+}
+.ySEDirtyHeight.over-slot-enabled .ySEDnDPlaceHolder {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .ySEDirtyHeight.over-slot-enabled .ySEDnDPlaceHolder {
+    float: left;
+    width: 25%;
+  }
+}
+.over-slot-enabled .ySEDnDPlaceHolder:after {
+  content: 'DROP HERE';
+}
+.ySEemptySlot {
+  min-height: 72px;
+  border: 1px dashed #b7c1cd;
+}
+.ySEDnDImageRed {
+  background-color: #ff3b30;
+}
+.ySEDnDImageBlue {
+  background-color: #7ac1f3;
+}
+body[data-smartedit-ready].UIhintsVisible {
+  padding-top: 65px;
+  transition: .5s padding;
+}
+.UIhintDragAndDrop {
+  position: fixed;
+  width: 100%;
+  background-color: rgba(86, 86, 86, 0.7);
+  text-align: center;
+  z-index: -999;
+  height: 0;
+  opacity: 0;
+  display: table !important;
+  transition: 1s all;
+}
+.UIhintDragAndDrop span {
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 1.8em;
+  display: table-cell;
+  vertical-align: middle;
+}
+.UIhintDragAndDrop.top {
+  top: 0;
+}
+.UIhintDragAndDrop.top-firefox-fix {
+  top: 0;
+}
+.UIhintDragAndDrop.top-firefox-fix.visible {
+  z-index: 999;
+  height: 25px;
+  opacity: 1;
+  transition: .6s all;
+}
+.UIhintDragAndDrop.bottom {
+  bottom: 0;
+  height: 65px !important;
+}
+.UIhintDragAndDrop.bottom.firefox-fix-applied {
+  visibility: hidden !important;
+}
+.UIhintDragAndDrop.bottom-firefox-fix {
+  bottom: 0;
+  height: 65px !important;
+}
+.UIhintDragAndDrop.visible {
+  z-index: 999;
+  height: 130px;
+  opacity: 1;
+  transition: .6s all;
+}
+body .ySmartEditToolbars .dropdown-menu {
+  overflow: auto !important;
+}
+#_sm_helper {
+  position: absolute !important;
+  z-index: 999999 !important;
+  width: 91px !important;
+  height: 57px !important;
+}
+body[data-smartedit-ready] [class^="col-"] {
+  position: inherit !important;
+}
+body[data-smartedit-ready].is-dragging .cmsx-ctx-wrapper2.active,
+body[data-smartedit-ready].is-sorting .cmsx-ctx-wrapper2.active {
+  border: none !important;
+}
+body[data-smartedit-ready].is-dragging .contextualMenuOverlay,
+body[data-smartedit-ready].is-sorting .contextualMenuOverlay {
+  display: none !important;
+}
+
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after,
+.ySErow:before,
+.ySErow:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after,
+.ySErow:after {
+  clear: both;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+#experience-selector-btn {
+  font-family: "Open Sans", sans-serif;
+}
+.ySEGenericEditor {
+  padding: 30px 0 0 0;
+}
+.ySEGenericEditor:before,
+.ySEGenericEditor:after {
+  content: " ";
+  display: table;
+}
+.ySEGenericEditor:after {
+  clear: both;
+}
+.ySEGenericEditor:before,
+.ySEGenericEditor:after {
+  content: " ";
+  display: table;
+}
+.ySEGenericEditor:after {
+  clear: both;
+}
+.ySErow {
+  padding-bottom: 30px;
+}
+localized-element .nav-tabs > li {
+  border-top: 1px solid #a1aebd;
+  border-bottom: 1px solid #a1aebd;
+  border-left: 1px solid #a1aebd;
+  font-weight: bold;
+}
+localized-element .nav-tabs > li:last-of-type {
+  border-right: 1px solid #a1aebd;
+}
+localized-element .nav-tabs > li.active {
+  background-color: #0486E0;
+  border-color: #0486E0;
+}
+localized-element .nav-tabs > li.active a {
+  color: #ffffff;
+}
+localized-element .nav-tabs > li.active a.sm-tab-error {
+  color: #FF3B30;
+}
+localized-element ul.nav-tabs > .dropdown ul > li {
+  background-color: #ffffff;
+}
+localized-element ul.nav-tabs > .dropdown ul > li a {
+  color: #0486E0;
+}
+localized-element ul.nav-tabs > .dropdown a.sm-tab-error {
+  color: #FF3B30;
+}
+.ySErow {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+experience-selector label {
+  color: #ffffff;
+  font-weight: normal;
+}
+experience-selector .ySEGenericEditor {
+  padding: 0;
+}
+experience-selector .ySEGenericEditor form {
+  padding-bottom: 0;
+  padding-left: 0;
+}
+experience-selector .ySEGenericEditor form .modal-header {
+  background-color: inherit;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+experience-selector .ySErow {
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100px;
+  margin-left: 0;
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  experience-selector .ySErow {
+    float: left;
+    width: 50%;
+  }
+}
+experience-selector .ySErow:nth-of-type(even) {
+  padding-left: 50px;
+  padding-right: 30px;
+}
+experience-selector .ySErow:nth-of-type(odd) {
+  padding-left: 30px;
+  padding-right: 50px;
+}
+experience-selector .ySEBtnRow {
+  background: inherit;
+  position: relative;
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 768px) {
+  experience-selector .ySEBtnRow {
+    float: left;
+    width: 100%;
+  }
+}
+.ySEDateField {
+  width: 100%;
+}
+.ySEDateField input {
+  border-right: none;
+}
+.ySEDateField .input-group-addon {
+  background-color: #ffffff;
+  color: #32a0ec;
+  border-bottom: 1px solid #d4d7dc;
+  border-top: 1px solid #d4d7dc;
+  margin-top: 0px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  border-radius: 0;
+}
+.ySEDateField span.glyphicon {
+  font-size: 1.1em;
+}
+.ySEDateField .bootstrap-datetimepicker-widget.dropdown-menu {
+  background-color: #ffffff;
+  color: #000000;
+  color: initial;
+}
+.ySEDateField.ySEDataDisabled .form-control {
+  border-right: 1px solid #d4d7dc;
+  border-radius: 0;
+}
+.ySmartEditToolbars experience-selector-button .dropdown-menu.yDdResolution {
+  margin-top: 1px;
+  border-top: none;
+  padding-bottom: 0px;
+  border-bottom: 0;
+  border-right: 0;
+}
+experience-selector-button > div.open {
+  background-color: #32a0ec;
+  color: #ffffff;
+  padding-top: 18px;
+  padding-bottom: 22px;
+  margin: -18px 0px -22px 0px;
+  padding-left: 0px;
+}
+experience-selector-button > div.open #experience-selector-btn span {
+  color: #ffffff;
+}
+experience-selector-button > div {
+  text-align: left;
+}
+generic-editor-field input.form-control,
+generic-editor-field .select2-container .select2-choice,
+generic-editor-field .select2-container .select2-choices,
+generic-editor-field .select2-container .select2-choices .select2-search-field input {
+  border-radius: 0;
+}
+generic-editor-field .select2-container .select2-choice.ui-select-match {
+  height: auto;
+  /*overwrite techne*/
+}
+generic-editor form label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+}
+smartedit-tabset ul.nav.nav-tabs > li > a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+smartedit-tabset ul.nav.nav-tabs > li {
+  min-width: 30px;
+}
+localized-element smartedit-tabset ul.nav.nav-tabs > li.dropdown {
+  border-right-color: transparent;
+  border-top-color: transparent;
+  border-bottom-color: transparent;
+}
+localized-element smartedit-tabset ul.nav.nav-tabs > li.dropdown a {
+  color: #0486e0;
+}
+localized-element smartedit-tabset ul.nav.nav-tabs > li.dropdown a .caret {
+  margin-left: 10px;
+  border-top: 6px dashed;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+localized-element smartedit-tabset ul.nav.nav-tabs > li a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+}
+localized-element smartedit-tabset ul.nav.nav-tabs > li ul.dropdown {
+  margin-top: 0;
+}
+generic-editor-field .ySEField .ySEFieldPrefix {
+  padding-bottom: 10px;
+}
+generic-editor-field .ySEField .ySEFieldPostfix {
+  padding-top: 20px;
+}
+.modal-dialog .modal-body {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+experience-selector-button experience-selector .modal-header h4.modal-title {
+  font-family: "Open Sans", sans-serif;
+  font-size: 23px;
+  font-weight: bold;
+}
+experience-selector-button experience-selector .ySErow label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+experience-selector .ySErow generic-editor-field .select2-container .select2-choice,
+experience-selector .ySErow generic-editor-field .select2-container .select2-choices,
+experience-selector .ySErow generic-editor-field .select2-container .select2-choices .select2-search-field input,
+experience-selector .ySErow generic-editor-field .ySEDateField .form-control {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+  font-weight: 500;
+  color: #27394f;
+}
+
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.ySEWaitDialog .modal-content {
+  background-color: #233243;
+  border-color: #233243;
+  color: #fff;
+}
+.ySEWaitDialog .modal-content .spinner {
+  margin: 0 !important;
+  position: relative;
+  width: 15px;
+  height: 15px;
+}
+.ySEWaitDialog .modal-content .spinner-container1 > div,
+.ySEWaitDialog .modal-content .spinner-container2 > div,
+.ySEWaitDialog .modal-content .spinner-container3 > div {
+  width: 3px;
+  height: 3px;
+}
+.smartEditLogin,
+.smartEditLoginModal {
+  background: -webkit-linear-gradient(#0486e0, #1c9aed);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0486e0, #1c9aed);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0486e0, #1c9aed);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0486e0, #1c9aed);
+  /* Standard syntax (must be last) */
+  color: #fff;
+}
+.smartEditLogin input,
+.smartEditLoginModal input {
+  background: -webkit-linear-gradient(#0486e0, #1c9aed);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#0486e0, #1c9aed);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#0486e0, #1c9aed);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#0486e0, #1c9aed);
+  /* Standard syntax (must be last) */
+  color: #fff;
+}
+.smartEditLogin .signinForm,
+.smartEditLoginModal .signinForm {
+  padding-top: 20px;
+}
+.smartEditLogin .ySELoginLabel,
+.smartEditLoginModal .ySELoginLabel {
+  color: #fff;
+}
+.smartEditLogin .alert,
+.smartEditLoginModal .alert {
+  margin-bottom: 0;
+}
+.smartEditLogin .form-group input,
+.smartEditLoginModal .form-group input {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border: 1px solid #fff;
+  box-shadow: none;
+}
+.smartEditLogin ::-webkit-input-placeholder,
+.smartEditLoginModal ::-webkit-input-placeholder {
+  /* WebKit browsers */
+  color: #fff;
+}
+.smartEditLogin :-moz-placeholder,
+.smartEditLoginModal :-moz-placeholder {
+  /* Mozilla Firefox 4 to 18 */
+  color: #fff;
+  opacity: 1;
+}
+.smartEditLogin ::-moz-placeholder,
+.smartEditLoginModal ::-moz-placeholder {
+  /* Mozilla Firefox 19+ */
+  color: #fff;
+  opacity: 1;
+}
+.smartEditLogin :-ms-input-placeholder,
+.smartEditLoginModal :-ms-input-placeholder {
+  /* Internet Explorer 10+ */
+  color: #fff;
+}
+.smartEditLogin .top-buffer,
+.smartEditLoginModal .top-buffer {
+  margin-top: 20px;
+}
+.smartEditLogin .top-buffer2,
+.smartEditLoginModal .top-buffer2 {
+  margin-top: 40px;
+}
+.smartEditLogin .ySELoginLanguage,
+.smartEditLoginModal .ySELoginLanguage {
+  padding-left: 0;
+}
+.smartEditLogin .ySELoginLanguage li,
+.smartEditLoginModal .ySELoginLanguage li {
+  color: #000000;
+}
+.smartEditLogin .btn,
+.smartEditLoginModal .btn {
+  text-transform: uppercase;
+}
+.smartEditLogin .select2-container .select2-choice,
+.smartEditLoginModal .select2-container .select2-choice,
+.smartEditLogin .select2-container .select2-choices,
+.smartEditLoginModal .select2-container .select2-choices,
+.smartEditLogin .select2-container .select2-choices .select2-search-field input,
+.smartEditLoginModal .select2-container .select2-choices .select2-search-field input {
+  font-family: Dosis, sans-serif;
+}
+.smartEditLogin .js-example-placeholder-single,
+.smartEditLoginModal .js-example-placeholder-single {
+  padding-left: 0;
+  padding-right: 0;
+  font-family: Dosis, sans-serif;
+}
+.smartEditLogin .select2-container .select2-choice,
+.smartEditLoginModal .select2-container .select2-choice {
+  border-radius: 0;
+  height: 46px;
+  font-size: 18px;
+}
+.smartEditLogin .select2-container .select2-choice .select2-arrow,
+.smartEditLoginModal .select2-container .select2-choice .select2-arrow {
+  background: none;
+  border-left: none;
+}
+.smartEditLogin .select2-container .select2-choice .select2-arrow b,
+.smartEditLoginModal .select2-container .select2-choice .select2-arrow b {
+  margin-top: 18px;
+  border-top: 6px dashed #000000;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.smartEditLogin .select2-dropdown-open .select2-choice .select2-arrow b,
+.smartEditLoginModal .select2-dropdown-open .select2-choice .select2-arrow b {
+  border-top: 0;
+  border-bottom: 6px dashed #000000;
+}
+.smartEditLogin .select2-drop,
+.smartEditLoginModal .select2-drop {
+  border-radius: 0;
+  color: #5f7084;
+}
+.smartEditLogin .select2-results,
+.smartEditLoginModal .select2-results {
+  padding: 0;
+  margin: 0;
+  font-size: 18px;
+}
+.smartEditLogin .select2-results .select2-highlighted,
+.smartEditLoginModal .select2-results .select2-highlighted {
+  background-color: #d2dbe6;
+  color: #5f7084;
+}
+.smartEditLogin .select2-results .select2-result-label,
+.smartEditLoginModal .select2-results .select2-result-label {
+  padding: 7px 7px 7px 14px;
+}
+.smartEditLogin .select2-default,
+.smartEditLoginModal .select2-default {
+  color: #5f7084!important;
+  font-weight: normal;
+}
+.smartEditLogin.vertical-center {
+  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+.ySELoginNotInit div.modal-dialog {
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+.ySELoginNotInit div.modal-dialog .modal-dialog {
+  width: 100%;
+  height: 100%;
+}
+.ySELoginNotInit div.modal-dialog .modal-content {
+  border: 0;
+  height: 100%;
+}
+.ySELoginNotInit div.modal-dialog .modal-body {
+  padding: 0;
+}
+.smartEditLoginModal {
+  overflow: hidden;
+}
+.smartEditLoginModal .ySELoginAuthMessage {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 18px;
+}
+.smartEditLogin,
+.smartEditLoginModal {
+  color: #fff;
+  font-family: Dosis, sans-serif;
+}
+.smartEditLogin .alert,
+.smartEditLoginModal .alert {
+  box-shadow: none;
+}
+.smartEditLogin .form-group input,
+.smartEditLoginModal .form-group input {
+  height: 46px;
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  box-shadow: none;
+}
+.smartEditLogin .alert.alert-error-bluebg,
+.smartEditLoginModal .alert.alert-error-bluebg {
+  background-color: tomato;
+  border-color: #fff;
+}
+.smartEditLoginModal {
+  padding: 150px 0;
+}
+.ySELoginInit .modal-body {
+  padding: 0;
+}
+.smartEditLogin .ySELogo {
+  padding-bottom: 30px;
+}
+.smartEditLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ySELoginNotInit {
+  height: 100%;
+}
+.ySELoginNotInit .modal-dialog {
+  height: 100%;
+}
+.ySELoginNotInit .modal-dialog .modal-content {
+  height: 100%;
+}
+.ySELoginNotInit .modal-dialog .modal-content .modal-body {
+  height: 100%;
+}
+.ySELoginNotInit .modal-dialog .modal-content .modal-body > div {
+  height: 100%;
+}
+.ySELoginNotInit .modal-dialog .modal-content .modal-body > div .smartEditLogin {
+  height: 100%;
+}
+@media (max-width: 767px) {
+  .smartEditLogin .ySELoginContent {
+    width: 400px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .smartEditLogin .ySELoginContent {
+    width: 500px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .smartEditLogin .ySELoginContent {
+    width: 700px;
+  }
+}
+@media (min-width: 1200px) {
+  .smartEditLogin .ySELoginContent {
+    width: 900px;
+  }
+}
+
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.open div .dropdown-menu {
+  display: block;
+}
+body {
+  padding: 0;
+}
+body .ySmartEditToolbars {
+  z-index: 1;
+  position: fixed !important;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  font-family: "Dosis", sans-serif;
+}
+body .ySmartEditToolbars .dropdown-menu {
+  background-color: #32a0ec;
+  color: #ffffff;
+  min-width: 0;
+  border-radius: 0px;
+  margin-top: 0px;
+  border-top: 1px solid #e5e5e5;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar {
+  background-color: #0486e0;
+  height: 65px;
+  padding: 15px 0px 0 19px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar {
+  padding-top: 15px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .dropdown-menu {
+  background-color: #32a0ec;
+  min-width: 0;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .leftNav .nav-close {
+  font-size: 18px;
+  margin-right: 32px;
+  color: #DBE3ED;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .leftNav .nav-close {
+  font-size: 18px;
+  margin-right: 32px;
+  color: #DBE3ED;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yToolbarBtn .yDdResolution > li > a:hover {
+  color: inherit;
+  background-color: inherit;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yToolbarBtn .yHybridAction {
+  box-shadow: none;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yToolbarBtn .btn-group {
+  padding-top: 15px;
+  box-shadow: none;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yToolbarBtn .btn-group.open {
+  background-color: #32a0ec;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yToolbarBtn button.btn {
+  font-size: 15px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .divider-vertical {
+  height: 50px;
+  margin: 0 9px;
+  border-left: 1px solid #F2F2F2;
+  border-right: 1px solid #FFF;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar-toggle {
+  display: inline-block;
+  padding: 0;
+  margin: 9px 40px 0 30px;
+  border-radius: 0;
+  float: none;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar-toggle .icon-bar {
+  background-color: #fff;
+  border-radius: 0;
+  height: 3px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .nav-pills button {
+  background: transparent none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 0;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .nav-pills button + .ySmartEditTitleToolbar .nav-pills button {
+  margin-right: 18px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .nav-pills {
+  margin-top: -15px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yHybridAction {
+  box-shadow: none;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yHybridAction img {
+  padding: 14px 25px;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .yTemplateToolbar {
+  display: inline;
+}
+body .ySmartEditToolbars .ySmartEditTitleToolbar .ySmartEditAppLogo {
+  margin-top: 2px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar {
+  background-color: #ffffff;
+  height: 65px;
+  padding: 0;
+  color: #0486e0;
+  border-bottom: 1px solid #cedcec;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .yDddlbResolution {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .yHybridAction {
+  box-shadow: none;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .btn-group.open {
+  background-color: #32a0ec;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yWebsiteTB experience-selector-button > div > .btn {
+  text-transform: none;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yWebsiteTB .yToolbarBtn {
+  width: 100%;
+  padding-top: 18px;
+  float: none;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn .pageToolMenu .list-unstyled .yCloseToolbar {
+  margin-top: 20px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn .pageToolMenu .list-unstyled .yCloseToolbar a:hover {
+  color: #a1aebd;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn .pageToolMenu .list-unstyled.page-tool-menu li {
+  padding-left: 30px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn .pageToolMenu .list-unstyled.page-tool-menu li a:hover {
+  color: #a1aebd;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn .pageToolMenu #page-tool-menu-home li {
+  padding-left: 30px;
+  padding-bottom: 25px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn .pageToolMenu #page-tool-menu-home li:first-of-type {
+  padding-top: 20px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .glyphicon {
+  color: #8592a2;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .navbar-toggle {
+  display: inline-block;
+  padding: 0;
+  margin: 5px 40px 0 48px;
+  border-radius: 0;
+  float: none;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .navbar-toggle .icon-bar {
+  background-color: #fff;
+  border-radius: 0;
+  height: 3px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .nav-pills > .yToolbarBtn > div > button,
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .nav-pills > .yToolbarBtn > experience-selector-button > div > button,
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .nav-pills > .yToolbarBtn > div > div > component-menu > div > button {
+  background: transparent none;
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding: 0;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .nav-pills > .yToolbarBtn > experience-selector-button > div > button {
+  padding: 0 0 0 49px;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions {
+  float: right;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn {
+  padding: inherit;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn:first-child {
+  margin-right: 1em;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn.btn-primary {
+  color: #27394f;
+  background-color: #FCDF2B;
+  border-color: #e2c713;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn-primary.focus,
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn-primary:focus {
+  color: #27394f;
+  background-color: #f1d003;
+  border-color: #6c5f09;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn-primary:hover {
+  color: #27394f;
+  background-color: #f1d003;
+  border-color: #aa950e;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn-default {
+  color: #fff;
+  background-color: #3f5875;
+  border-color: #2b415b;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn-default.focus,
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn.btn-default:focus {
+  color: #fff;
+  background-color: #2d3f54;
+  border-color: #020304;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .experience-selector-actions .btn-default:hover {
+  color: #fff;
+  background-color: #2d3f54;
+  border-color: #172331;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .btn-group {
+  padding-top: 15px;
+  padding-bottom: 14px;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-shadow: none;
+  border-radius: 0;
+}
+body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .nav-pills button + .ySmartEditTitleToolbar .nav-pills button {
+  margin-right: 18px;
+}
+/*left nav*/
+.nav-expanded-left .ySmartEditTitleToolbar a.nav-expander,
+.nav-expanded-left .ySmartEditTitleToolbar button.nav-expander {
+  background: none repeat scroll 0 0 #000000;
+  color: #FFFFFF;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-left: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  left: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  width: 130px;
+  z-index: 12;
+  transition: left 0.3s ease-in-out 0s;
+  -webkit-transition: left 0.3s ease-in-out 0s;
+  -moz-transition: left 0.3s ease-in-out 0s;
+  -o-transition: left 0.3s ease-in-out 0s;
+}
+.nav-expanded-left .ySmartEditTitleToolbar a.nav-expander.fixed,
+.nav-expanded-left .ySmartEditTitleToolbar button.nav-expander.fixed {
+  left: 20em;
+}
+.nav-expanded-left .ySmartEditTitleToolbar nav {
+  left: 0;
+}
+.ySmartEditTitleToolbar a.nav-expander:hover,
+.ySmartEditTitleToolbar button.nav-expander:hover {
+  cursor: pointer;
+}
+.ySmartEditTitleToolbar a.nav-expander.fixed,
+.ySmartEditTitleToolbar button.nav-expander.fixed {
+  position: fixed;
+}
+.ySmartEditTitleToolbar .navbar-inverse,
+.ySmartEditTitleToolbar .navbar-toggle {
+  background: #0486e0;
+  color: #ffffff;
+  border: none;
+}
+.ySmartEditTitleToolbar .navbar-inverse .navbar-toggle:hover,
+.ySmartEditTitleToolbar .navbar-inverse .navbar-toggle:focus {
+  background-color: #0486e0;
+}
+.ySmartEditTitleToolbar nav {
+  background: #233243;
+  color: #36c2f2;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  left: -20em;
+  font-size: 15px;
+  top: 0;
+  width: 20em;
+  z-index: 1001;
+  transition: left 0.3s ease-in-out 0s;
+  -webkit-transition: left 0.3s ease-in-out 0s;
+  -moz-transition: left 0.3s ease-in-out 0s;
+  -o-transition: left 0.3s ease-in-out 0s;
+}
+.ySmartEditTitleToolbar .left-toolbar {
+  font-size: 16px !important;
+  padding-top: 0;
+}
+.ySmartEditTitleToolbar .left-toolbar li {
+  padding: 12px 12px 36px 48px;
+}
+.ySmartEditTitleToolbar .left-toolbar li.divider {
+  border-bottom: 1px solid #172535;
+  margin-left: 48px;
+  height: 1px;
+}
+.ySmartEditTitleToolbar .left-toolbar li.yUserData .yUserInfo p {
+  color: #dbe3eb;
+}
+.ySmartEditTitleToolbar .left-toolbar li.yUserData .yUserInfo a {
+  color: #808fa1;
+}
+.ySmartEditTitleToolbar .left-toolbar li a {
+  color: #808fa1;
+  text-decoration: none;
+}
+.ySmartEditTitleToolbar .left-toolbar li a:hover {
+  color: #dbe3eb;
+  text-decoration: none;
+}
+.ySmartEditTitleToolbar .left-toolbar li.yCloseToolbar {
+  padding-bottom: 0;
+  padding-right: 0;
+}
+.ySmartEditTitleToolbar .left-toolbar li .sub-nav {
+  border-bottom: 0;
+  padding: 4px;
+}
+.ySmartEditTitleToolbar .left-toolbar a .caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+  content: "";
+  margin-top: 8px;
+}
+.ySmartEditTitleToolbar .left-toolbar a:hover .caret {
+  border-top-color: #4f5963;
+}
+.ySmartEditTitleToolbar .left-toolbar li.open > a > .caret {
+  border-top: none;
+  border-bottom: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+}
+.ySmartEditTitleToolbar .left-toolbar li.open > a:hover > .caret {
+  border-bottom-color: #4f5963;
+}
+.ySmartEditTitleToolbar .page-tool-menu {
+  font-size: 16px !important;
+  padding-top: 0;
+}
+.ySmartEditTitleToolbar .page-tool-menu li {
+  padding: 12px 12px 36px 48px;
+}
+.ySmartEditTitleToolbar .page-tool-menu li.divider {
+  border-bottom: 1px solid #172535;
+  margin-left: 48px;
+  height: 1px;
+}
+.ySmartEditTitleToolbar .page-tool-menu li.yUserData .yUserInfo p {
+  color: #dbe3eb;
+}
+.ySmartEditTitleToolbar .page-tool-menu li.yUserData .yUserInfo a {
+  color: #808fa1;
+}
+.ySmartEditTitleToolbar .page-tool-menu li a {
+  color: #808fa1;
+  text-decoration: none;
+}
+.ySmartEditTitleToolbar .page-tool-menu li a:hover {
+  color: #dbe3eb;
+  text-decoration: none;
+}
+.ySmartEditTitleToolbar .page-tool-menu li.yCloseToolbar {
+  padding-bottom: 0;
+  padding-right: 0;
+}
+.ySmartEditTitleToolbar .page-tool-menu li .sub-nav {
+  border-bottom: 0;
+  padding: 4px;
+}
+.ySmartEditTitleToolbar .page-tool-menu a .caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+  content: "";
+  margin-top: 8px;
+}
+.ySmartEditTitleToolbar .page-tool-menu a:hover .caret {
+  border-top-color: #4f5963;
+}
+.ySmartEditTitleToolbar .page-tool-menu li.open > a > .caret {
+  border-top: none;
+  border-bottom: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+}
+.ySmartEditTitleToolbar .page-tool-menu li.open > a:hover > .caret {
+  border-bottom-color: #4f5963;
+}
+.ySmartEditTitleToolbar .icon:before {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '>';
+}
+.ySmartEditTitleToolbar .icon-back:before {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '< ';
+}
+.ySmartEditTitleToolbar .left-toolbar li > a > span.icon {
+  float: right;
+  margin: -2px 24px -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.ySmartEditTitleToolbar .left-toolbar li > a:hover > span.icon {
+  float: right;
+  margin: -2px 24px -0.1em 0;
+  opacity: 1;
+}
+.ySmartEditTitleToolbar .page-tool-menu li > a > span.icon {
+  float: right;
+  margin: -2px 24px -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.ySmartEditTitleToolbar .page-tool-menu li > a:hover > span.icon {
+  float: right;
+  margin: -2px 24px -0.1em 0;
+  opacity: 1;
+}
+.ySmartEditTitleToolbar .nav-close {
+  font-size: 20px;
+  padding-left: 30px;
+  padding-top: 30px;
+}
+body.nav-expanded-left {
+  margin-right: 0em;
+  /*123*/
+  transition: left 0.4s ease-in-out 0s;
+  -webkit-transition: left 0.4s ease-in-out 0s;
+  -moz-transition: left 0.4s ease-in-out 0s;
+  -o-transition: left 0.4s ease-in-out 0s;
+}
+/*left nav*/
+/*right nav*/
+.nav-expanded-right .ySmartEditExperienceSelectorToolbar a.nav-expander,
+.nav-expanded-right .ySmartEditExperienceSelectorToolbar button.nav-expander {
+  background: none repeat scroll 0 0 #000000;
+  color: #0f0f0f;
+  display: block;
+  font-size: 15px;
+  font-weight: 400;
+  height: 50px;
+  margin-right: 0;
+  padding: 1em 1.6em 2em;
+  position: absolute;
+  left: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  top: 0;
+  width: 130px;
+  z-index: 12;
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+}
+.nav-expanded-right .ySmartEditExperienceSelectorToolbar a.nav-expander.fixed,
+.nav-expanded-right .ySmartEditExperienceSelectorToolbar button.nav-expander.fixed {
+  right: 20em;
+}
+.nav-expanded-right .ySmartEditExperienceSelectorToolbar nav {
+  right: 0;
+}
+.ySmartEditExperienceSelectorToolbar a.nav-expander:hover,
+.ySmartEditExperienceSelectorToolbar button.nav-expander:hover {
+  cursor: pointer;
+}
+.ySmartEditExperienceSelectorToolbar a.nav-expander.fixed,
+.ySmartEditExperienceSelectorToolbar button.nav-expander.fixed {
+  position: fixed;
+}
+.ySmartEditExperienceSelectorToolbar .navbar-inverse,
+.ySmartEditExperienceSelectorToolbar .navbar-toggle {
+  background: #0486e0;
+  color: #0f0f0f;
+  border: none;
+}
+.ySmartEditExperienceSelectorToolbar .navbar-inverse .navbar-toggle:hover,
+.ySmartEditExperienceSelectorToolbar .navbar-inverse .navbar-toggle:focus {
+  background-color: #0486e0;
+}
+.ySmartEditExperienceSelectorToolbar nav {
+  background: #ffffff;
+  color: #36c2f2;
+  display: block;
+  height: 100%;
+  overflow: auto;
+  position: fixed;
+  right: -20em;
+  font-size: 15px;
+  top: 0;
+  width: 20em;
+  z-index: 1000;
+  transition: right 0.3s ease-in-out 0s;
+  -webkit-transition: right 0.3s ease-in-out 0s;
+  -moz-transition: right 0.3s ease-in-out 0s;
+  -o-transition: right 0.3s ease-in-out 0s;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar {
+  padding-top: 0;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li {
+  margin-left: 10px;
+  font-size: 18px;
+  padding: 12px 12px 12px 20px;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.divider {
+  border-bottom: 1px solid #172535;
+  margin-right: 48px;
+  height: 1px;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.yUserData {
+  height: 70px;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.yUserData .yUserInfo p {
+  color: #dbe3eb;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.yUserData .yUserInfo a {
+  color: #808fa1;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li a {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li a:hover {
+  color: #0f0f0f;
+  text-decoration: none;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.yCloseToolbar {
+  padding-top: 10px;
+  padding-bottom: 0;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li .sub-nav {
+  border-bottom: 0;
+  padding: 4px;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar a .caret {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  vertical-align: top;
+  border-top: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+  content: "";
+  margin-top: 8px;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar a:hover .caret {
+  border-top-color: #4f5963;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.open > a > .caret {
+  border-top: none;
+  border-bottom: 4px solid #4f5963;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+  /*123*/
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li.open > a:hover > .caret {
+  border-bottom-color: #4f5963;
+}
+.ySmartEditExperienceSelectorToolbar .icon:before {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '>';
+}
+.ySmartEditExperienceSelectorToolbar .icon-back:before {
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  text-transform: none;
+  content: '< ';
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li > a > span.icon {
+  float: left;
+  margin: 0.1em 1.7em -0.1em 0;
+  opacity: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.ySmartEditExperienceSelectorToolbar .main-toolbar li > a:hover > span.icon {
+  float: left;
+  margin: 0.1em 0.8em -0.1em 0;
+  opacity: 1;
+}
+.ySmartEditExperienceSelectorToolbar .nav-close {
+  font-size: 20px;
+  padding-right: 30px;
+  padding-top: 30px;
+}
+.ySmartEditExperienceSelectorToolbar span.yStatusError {
+  color: #ff3b30;
+}
+.ySmartEditExperienceSelectorToolbar span.yStatusDefault {
+  color: #27394f;
+}
+.ySmartEditExperienceSelectorToolbar span.yStatusInfo {
+  color: #18bc33;
+}
+.ySmartEditExperienceSelectorToolbar div.yStatusSubtitle {
+  color: #8592a2;
+  font-size: 14px;
+  padding-left: 37px;
+}
+.ySmartEditExperienceSelectorToolbar span.yStatusError img,
+.ySmartEditExperienceSelectorToolbar span.yStatusDefault img,
+.ySmartEditExperienceSelectorToolbar span.yStatusInfo img {
+  padding-right: 18px;
+}
+body.nav-expanded-right {
+  margin-left: 0em;
+  /*123*/
+  transition: right 0.4s ease-in-out 0s;
+  -webkit-transition: right 0.4s ease-in-out 0s;
+  -moz-transition: right 0.4s ease-in-out 0s;
+  -o-transition: right 0.4s ease-in-out 0s;
+}
+/*right nav*/
+@media (max-width: 991px) {
+  body .ySmartEditToolbars .ySmartEditTitleToolbar {
+    height: 100px;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar-toggle {
+    padding-top: 15px;
+    margin-top: 8px;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar-toggle .icon-bar {
+    width: 40px;
+    height: 4px;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar-toggle .icon-bar + .icon-bar {
+    margin-top: 6px;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .navbar {
+    padding-top: 30px;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .ySmartEditAppLogo {
+    height: 35px;
+    margin-top: 18px;
+  }
+  .yWebsite,
+  .yPage {
+    border-bottom: 1px solid #cedcec;
+    padding-top: 0;
+    padding-bottom: 0;
+    height: 100px;
+    background-color: #FFFFFF;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+  .yWebsite .btn-text,
+  .yPage .btn-text {
+    font-size: 22px;
+  }
+  body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yWebsite {
+    border-bottom: 1px solid #cedcec;
+  }
+  body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yWebsite .yWebsiteTB .yToolbarBtn {
+    padding-top: 30px;
+  }
+  .yPage .yPageTB {
+    padding-top: 0;
+  }
+  body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .btn-group {
+    padding: 29px 22px 29px 22px;
+  }
+  body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .btn-group img {
+    height: 40px;
+  }
+  body .ySmartEditToolbars .ySmartEditExperienceSelectorToolbar .yToolbarBtn .btn-group .dropdown-menu .item {
+    font-size: 22px;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .yToolbarBtn .btn-group {
+    padding-top: 17px;
+    padding-bottom: 0;
+  }
+  body .ySmartEditToolbars .ySmartEditTitleToolbar .yHybridAction img {
+    padding-top: 31px;
+    padding-bottom: 31px;
+  }
+  /*toolbars for mobile taking 100% width*/
+  .ySmartEditTitleToolbar nav.leftNav {
+    left: -100%;
+    width: 100%;
+    font-size: 16px;
+  }
+  .nav-expanded-left .ySmartEditTitleToolbar nav {
+    left: 0 !important;
+  }
+  .ySmartEditExperienceSelectorToolbar nav.pageToolMenu {
+    right: -100%;
+    width: 100%;
+  }
+  .nav-expanded-right .ySmartEditExperienceSelectorToolbar nav {
+    right: 0 !important;
+  }
+  /*toolbars for mobile taking 100% width*/
+}
+.yWebsite,
+.yPage {
+  background-color: #FFFFFF;
+}
+.yPage .yToolbarBtn {
+  margin-right: -1.5px;
+}
+/*shift down the old UI*/
+.col-xs-1.form-horizontal,
+body > div > .col-xs-7 {
+  margin-top: 150px;
+}
+@media (max-width: 991px) {
+  .col-xs-1.form-horizontal,
+  body > div > .col-xs-7 {
+    margin-top: 300px;
+  }
+}
+.ySmartEditTemplateBckg {
+  background-color: #32a0ec;
+}
+/*page tool menu animation*/
+.hideLevel1 {
+  margin-left: -200px;
+  opacity: 0;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.showLevel1 {
+  margin-left: 0;
+  opacity: 1;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.hideLevel2 {
+  margin-left: 320px;
+  position: absolute;
+  opacity: 0;
+  top: 40px;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.showLevel2 {
+  margin-left: 0;
+  position: absolute;
+  top: 40px;
+  opacity: 1;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.hide1 {
+  position: fixed;
+  top: 0;
+  right: -200px;
+  transition: right 3s;
+  -webkit-transition: right 3s;
+}
+.yWebsite {
+  margin-left: -15px;
+}
+.ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn button:hover,
+.ySmartEditExperienceSelectorToolbar .yPageTB .yToolbarBtn button:focus,
+.ySmartEditExperienceSelectorToolbar .yToolbarBtn .yWebsiteSelectBtn.btn:hover,
+.ySmartEditExperienceSelectorToolbar .yToolbarBtn .yWebsiteSelectBtn.btn:focus {
+  color: #0486e0;
+}
+.yDddlbResolution.btn-default:active,
+.yDddlbResolution.btn-default:focus {
+  outline: none;
+}
+inflection-point-selector > div.open {
+  background-color: #32a0ec ;
+}
+inflection-point-selector ul.dropdown-menu > li:not(:last-child) {
+  border-bottom: 1px solid #e5e5e5;
+}
+.ySmartEditTitleToolbar .yPageTB {
+  margin-right: 25px;
+}
+.ySEOpenComponent {
+  background-color: #32a0ec;
+}
+.ySEHybridAction .btn-default:active:focus,
+.ySEHybridAction .btn-default:focus {
+  outline-color: #ffffff;
+}
+.ySEHybridAction.ySEOpenComponent .btn-default:active:focus,
+.ySEHybridAction.ySEOpenComponent .btn-default:focus {
+  outline-color: #32a0ec;
+}
+/*page tool menu animation*/
+.ySELeftHideLevel1 {
+  margin-left: -200px;
+  opacity: 0;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.ySELeftShowLevel1 {
+  margin-left: 0;
+  opacity: 1;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.ySELeftHideLevel2 {
+  margin-left: 320px;
+  position: absolute;
+  opacity: 0;
+  top: 125px;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.ySELeftShowLevel2 {
+  margin-left: 0;
+  position: absolute;
+  top: 125px;
+  opacity: 1;
+  -webkit-transition: margin-left 0.5s, opacity 0.7s;
+  transition: margin-left 0.5s, opacity 0.7s;
+}
+.ySmartEditTitleToolbar .yTemplateToolbar nav.leftNav {
+  overflow: hidden;
+}
+nav.pageToolMenu {
+  overflow: hidden;
+}
+[ng-click],
+[data-ng-click],
+[x-ng-click] {
+  cursor: pointer;
+}
+
+/* Make iFrame 100% height of the screen by default + fix drag and drop jumping */
+body,
+html,
+body[data-ng-app] > div[data-ng-view] {
+  height: 100%;
+}
+html.smartedit-html-container {
+  height: auto;
+}
+body[data-smartedit-ready] {
+  height: auto;
+  overflow-x: hidden !important;
+}
+#js_iFrameWrapper {
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 0;
+  padding-top: 130px;
+  overflow: hidden;
+}
+/* -- end */
+.thumbnail {
+  width: 64px;
+  display: inline;
+}
+button.close {
+  margin-right: 20px;
+}
+div.synchronize {
+  position: relative;
+}
+img.synchronize {
+  position: absolute;
+  right: 0;
+  z-index: 500;
+}
+.contextualMenuOverlay {
+  position: absolute;
+  z-index: 9999;
+  left: 3px;
+  top: 3px;
+}
+.contextualMenuOverlay.editMode {
+  width: 100%;
+  height: 100%;
+}
+.piled {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.minDivHeight {
+  min-height: 20px;
+}
+.clickable {
+  cursor: pointer;
+}
+/*
+input.ng-invalid.ng-dirty {
+    border-color: #FA787E;
+    border-style: solid;
+}
+
+input.ng-valid.ng-dirty {
+    border-color: #78FA89;
+    border-style: solid;
+}*/
+.toptoolbar {
+  position: absolute;
+  padding: 10px;
+  margin-left: 60px;
+  z-index: 100;
+}
+.floating-perspective {
+  position: fixed;
+  padding: 10px;
+  left: 10px;
+  z-index: 700;
+}
+.xposed-perspectives,
+.xposed-administration {
+  color: white;
+  background: #29a429;
+  border: 1px solid #ffffff;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+}
+.xposed-administration {
+  background: blue;
+}
+.floating-bg {
+  color: white;
+  border: 1px solid #ffffff;
+  background: #444d52;
+  padding: 5px 20px 0px 20px;
+}
+.overlay {
+  position: absolute;
+  z-index: 300;
+}
+select,
+option {
+  color: black;
+}
+.contentSlot {
+  background-color: pink;
+}
+.form-control {
+  height: auto;
+}
+.alert-overlay {
+  position: fixed;
+  margin-top: 40px;
+  z-index: 1091;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 8px 20% 8px 20%;
+}
+.ySEEmptyMessage {
+  display: none;
+}
+/* Fix techne bug for dropdown template */
+.ui-select-container a:hover {
+  color: #555 !important;
+}
+/*override of bootstrap css*/
+iframe {
+  box-sizing: content-box;
+  border: none;
+}
+iframe.device-vertical.device-iphoneResponsive {
+  background: url(../../../images/devices/iphone_v.png) no-repeat;
+  padding: 140px 80px;
+  overflow-x: hidden;
+}
+iframe.device-horizontal.device-iphoneResponsive {
+  background: url(../../../images/devices/iphone_h.png) no-repeat;
+  padding: 80px 140px;
+  overflow-x: hidden;
+}
+iframe.device-vertical.device-ipadResponsive {
+  background: url(../../../images/devices/ipad_v.png) no-repeat;
+  padding: 40px 42px;
+  overflow-x: hidden;
+  margin-top: 25px;
+}
+iframe.device-horizontal.device-ipadResponsive {
+  background: url(../../../images/devices/ipad_h.png) no-repeat;
+  padding: 42px 42px;
+  overflow-x: hidden;
+  margin-top: 25px;
+}
+iframe.device-vertical.device-nexusResponsive {
+  background: url(../../../images/devices/nexus_v.png) no-repeat;
+  padding: 155px 59px;
+  overflow-x: hidden;
+  margin-top: 25px;
+}
+iframe.device-horizontal.device-nexusResponsive {
+  background: url(../../../images/devices/nexus_h.png) no-repeat;
+  padding: 61px 155px;
+  overflow-x: hidden;
+  margin-top: 25px;
+}
+iframe.device-vertical.device-samsung4Responsive {
+  background: url(../../../images/devices/galaxy_v.png) no-repeat;
+  padding: 70px 19px;
+  overflow-x: hidden;
+  margin-top: 25px;
+}
+iframe.device-horizontal.device-samsung4Responsive {
+  background: url(../../../images/devices/galaxy_h.png) no-repeat;
+  padding: 23px 70px;
+  overflow-x: hidden;
+  margin-top: 25px;
+}
+.select2 > .select2-choice.ui-select-match {
+  /* Because of the inclusion of Bootstrap */
+  /*height: 29px;*/
+}
+.selectize-control > .selectize-dropdown {
+  top: 36px;
+}
+.cmsx-ctx-btns,
+.cmsx-ctx-more-btn {
+  border-radius: 0;
+  opacity: 1;
+  border: 0;
+  box-shadow: none;
+  padding: 0px 0px;
+  z-index: 5001;
+}
+.cmsx-ctx-btns {
+  margin-right: 2px;
+}
+.cmsx-ctx-btns img {
+  opacity: 1;
+}
+/*
+.yCmsComponent:hover,
+.contextualMenuOverlay:hover{
+    -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 198, 255, 0.2);
+    -moz-box-shadow: inset 0 0 0 1000px rgba(0, 198, 255, 0.2);
+    box-shadow: inset 0 0 0 1000px rgba(0, 198, 255, 0.2);
+}
+
+.yWrapperData:hover{
+    -webkit-box-shadow: inset 0 0 0 1000px rgba(0, 198, 255, 0.8);
+    -moz-box-shadow: inset 0 0 0 1000px rgba(0, 198, 255, 0.8);
+    box-shadow: inset 0 0 0 1000px rgba(0, 198, 255, 0.8);
+}
+
+.yWrapperData img:hover{
+    opacity: 0.8;
+}*/
+.cmsx-ctx-wrapper1 {
+  overflow: hidden;
+  display: table;
+}
+.cmsx-ctx-wrapper2 {
+  display: table-cell;
+  vertical-align: middle;
+}
+.cmsx-ctx-more .dropdown,
+.cmsx-ctx-more {
+  display: inline;
+}
+.cmsx-ctx-btns img,
+.cmsx-ctx-more-btn img {
+  max-width: 45px;
+}
+.yCmsCtxMenu.dropdown .dropdown-menu {
+  z-index: 1013;
+  border: 0;
+  border-radius: 0;
+  font-family: Dosis;
+}
+.cmsx-ctx-menu-more-icon {
+  max-width: 20px;
+  margin-right: 10px;
+}
+.yCmsCtxMenu.dropdown .dropdown-menu li,
+.yCmsCtxMenu.dropdown .dropdown-menu li a {
+  z-index: 5000;
+  margin-top: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.yCmsCtxMenu.dropdown ul.dropdown-menu {
+  margin-top: 0;
+}
+.cmsx-ctx-more-btn .bottom-shadow {
+  box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.1);
+  z-index: 1014;
+  position: relative;
+}
+.alert.alert-success {
+  background-color: #18BC45;
+  border-color: #18BC45;
+  opacity: 0.95;
+}
+.alert.alert-danger {
+  background-color: #FF3B30;
+  border-color: #FF3B30;
+  opacity: 0.95;
+}
+.error-input,
+input.has-error {
+  color: #FF3B30;
+}
+input.has-error,
+textarea.has-error {
+  border-color: #FF3B30;
+}
+.nav-tabs li a.sm-tab-error {
+  color: #FF3B30;
+}
+.nav-tabs li a.sm-tab-error:before {
+  content: "! ";
+}
+.ySEWaitDialog {
+  margin-top: 300px;
+}
+
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.modal-dialog .modal-footer,
+.ySEGenericEditor .modal-footer {
+  padding: 0 0 2px 0;
+}
+experience-selector .ySEGenericEditor .modal-footer {
+  padding-bottom: 0px;
+  margin-top: 95px;
+  border-top: 1px solid #7ac1f3;
+}
+.modal-dialog .modal-footer > span,
+.ySEGenericEditor .modal-footer > span {
+  display: inline-block;
+}
+.modal-dialog .modal-footer .btn,
+.ySEGenericEditor .modal-footer .btn {
+  font-size: 23px;
+  font-family: Dosis, sans-serif;
+  padding: 20px 50px 20px 50px;
+}
+.modal-dialog .modal-footer {
+  border-top: 1px solid #ebeef1;
+  background: inherit;
+}
+.modal-dialog .modal-header {
+  background: inherit;
+  border-bottom: 1px solid #ebeef1;
+}
+.modal-dialog .modal-header .hyicon.hyicon-close {
+  color: #7f90a4;
+  font-size: 25px;
+}
+.modal-dialog .modal-header .close {
+  margin-top: -9px;
+}
+.modal-dialog .modal-header h4 {
+  font-family: Dosis, sans-serif;
+  font-size: 33px;
+  margin: 0;
+}
+.modal-dialog .modal-header {
+  padding-left: 50px;
+  padding-top: 35px;
+  padding-right: 30px;
+}
+experience-selector .ySEGenericEditor form {
+  padding-right: 0;
+}
+experience-selector .ySEGenericEditor .btn-subordinate {
+  color: #ffffff;
+}
+generic-editor-field .select2-container .select2-choice .select2-arrow,
+generic-editor-field .select2-container .select2-choice div {
+  background: none;
+  border-left: none;
+}
+generic-editor-field .select2-container .select2-choice .select2-arrow b,
+generic-editor-field .select2-container .select2-choice abbr,
+generic-editor-field .select2-container-multi .select2-choices .select2-search-field input.select2-active,
+generic-editor-field .select2-more-results.select2-active,
+.select2-search input,
+generic-editor-field .select2-search input.select2-active,
+.select2-search-choice-close,
+generic-editor-field .select2-container .select2-choice .select2-arrow b,
+generic-editor-field .select2-container .select2-choice div b {
+  color: #27394f;
+  margin-top: 5px;
+}
+generic-editor-field .ui-select-dropdown .ui-select-choices-group .select2-result-label {
+  font-family: "Open Sans", sans-serif;
+  font-size: 15px;
+}
+localized-element generic-editor-field .select2-container.select2-allowclear .select2-choice abbr {
+  display: none;
+}
+

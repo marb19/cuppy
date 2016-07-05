@@ -1,0 +1,100 @@
+# -----------------------------------------------------------------------
+# [y] hybris Platform 
+# 
+# Copyright (c) 2000-2015 hybris AG
+# All rights reserved.
+#  
+# This software is the confidential and proprietary information of hybris 
+# ("Confidential Information"). You shall not disclose such Confidential
+# Information and shall use it only in accordance with the terms of the
+# license agreement you entered into with hybris.
+# -----------------------------------------------------------------------
+######
+## PARAMETERS REQUIRED FOR THIS SCRIPT
+##
+##   * contentCatalog   - content catalog id
+##   * productCatalog   = product catalog id
+##   * storeUid - site id
+##   * storeUid - id of the store
+##   * channel - site channel
+#######
+
+
+# Import essential Currency Related Data for China Accelerator
+#% impex.setLocale(Locale.GERMAN)
+# Includes:
+# * Languages
+# * Currencies
+# * Titles
+# * Vendors
+# * Warehouses
+# * Supported Credit/Debit cards
+# * User Groups
+# * DistanceUnits for Storelocator
+# * MediaFolders
+# * MediaFormats
+# * Tax & Tax Groups
+# * Jobs
+
+
+
+# Currencies
+$ukCurrency=GBP
+$jpCurrency=JPY
+$usCurrency=USD
+$europeCurrency=EUR
+$chinaCurrency=CNY
+
+
+# Currencies
+INSERT_UPDATE Currency;isocode[unique=true];conversion;digits;symbol;name[lang=en]
+;CNY;1;2;¥;Chinese Yuan
+
+# SiteMap Language Currencies
+INSERT_UPDATE SiteMapLanguageCurrency;&siteMapLanguageCurrency;language(isoCode)[unique=true];currency(isocode)[unique=true];
+;zhCny;zh;CNY
+;enCny;en;CNY
+
+
+# Tax & Tax Groups
+INSERT_UPDATE UserTaxGroup;code[unique=true]
+;cn-taxes
+
+INSERT_UPDATE ProductTaxGroup;code[unique=true]
+;cn-sales-tax-full
+
+INSERT_UPDATE Tax;code[unique=true];value;currency(isocode);name[lang=en];
+;cn-sales-tax-full;10;CNY;Chinese Sales Tax
+
+#remove hongkong,macau,and taiwan from countries
+REMOVE Country;isocode[unique=true]
+;HK
+;TW
+;MO
+
+
+######
+## PARAMETERS REQUIRED FOR THIS SCRIPT
+##
+##   * contentCatalog   - content catalog id
+##   * productCatalog   = product catalog id
+##   * storeUid - site id
+##   * storeUid - id of the store
+##   * channel - site channel
+#######
+
+# 
+# Import the Product Catalog and Classification Catalog
+#
+
+$productCatalog=electronicsProductCatalog
+$classificationCatalog=electronicsClassification
+$catalogVersion=catalogversion(catalog(id[default=$productCatalog]),version[default='Staged'])[unique=true,default=$productCatalog:Staged]
+$languages=en,zh
+
+
+# Create default tax row for all products in product catalog
+INSERT_UPDATE TaxRow;$catalogVersion;tax(code)[unique=true];pg(code)[unique=true];ug(code)[unique=true]
+;;cn-sales-tax-full;cn-sales-tax-full;cn-taxes
+
+

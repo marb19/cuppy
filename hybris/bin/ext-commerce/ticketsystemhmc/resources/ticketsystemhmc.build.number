@@ -1,0 +1,11 @@
+#Ant properties
+#Mon Mar 07 19:56:09 CET 2016
+builddate=20160307 1956
+description=ticketsystemhmc
+group.id=de.hybris.platform
+module.name=platform-module
+name=ticketsystemhmc
+releasedate=20160229 1621
+vendor=hybris
+version=6.0.0.0-SNAPSHOT
+version.api=6.0.0

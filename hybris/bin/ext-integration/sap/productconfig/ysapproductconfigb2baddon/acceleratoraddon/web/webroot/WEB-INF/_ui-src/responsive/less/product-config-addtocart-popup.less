@@ -1,0 +1,61 @@
+#cpqBoxClose:active {outline:0;}
+ 
+#cpqBoxClose {
+	position: absolute;
+	top: (@grid-gutter-width/2);
+	right: (@grid-gutter-width/2);
+	background: transparent;
+	border: 0 none;
+	color: @modal-close-btn-color;
+	font-size: 25px;
+}
+
+@media (max-width: @screen-sm-max) { 
+    #cpqBoxClose{
+        .btn-lg;
+    }
+}
+
+#cpqErrorBox {
+	background-color: @cpq-yellow; 
+	padding: @padding-small-vertical @padding-small-horizontal;
+	display: inline-block;
+	height: 100%;
+	width: 100%;
+
+	.cpq-error-sign {
+		align-items: center;
+   	height: 100%;
+   	display: flex;
+   	padding-right: @padding-small-horizontal;
+   }
+}
+
+.cpq-error-message {
+	a:hover {
+		cursor: pointer;
+	}
+   align-items: center;
+   height: 100%;
+   display: flex;  
+   font-size: @font-size-small;
+}
+
+.cpq-error-message-cart-popup {
+	.cpq-error-message;
+	font-weight: bold;
+	 a {
+	    text-decoration: underline;
+	 }
+}
+
+.cpq-popup-link{
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.details {
+	.cpq-price-value {
+		margin-top: @cpq-padding;
+	}
+}

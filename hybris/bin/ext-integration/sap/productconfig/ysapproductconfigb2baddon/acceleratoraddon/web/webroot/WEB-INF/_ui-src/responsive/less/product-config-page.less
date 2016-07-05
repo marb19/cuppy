@@ -1,0 +1,69 @@
+ .cpq-glyphicon-asterisk {
+	.glyphicon;
+	content: "\2a";
+	padding-left: @cpq-padding-xs-horizontal;
+}
+
+.cpq-glyphicon-info-sign {
+	.glyphicon;
+	content: "\e086";
+	top: @cpq-info-sign-alignment;
+	font-size: @font-size-large;
+	padding-left: @cpq-padding-xs-horizontal;
+}
+
+.cpq-glyphicon-list {
+	.glyphicon;
+	content:"\e056";
+}
+
+.glyphicon-remove {
+	.glyphicon;
+	content:"\e014";
+}
+
+.cpq-glyphicon-chevron {
+	.glyphicon;
+	font-size: @font-size-small;
+	float: left;
+	cursor: pointer;
+}
+
+.cpq-glyphicon-chevron-up {
+	.cpq-glyphicon-chevron;
+	content: "\e113";
+}
+
+.cpq-glyphicon-chevron-down { 
+	.cpq-glyphicon-chevron;
+	content: "\e114";
+}
+
+.name.product-details-glyphicon-chevron-open:before{
+	.cpq-glyphicon-chevron-up;
+	padding: @cpq-padding-product-details-chevron-vertical @padding-xs-horizontal;
+	font-size: @font-size-base;
+}
+
+.name.product-details-glyphicon-chevron-open{
+	cursor: pointer;	
+}
+
+
+.name.product-details-glyphicon-chevron-close:before{
+	.cpq-glyphicon-chevron-down;
+	padding: @cpq-padding-product-details-chevron-vertical @padding-xs-horizontal; 
+	font-size: @font-size-base;
+}
+
+.name.product-details-glyphicon-chevron-close{
+	cursor: pointer;	
+}
+
+
+@media (max-width: @screen-sm-max){
+	.cpq-page{
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+}

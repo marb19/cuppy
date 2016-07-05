@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <base href="../../../../../" />
+
+    <!--3rd prty libs-->
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+    <script src="bower_components/angular-mocks/angular-mocks.js"></script>
+    <script src="bower_components/angular-translate/angular-translate.min.js"></script>
+    <script src="bower_components/angular-translate-loader-static-files/angular-translate-loader-static-files.min.js"></script>
+
+    <!-- 3rd party css -->
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="buildArtifacts/static-resources/techne/css/techne.min.css">
+    <link rel="stylesheet" href="buildArtifacts/static-resources/dist/smartedit/css/style.css">
+
+    <script>
+    window.smartedit = {
+        i18nAPIRoot: "somepath"
+    }
+    angular.module('decoratortemplates', []);
+    </script>
+
+
+    <script src="buildArtifacts/seLibraries/smartEditContainer/services/functions.js"></script>
+    <script src="buildArtifacts/seLibraries/smartEditContainer/services/languageService.js"></script>
+    <script src="buildArtifacts/seLibraries/smartEditContainer/services/i18nInterceptor.js"></script>
+    <script src="buildArtifacts/seLibraries/smartEditContainer/services/translateService.js"></script>
+    <script src="buildArtifacts/seLibraries/smartEditContainer/services/restServiceFactory.js"></script>
+    <script src="buildArtifacts/seLibraries/smartEditContainer/services/eventservice.js"></script>
+    <script src="buildArtifacts/seLibraries/smartEditContainer/services/iframeClickDetectionService.js"></script>
+
+    <script src="jsTests/cmssmarteditContainer/e2e/features/componentMenu/componentMenuApp.js"></script>
+
+    <script src="web/features/commons/webServicesConstants/cmsWebservicesConstants.js"></script>
+    <script src="web/features/cmssmarteditContainer/componentMenu/componentMenu.module.js"></script>
+    <script src="web/features/cmssmarteditContainer/componentMenu/componentMenu.controller.js"></script>
+    <script src="web/features/cmssmarteditContainer/componentMenu/componentMenu.filter.js"></script>
+    <script src="web/features/cmssmarteditContainer/componentMenu/componentMenu.service.js"></script>
+    <script src="web/features/cmssmarteditContainer/componentMenu/componentItem.directive.js"></script>
+    <script src="web/features/cmssmarteditContainer/componentMenu/componentTabs.directive.js"></script>
+    <script src="web/features/cmssmarteditContainer/componentMenu/componentSearch.directive.js"></script>
+    <script src="web/features/cmssmarteditContainer/componentMenu/componentType.directive.js"></script>
+    <script src="jsTarget/web/features/cmssmarteditContainer/templates.js"></script>
+</head>
+
+<body data-ng-app="componentMenuApp" data-ng-controller="defaultController">
+
+    <div class="btn-group " dropdown is-open="true">
+        <button type="button" class="btn btn-default yHybridAction" dropdown-toggle ng-disabled="disabled" class="btn yDddlbResolution" aria-pressed="false" data-ng-click="triggerAction(item, $event)">
+            test
+        </button>
+        <div ng-include="'web/features/cmssmarteditContainer/componentMenu/componentMenuTemplate.html'" />
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,11 @@
+#
+# Enable access to warehousing BackOffice
+#
+
+INSERT_UPDATE Usergroup;uid[unique=true];groups(uid);locname[lang=en];
+;warehousemanagergroup;employeegroup,warehousemanagerrole;
+;warehouseagentgroup;employeegroup,warehouseagentrole;
+
+INSERT_UPDATE Employee;uid[unique=true];name;groups(uid);password
+;WarehouseManager;Warehouse Manager;warehousemanagergroup;1234
+;WarehouseAgent;Warehouse Agent;warehouseagentgroup;1234

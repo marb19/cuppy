@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--
+  ~ [y] hybris Platform
+  ~
+  ~ Copyright (c) 2000-2016 hybris AG
+  ~ All rights reserved.
+  ~
+  ~ This software is the confidential and proprietary information of hybris
+  ~ ("Confidential Information"). You shall not disclose such Confidential
+  ~ Information and shall use it only in accordance with the terms of the
+  ~ license agreement you entered into with hybris.
+  -->
+
+<config xmlns="http://www.hybris.com/cockpit/config">
+
+    <!-- Base configuration -->
+	<context merge-by="type" type="OAuthClientDetails" parent="GenericItem" component="base" >
+		<y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+			<y:labels>
+				<y:label>clientId</y:label>
+			</y:labels>
+		</y:base>
+	</context>   
+	
+	<context type="OAuthAccessToken" component="base" merge-by="type" parent="GenericItem" >
+        <y:base xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+            <y:labels>
+                <y:label>tokenId</y:label>
+            </y:labels>
+        </y:base>
+    </context> 
+   
+ <!-- Actions for editor area -->
+
+ 	<context component="editorareaactions" type="OAuthAccessToken">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+        	<y:group qualifier="common">
+	                <y:action action-id="DeleteAccessTokenWithRefreshToken" property="currentObject"/>
+	        </y:group>
+        </y:actions>
+    </context>
+ 
+  	<context component="listviewactions" type="OAuthAccessToken">
+        <y:actions xmlns:y="http://www.hybris.com/cockpit/config/hybris">
+        	<y:group qualifier="common">
+	             <y:action action-id="DeleteAccessTokenWithRefreshToken" property="selectedObjects"/>
+	        </y:group>
+        </y:actions>
+    </context>
+ 
+    <!-- Explorer tree configuration -->    
+	<context merge-by="module" parent="auto" component="explorer-tree">
+		<explorer-tree:explorer-tree xmlns:explorer-tree="http://www.hybris.com/cockpitng/config/explorertree">
+			<explorer-tree:navigation-node id="hmc_treenode_system">
+				<explorer-tree:navigation-node id="hmc_type_tree_oauthserver">
+					<explorer-tree:type-node code="OAuthClientDetails" id="hmc_type_tree_oauthclientdetails" />
+					<explorer-tree:type-node code="OAuthAccessToken" id="type_tree_oauthaccesstoken"/>
+				</explorer-tree:navigation-node>
+			</explorer-tree:navigation-node>
+		</explorer-tree:explorer-tree>
+	</context>
+
+    <!-- List view configuration -->
+	<context merge-by="type" parent="GenericItem" type="OAuthClientDetails" component="listview">
+		<list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/component/listView">
+			<list-view:column qualifier="clientId"/>
+			<list-view:column qualifier="authorities"/>
+			<list-view:column qualifier="authorizedGrantTypes"/>
+		</list-view:list-view>
+	</context>
+
+    <context merge-by="type" parent="GenericItem" type="OAuthAccessToken" component="listview">
+        <list-view:list-view xmlns:list-view="http://www.hybris.com/cockpitng/component/listView">
+            <list-view:column qualifier="tokenId"/>
+            <list-view:column qualifier="userName"/>
+            <list-view:column qualifier="clientId"/>
+        </list-view:list-view>
+    </context>
+    
+ 	<!-- Editor area configuration -->
+	<context merge-by="type" parent="GenericItem" type="OAuthClientDetails" component="editor-area">
+		<editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/component/editorArea">
+			<editorArea:essentials>
+				<editorArea:essentialSection name="hmc.essential">
+					<editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="clientId" description="field.oauthclient.clientId.description"/>
+				</editorArea:essentialSection>
+			</editorArea:essentials>
+			<editorArea:tab name="hmc.tab.common">
+				<editorArea:section name="field.oauthclient.clientSecret.description">
+ 					<editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="clientSecret" description="field.oauthclient.clientSecret.description" editor="com.hybris.cockpitng.editor.defaultpassword"/>
+				</editorArea:section>
+				<editorArea:section name="section.oauthclient.basics">
+					<editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="authorities" description="field.oauthclient.authorities.description"/>
+					<editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="authorizedGrantTypes" description="field.oauthclient.authorizedGrantTypes.description"/>
+					<editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="resourceIds" description="field.oauthclient.resourceIds.description"/>
+					<editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="registeredRedirectUri" description="field.oauthclient.registeredRedirectUri.description"/>
+				</editorArea:section>
+				<editorArea:section name="section.oauthclient.scope">
+					<editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="scope" description="field.oauthclient.scope.description"/>
+					<editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="autoApprove" description="field.oauthclient.autoApprove.description"/>
+				</editorArea:section>
+				<editorArea:section name="section.oauthclient.tokenvalidity">
+					<editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="accessTokenValiditySeconds" description="field.oauthclient.accessTokenValiditySeconds.description"/>
+					<editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="refreshTokenValiditySeconds" description="field.oauthclient.refreshTokenValiditySeconds.description"/>
+				</editorArea:section>
+			</editorArea:tab>
+		</editorArea:editorArea>
+	</context>
+	
+	<context merge-by="type" parent="GenericItem"  type="OAuthAccessToken" component="editor-area">
+        <editorArea:editorArea xmlns:editorArea="http://www.hybris.com/cockpitng/component/editorArea">
+            <editorArea:tab name="hmc.tab.common">
+            	<editorArea:section name="section.oauthtoken.basics">
+	                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="tokenId" readonly="true"/>
+	                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="userName" readonly="true"/>
+	                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="clientId" readonly="true"/>
+	                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="refreshToken" readonly="true"/>
+	                    <editorArea:attribute xmlns="http://www.hybris.com/cockpitng/component/editorArea" qualifier="authenticationId" readonly="true"/>
+                    </editorArea:section>
+            </editorArea:tab>
+        </editorArea:editorArea>
+    </context>	
+
+    <!--   Simple search configuration -->
+	<context merge-by="type" parent="GenericItem" type="OAuthClientDetails" component="simple-search">
+		<simple-search:simple-search xmlns:simple-search="http://www.hybris.com/cockpitng/config/simplesearch">
+			<simple-search:field xmlns="http://www.hybris.com/cockpitng/config/simplesearch" name="clientId"/>
+		</simple-search:simple-search>
+	</context>
+	
+	<context merge-by="type" parent="GenericItem" type="OAuthAccessToken" component="simple-search">
+        <simple-search:simple-search xmlns:simple-search="http://www.hybris.com/cockpitng/config/simplesearch">
+            <simple-search:field xmlns="http://www.hybris.com/cockpitng/config/simplesearch" name="userName"/>
+            <simple-search:field xmlns="http://www.hybris.com/cockpitng/config/simplesearch" name="clientId"/>
+        </simple-search:simple-search>
+    </context>
+        
+    <!--   Advanced search configuration -->
+	<context merge-by="type" parent="GenericItem" type="OAuthClientDetails" component="advanced-search">
+		<advanced-search:advanced-search xmlns:advanced-search="http://www.hybris.com/cockpitng/config/advancedsearch">
+			<advanced-search:field-list>
+				<advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="clientId" selected="true" operator="contains" />			
+				<advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="authorities" selected="false" />			
+				<advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="registeredRedirectUri" selected="false" />			
+				<advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="resourceIds" selected="false" />			
+				<advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="authorizedGrantTypes" selected="false" />			
+				<advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="scope" selected="false" />			
+				<advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="autoApprove" selected="false" />			
+				<advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="authorizedGrantTypes" selected="false" />			
+				<advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="refreshTokenValiditySeconds" selected="false" />			
+			</advanced-search:field-list>
+		</advanced-search:advanced-search>
+	</context>
+	
+		<context merge-by="type" parent="GenericItem" type="OAuthAccessToken" component="advanced-search">
+		<advanced-search:advanced-search xmlns:advanced-search="http://www.hybris.com/cockpitng/config/advancedsearch">
+			<advanced-search:field-list>
+				<advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="clientId" selected="true" operator="contains" />			
+				<advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="userName" selected="true" />
+				<advanced-search:field xmlns="http://www.hybris.com/cockpitng/config/advancedsearch" name="tokenId" selected="false" />			
+			</advanced-search:field-list>
+		</advanced-search:advanced-search>
+	</context>
+
+	<!--   Wizards -->
+	<context merge-by="type" type="OAuthClientDetails" component="create-wizard">
+		<wz:flow xmlns:wz="http://www.hybris.com/cockpitng/config/wizard-config" id="OAuthClientDetailsWizard" title="create.title(ctx.TYPE_CODE)">
+			<wz:prepare id="newItemPrepare">
+				<wz:initialize property="newItem" type="ctx.TYPE_CODE"/>
+			</wz:prepare>
+			<wz:step id="step1" label="create.oauthclient.essential.label">
+				<wz:content id="step1.content">
+					<wz:property-list root="newItem">
+						<wz:property qualifier="clientId" description="field.oauthclient.clientId.description"/>
+						<wz:property qualifier="clientSecret" description="field.oauthclient.clientSecret.description" editor="com.hybris.cockpitng.editor.defaultpassword"/>
+					</wz:property-list>
+				</wz:content>
+				<wz:navigation id="step1.navigation">
+					<wz:cancel/>
+					<wz:next visible="!#empty(newItem.clientId)"/>
+				</wz:navigation>
+			</wz:step>
+			<wz:step id="step2" label="create.oauthclient.basic.label">
+				<wz:content id="step2.content">
+					<wz:property-list root="newItem">
+						<wz:property qualifier="authorities" description="field.oauthclient.authorities.description"/>
+						<wz:property qualifier="authorizedGrantTypes" description="field.oauthclient.authorizedGrantTypes.description"/>
+						<wz:property qualifier="resourceIds" description="field.oauthclient.resourceIds.description"/>
+						<wz:property qualifier="registeredRedirectUri" description="field.oauthclient.registeredRedirectUri.description"/>
+					</wz:property-list>
+				</wz:content>
+				<wz:navigation id="step2.navigation">
+					<wz:cancel/>
+					<wz:next/>
+					</wz:navigation>
+			</wz:step>
+			<wz:step id="step3" label="create.oauthclient.scope.label">
+				<wz:content id="step3.content">
+					<wz:property-list root="newItem">
+						<wz:property qualifier="scope" description="field.oauthclient.scope.description"/>
+						<wz:property qualifier="autoApprove" description="field.oauthclient.autoApprove.description"/>
+					</wz:property-list>
+				</wz:content>
+				<wz:navigation id="step3.navigation">
+					<wz:cancel/>
+					<wz:back/>
+					<wz:next visible="!#empty(newItem.scope)"/>
+					<wz:done visible="!#empty(newItem.scope) AND !#empty(newItem.clientId)">
+						<wz:save property="newItem"/>
+					</wz:done>
+				</wz:navigation>
+			</wz:step>
+			<wz:step id="step4" label="create.oauthclient.tokenValidity.label">
+				<wz:content id="step4.content">
+					<wz:property-list root="newItem">
+						<wz:property qualifier="accessTokenValiditySeconds" description="field.oauthclient.accessTokenValiditySeconds.description"/>
+						<wz:property qualifier="refreshTokenValiditySeconds" description="field.oauthclient.refreshTokenValiditySeconds.description"/>
+					</wz:property-list>
+				</wz:content>
+				<wz:navigation id="step4.navigation">
+					<wz:cancel/>
+					<wz:back/>
+					<wz:done visible="!#empty(newItem.scope) AND !#empty(newItem.clientId)">
+						<wz:save property="newItem"/>
+					</wz:done>
+				</wz:navigation>
+			</wz:step>
+		</wz:flow>
+	</context>
+
+
+</config>

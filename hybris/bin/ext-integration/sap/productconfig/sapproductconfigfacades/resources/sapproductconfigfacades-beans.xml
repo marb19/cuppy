@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="beans.xsd">
+	
+	<enum class="de.hybris.platform.sap.productconfig.facades.UiType">
+		<value>STRING</value>
+		<value>NUMERIC</value>
+		<value>CHECK_BOX</value>
+		<value>CHECK_BOX_LIST</value>
+		<value>RADIO_BUTTON</value>
+		<value>RADIO_BUTTON_ADDITIONAL_INPUT</value>
+		<value>DROPDOWN</value>
+		<value>DROPDOWN_ADDITIONAL_INPUT</value>
+		<value>READ_ONLY</value>
+		<value>NOT_IMPLEMENTED</value>
+	</enum>
+	
+	<enum class="de.hybris.platform.sap.productconfig.facades.UiValidationType">
+		<value>NUMERIC</value>
+		<value>NONE</value>
+	</enum>
+
+	<enum class="de.hybris.platform.sap.productconfig.facades.GroupStatusType">
+		<value>CONFLICT</value>
+		<value>DEFAULT</value>
+		<value>ERROR</value>
+		<value>WARNING</value>
+		<value>FLAG</value>
+		<value>FINISHED</value>
+	</enum>
+	
+	<enum class="de.hybris.platform.sap.productconfig.facades.CsticStatusType">
+		<value>CONFLICT</value>
+		<value>DEFAULT</value>
+		<value>ERROR</value>
+		<value>WARNING</value>
+		<value>FINISHED</value>
+	</enum>
+
+	<enum class="de.hybris.platform.sap.productconfig.facades.GroupType">
+		<value>CSTIC_GROUP</value>
+		<value>INSTANCE</value>
+		<value>CONFLICT</value>
+		<value>CONFLICT_HEADER</value>
+	</enum>
+
+	<enum class="de.hybris.platform.sap.productconfig.facades.FirstOrLastGroupType">
+		<value>FIRST</value>
+		<value>INTERJACENT</value>
+		<value>LAST</value>
+		<value>ONLYONE</value>
+	</enum>
+
+	<enum class="de.hybris.platform.sap.productconfig.facades.CPQActionType">
+		<value>NAV_TO_CSTIC_IN_GROUP</value>
+		<value>NAV_TO_CSTIC_IN_CONFLICT</value>
+		<value>PREV_BTN</value>
+		<value>NEXT_BTN</value>
+		<value>SHOW_FULL_LONG_TEXT</value>
+		<value>HIDE_FULL_LONG_TEXT</value>
+		<value>MENU_NAVIGATION</value>
+		<value>VALUE_CHANGED</value>
+		<value>RETRACT_VALUE</value>
+	</enum>
+
+	<bean class="de.hybris.platform.commercefacades.product.data.ProductData">
+		<property name="configurable" type="java.lang.Boolean" />
+	</bean>
+
+	<bean class="de.hybris.platform.sap.productconfig.facades.CsticData">
+		<property name="key" type="String"/>
+		<property name="value" type="String"/>
+		<property name="instanceId" type="String"/>
+		<property name="additionalValue" type="String"/>
+		<property name="lastValidValue" type="String"/>
+		<property name="name" type="String"/>
+		<property name="longText" type="String"/>
+		<property name="longTextHTMLFormat" type="boolean"/>
+		<property name="showFullLongText" type="boolean"/>
+		<property name="type" type="de.hybris.platform.sap.productconfig.facades.UiType"/>
+		<property name="validationType" type="de.hybris.platform.sap.productconfig.facades.UiValidationType"/>
+		<property name="visible" type="boolean"/>
+		<property name="required" type="boolean"/>
+		<property name="intervalInDomain" type="boolean"/>
+		<property name="maxlength" type="int"/>
+		<property name="domainvalues" type="java.util.List&lt;CsticValueData&gt;"/>
+		<property name="langdepname" type="String"/>
+		<property name="typeLength" type="int"/>
+		<property name="numberScale" type="int"/>
+		<property name="entryFieldMask" type="String"/>
+		<property name="conflicts" type="java.util.List&lt;ConflictData&gt;"/>
+		<property name="position" type="int"/>
+		<property name="csticStatus" type="de.hybris.platform.sap.productconfig.facades.CsticStatusType"/>
+		<property name="placeholder" type="String"/>		
+		<property name="retractTriggered" type="boolean"/>		
+	</bean>
+
+	<bean class="de.hybris.platform.sap.productconfig.facades.CsticValueData">
+		<property name="key" type="String"/>
+		<property name="selected" type="boolean"/>
+		<property name="readonly" type="boolean"/>
+		<property name="name" type="String"/>
+		<property name="langdepname" type="String"/>
+		<property name="deltaPrice" type="de.hybris.platform.commercefacades.product.data.PriceData" />
+	</bean>
+	
+	<bean class="de.hybris.platform.sap.productconfig.facades.ConflictData">
+    	<property name="text" type="String"/>
+	</bean>
+
+	<bean class="de.hybris.platform.sap.productconfig.facades.KBKeyData">
+		<property name="productCode" type="String"/>
+		<property name="kbName" type="String"/>
+		<property name="kbLogsys" type="String"/>
+		<property name="kbVersion" type="String"/>
+	</bean>
+
+	<bean class="de.hybris.platform.sap.productconfig.facades.UiGroupData">
+		<property name="id" type="String"/>
+		<property name="name" type="String"/>
+		<property name="description" type="String"/>
+		<property name="summaryText" type="String"/>
+		<property name="collapsed" type="boolean"/>
+		<property name="collapsedInSpecificationTree" type="boolean"/>
+		<property name="configurable" type="boolean"/>
+		<property name="visited" type="boolean" />		
+		<property name="groupType" type="de.hybris.platform.sap.productconfig.facades.GroupType"/>
+		<property name="groupStatus" type="de.hybris.platform.sap.productconfig.facades.GroupStatusType"/>
+		<property name="cstics" type="java.util.List&lt;de.hybris.platform.sap.productconfig.facades.CsticData&gt;"/>
+		<property name="subGroups" type="java.util.List&lt;de.hybris.platform.sap.productconfig.facades.UiGroupData&gt;"/>
+		<property name="oneConfigurableSubGroup" type="boolean"/>
+		<property name="numberErrorCstics" type="int"/>
+		<property name="firstOrLastGroup" type="de.hybris.platform.sap.productconfig.facades.FirstOrLastGroupType"/>
+	</bean>
+	
+	<bean class="de.hybris.platform.sap.productconfig.facades.UiGroupForDisplayData">
+		<property name="group" type="de.hybris.platform.sap.productconfig.facades.UiGroupData"/>
+		<property name="path" type="String"/>
+		<property name="groupIdPath" type="String"/>
+	</bean>
+
+	<bean class="de.hybris.platform.sap.productconfig.facades.PricingData">
+		<property name="basePrice" type="de.hybris.platform.commercefacades.product.data.PriceData"/>
+		<property name="selectedOptions" type="de.hybris.platform.commercefacades.product.data.PriceData"/>
+		<property name="currentTotal" type="de.hybris.platform.commercefacades.product.data.PriceData"/>		
+	</bean>
+	
+	<bean class="de.hybris.platform.sap.productconfig.facades.ConfigurationData">
+		<property name="kbKey" type="de.hybris.platform.sap.productconfig.facades.KBKeyData"/>
+		<property name="pricing" type="de.hybris.platform.sap.productconfig.facades.PricingData"/>
+		<property name="groups" type="java.util.List&lt;de.hybris.platform.sap.productconfig.facades.UiGroupData&gt;"/>
+		<property name="csticGroupsFlat" type="java.util.List&lt;de.hybris.platform.sap.productconfig.facades.UiGroupData&gt;"/>				
+		<property name="configId" type="String"/>
+		<property name="cartItemPK" type="String"/>	
+		<property name="selectedGroup" type="String"/>		
+		<property name="showLegend" type="boolean"/>
+		<property name="autoExpand" type="boolean"/>
+		<property name="startLevel" type="int"/>
+		<property name="focusId" type="String"/>
+		<property name="specificationTreeCollapsed" type="boolean"/>
+		<property name="priceSummaryCollapsed" type="boolean"/>
+		<property name="inputMerged" type="boolean"/>
+		<property name="groupIdToDisplay" type="String"/>
+		<property name="groupToDisplay" type="de.hybris.platform.sap.productconfig.facades.UiGroupForDisplayData"/>
+		<property name="groupIdToToggle" type="String"/>
+		<property name="groupIdToToggleInSpecTree" type="String"/>
+		<property name="forceExpand" type="boolean"/>
+		<property name="consistent" type="boolean"/>
+		<property name="complete" type="boolean"/>
+		<property name="hideImageGallery" type="boolean"/>
+		<property name="singleLevel" type="boolean"/>
+		<property name="prevNextButtonClicked" type="String"/>
+		<property name="cpqAction" type="de.hybris.platform.sap.productconfig.facades.CPQActionType"/>
+	</bean>
+	
+	<bean class="de.hybris.platform.commercefacades.order.data.OrderEntryData">
+		<property name="configurationAttached"
+		          type="boolean"/>
+		<property name="itemPK"
+		          type="String"/>
+	   <property name="configurationConsistent"
+		          type="boolean"/>
+		<property name="configurationErrorCount"
+		          type="int"/>
+	</bean>
+	
+</beans>

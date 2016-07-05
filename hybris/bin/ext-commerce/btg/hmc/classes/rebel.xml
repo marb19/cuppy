@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://www.zeroturnaround.com">
+  <classpath>
+    <dir name="/rp/tmp/pipelines/20160224092519_advanced_personalization_artifact_release_6_0_0_8f85dac6c675aea563d5e4790c3806a6214bb64b/prepare/build/source/btg/hmc/classes" />
+  </classpath>
+</application>

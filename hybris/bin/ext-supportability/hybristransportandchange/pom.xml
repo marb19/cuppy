@@ -1,0 +1,90 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                      http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.hybris.onpremise</groupId>
+		<artifactId>superpom</artifactId>
+		<version>2.1.1</version>
+	</parent>
+
+
+	<groupId>de.hybris.platform</groupId>
+	<artifactId>hybristransportandchange-module</artifactId>
+	<version>6.0.0.0-RC3</version>
+	<packaging>pom</packaging>
+
+	<build>
+		<plugins>
+		  <plugin>
+			<groupId>org.codehaus.mojo</groupId>
+			<artifactId>build-helper-maven-plugin</artifactId>
+			<version>1.8</version>
+			<executions>
+			  <execution>
+				<id>attach-artifacts</id>
+				<phase>package</phase>
+				<goals>
+				  <goal>attach-artifact</goal>
+				</goals>
+				<configuration>
+				  <artifacts>
+	 
+					<!-- english localization files artifact -->
+					<artifact>
+					  <file>${project.build.directory}/hybris/temp/dists/langpack.zip</file>
+					  <classifier>loc</classifier>
+					  <type>zip</type>
+					</artifact>
+	 
+					<!-- 'all extensions released as source' full release artifact - this is NOT the src artifact for debugging!  -->
+					<artifact>
+					  <file>${project.build.directory}/hybristransportandchange-module-${project.version}-dev.zip</file>
+					  <classifier>dev</classifier>
+					  <type>zip</type>
+					</artifact>
+	 
+				  </artifacts>
+				</configuration>
+			  </execution>
+			</executions>
+		  </plugin>
+		</plugins>
+	</build>
+  
+	<!-- Define your hybris dependencies here -->
+	<dependencies>
+		<dependency>
+			<artifactId>platform-module</artifactId>
+			<groupId>de.hybris.platform</groupId>
+			<type>zip</type>
+			<version>6.0.0.0-M24</version>
+		</dependency>
+		<dependency>
+			<groupId>de.hybris.platform</groupId>
+			<artifactId>platform-optional-module</artifactId>
+			<version>6.0.0.0-M6</version>
+			<type>zip</type>
+		</dependency>
+	</dependencies>
+
+
+	<properties>
+		
+		<!-- hybris platform properties -->
+		<platform.extensions>hybristransportandchange</platform.extensions>
+		<testclasses.extensions>hybristransportandchange</testclasses.extensions>
+		<codequality.extensions>hybristransportandchange</codequality.extensions>
+		
+		<!-- hybris distribution properties -->
+		<dist.extensions.binary>hybristransportandchange</dist.extensions.binary>
+		<dist.extensions.source></dist.extensions.source>
+		<dist.create.source.dist>true</dist.create.source.dist>
+		<dist.create.en.langpack>true</dist.create.en.langpack>
+		<dist.include.platform>false</dist.include.platform>
+		<hybris.local.ext.hybristransportandchange.package>ext-supportability</hybris.local.ext.hybristransportandchange.package>
+		<dist.finaldevzipname>${project.build.directory}/hybristransportandchange-module-${project.version}-dev.zip</dist.finaldevzipname>
+	</properties>
+
+</project>

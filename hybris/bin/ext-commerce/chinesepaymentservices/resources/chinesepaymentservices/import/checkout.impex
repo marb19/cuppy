@@ -1,0 +1,20 @@
+# -----------------------------------------------------------------------
+# [y] hybris Platform
+#
+# Copyright (c) 2000-2015 hybris AG
+# All rights reserved.
+# 
+# This software is the confidential and proprietary information of hybris
+# ("Confidential Information"). You shall not disclose such Confidential
+# Information and shall use it only in accordance with the terms of the
+# license agreement you entered into with hybris.
+# -----------------------------------------------------------------------
+
+INSERT_UPDATE ServicelayerJob;code[unique=true];springId
+;unpaidOrderCancelJob;unpaidOrderCancelJob
+
+INSERT_UPDATE CronJob;code[unique=true];job(code);singleExecutable;sessionLanguage(isocode)
+;unpaidOrderCancelJob;unpaidOrderCancelJob;false;en
+
+INSERT_UPDATE Trigger;cronjob(code)[unique=true];cronExpression
+;unpaidOrderCancelJob;0 0 * * * ?

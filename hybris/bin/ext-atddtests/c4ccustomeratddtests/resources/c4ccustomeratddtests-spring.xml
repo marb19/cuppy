@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ [y] hybris Platform
+
+ Copyright (c) 2000-2016 hybris AG
+ All rights reserved.
+
+ This software is the confidential and proprietary information of hybris
+ ("Confidential Information"). You shall not disclose such Confidential
+ Information and shall use it only in accordance with the terms of the
+ license agreement you entered into with hybris.
+-->
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+		 xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns:context="http://www.springframework.org/schema/context"
+		 xmlns:util="http://www.springframework.org/schema/util"
+		 xsi:schemaLocation="http://www.springframework.org/schema/beans
+		 	http://www.springframework.org/schema/beans/spring-beans.xsd
+		 	http://www.springframework.org/schema/context
+		 	http://www.springframework.org/schema/context/spring-context.xsd
+		 	http://www.springframework.org/schema/util
+		 	http://www.springframework.org/schema/util/spring-util.xsd"
+		 profile="tenant_junit">
+
+	<context:annotation-config />
+
+	<bean id="c4cIntegrationServer" parent="atddServletContainer">
+		<property name="jettyConfigPath" value="${c4ccustomeratddtests.jetty.config}"/>
+		<property name="libPath" value="${c4ccustomeratddtests.jetty.lib}"/>
+		<property name="logFilePath" value="${c4ccustomeratddtests.jetty.log}"/>
+		<property name="port" value="${c4ccustomeratddtests.jetty.port}"/>
+		<property name="properties">
+			<props>
+				<prop key="kernel.autoInitMode">create-drop</prop>
+				<prop key="datahub.c4c.exportURL">${c4ccustomeratddtests.datahub.c4c.exportURL}</prop>
+				<prop key="datahub.c4c.userName">${c4ccustomeratddtests.datahub.c4c.userName}</prop>
+				<prop key="datahub.c4c.password">${c4ccustomeratddtests.datahub.c4c.password}</prop>
+				<prop key="datahub.c4c.senderParty.schemeID.GLOBAL">${c4ccustomeratddtests.datahub.c4c.senderParty.schemeID.GLOBAL}</prop>
+				<prop key="datahub.c4c.senderParty.internalID.GLOBAL">${c4ccustomeratddtests.datahub.c4c.senderParty.internalID.GLOBAL}</prop>
+				<prop key="datahub.c4c.senderParty.schemeAgencyID.GLOBAL">${c4ccustomeratddtests.datahub.c4c.senderParty.schemeAgencyID.GLOBAL}</prop>
+				<prop key="datahub.c4c.recipientParty.schemeID.GLOBAL">${c4ccustomeratddtests.datahub.c4c.recipientParty.schemeID.GLOBAL}</prop>
+				<prop key="datahub.c4c.recipientParty.internalID.GLOBAL">${c4ccustomeratddtests.datahub.c4c.recipientParty.internalID.GLOBAL}</prop>
+				<prop key="datahub.c4c.recipientParty.schemeAgencyID.GLOBAL">${c4ccustomeratddtests.datahub.c4c.recipientParty.schemeAgencyID.GLOBAL}</prop>
+				<prop key="datahub.c4c.waitBeforeTriggerPublication">${c4ccustomeratddtests.datahub.c4c.waitBeforeTriggerPublication}</prop>
+				<prop key="datahub.c4c.shouldTriggerPublication">${c4ccustomeratddtests.datahub.c4c.shouldTriggerPublication}</prop>
+				<prop key="datahub.encryption.key.path">${c4ccustomeratddtests.datahub.encryption.key.path}</prop>
+				<!-- the following properties are meant for setting basic authentication on datahub -->
+				<prop key="datahub.security.basic.admin.user">${c4ccustomeratddtests.datahub.security.basic.admin.user}</prop>
+				<prop key="datahub.security.basic.admin.password">${c4ccustomeratddtests.datahub.security.basic.admin.password}</prop>
+				<prop key="datahub.security.basic.read_only.user">${c4ccustomeratddtests.datahub.security.basic.read_only.user}</prop>
+				<prop key="datahub.security.basic.read_only.password">${c4ccustomeratddtests.datahub.security.basic.read_only.password}</prop>
+			</props>
+		</property>
+		<property name="servlets">
+				<list>
+					<bean parent="servletDefinition">
+						<property name="contextPath" value="/datahub"/>
+						<property name="servletPath" value="${c4ccustomeratddtests.war.path}"/>
+						<property name="heartbeat" value="/datahub"/>
+					</bean>
+					<bean parent="servletDefinition">
+						<property name="contextPath" value="/c4c-endpoint-mock-webapp"/>
+						<property name="servletPath" value="${c4ccustomeratddtests.c4c.endpoint.mock.war.path}"/>
+						<property name="heartbeat" value="${c4ccustomeratddtests.c4c.endpoint.mock.heartbeat}"/>
+					</bean>
+				</list>
+		</property>
+	</bean>
+
+	<bean id="c4cCookieStore" class="org.apache.http.impl.client.BasicCookieStore" />
+
+	<bean id="c4cHttpClientContext" class="org.apache.http.client.protocol.HttpClientContext" factory-method="create">
+		<property name="credentialsProvider" ref="c4cCredentialsProvider" />
+		<property name="cookieStore" ref="c4cCookieStore" />
+	</bean>
+	
+	<bean id="c4cCredentialsProvider" class="org.apache.http.impl.client.BasicCredentialsProvider" />
+	
+	<bean class="org.springframework.beans.factory.config.MethodInvokingFactoryBean">
+		<property name="targetObject">
+			<ref bean="c4cCredentialsProvider"/>
+		</property>
+		<property name="targetMethod" value="setCredentials" />
+		<property name="arguments">
+			<list>
+				<util:constant static-field="org.apache.http.auth.AuthScope.ANY"/>
+				<bean class="org.apache.http.auth.UsernamePasswordCredentials">
+					<constructor-arg value="${c4ccustomeratddtests.datahubadapter.datahuboutbound.user}" />
+					<constructor-arg value="${c4ccustomeratddtests.datahubadapter.datahuboutbound.password}" />
+				</bean>
+			</list>
+		</property>
+	</bean>
+
+	<bean id="c4cRequestConfigBuilder" class="org.apache.http.client.config.RequestConfig" factory-method="custom" />
+
+	<bean id="c4cRequestConfig" factory-bean="c4cRequestConfigBuilder" factory-method="build" />
+	
+	<bean id="c4cHttpClientBuilder" class="org.apache.http.impl.client.HttpClientBuilder" factory-method="create">
+		<property name="defaultRequestConfig" ref="c4cRequestConfig" />
+	</bean>
+	
+	<bean id="c4cHttpClient" factory-bean="c4cHttpClientBuilder" factory-method="build" />
+</beans>

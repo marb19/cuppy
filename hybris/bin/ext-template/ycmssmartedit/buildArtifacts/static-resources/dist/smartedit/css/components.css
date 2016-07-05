@@ -1,0 +1,269 @@
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.btn-group-lg > .btn {
+  padding: 10px 16px;
+  font-size: 18px;
+  line-height: 1.33;
+  border-radius: 6px;
+}
+.btn-group-sm > .btn {
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.btn-group-xs > .btn {
+  padding: 1px 5px;
+  font-size: 12px;
+  line-height: 1.5;
+  border-radius: 3px;
+}
+.container:before,
+.container:after,
+.container-fluid:before,
+.container-fluid:after,
+.row:before,
+.row:after,
+.form-horizontal .form-group:before,
+.form-horizontal .form-group:after,
+.btn-toolbar:before,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:before,
+.btn-group-vertical > .btn-group:after,
+.nav:before,
+.nav:after,
+.navbar:before,
+.navbar:after,
+.navbar-header:before,
+.navbar-header:after,
+.navbar-collapse:before,
+.navbar-collapse:after,
+.pager:before,
+.pager:after,
+.panel-body:before,
+.panel-body:after,
+.modal-footer:before,
+.modal-footer:after {
+  content: " ";
+  display: table;
+}
+.container:after,
+.container-fluid:after,
+.row:after,
+.form-horizontal .form-group:after,
+.btn-toolbar:after,
+.btn-group-vertical > .btn-group:after,
+.nav:after,
+.navbar:after,
+.navbar-header:after,
+.navbar-collapse:after,
+.pager:after,
+.panel-body:after,
+.modal-footer:after {
+  clear: both;
+}
+.ySEComponentMenu > li.item:first-of-type {
+  padding: 50px 50px 30px 50px;
+}
+.ySEComponentMenu .ySEComTypeTab {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #ffffff;
+  opacity: 0.5;
+}
+.ySEComponentMenu .ySECompSearchField {
+  font-family: "Open Sans", sans-serif;
+}
+.ySEComponentMenu .ySEComTypeTab.active {
+  opacity: 1;
+}
+.ySEComponentMenu .ySEBottomLabel {
+  font-family: "Open Sans", sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+  text-transform: none;
+  font-weight: normal;
+}
+.ySEComponentMenu .ySECustCompName,
+.ySEComponentMenu .ySECustCompType {
+  font-family: "Open Sans", sans-serif;
+}
+.ySEComponentMenu .ySECustCompType {
+  font-size: 11px;
+  text-transform: uppercase;
+}
+.ySEComponentMenu .ySECustCompName {
+  font-size: 13px;
+  font-weight: bold;
+}
+.ySEComponentMenu .ySECompTypeTitle .ySECustCompType {
+  line-height: 45px;
+}
+.ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem .ySECustomCompTitle.ySECompTypeTitle {
+  padding-top: 0;
+}
+.ySEComponentMenu .smartEditComponent:hover {
+  cursor: grab;
+  cursor: -webkit-grab;
+}
+.ySEComponentMenu .ySEComponentSearch {
+  background-color: #ffffff;
+  border: 1px solid #d4d7dc;
+  margin-top: 5px;
+}
+.ySEComponentMenu .ySEComponentSearch .ySESearchIcon {
+  background-color: #ffffff;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  top: 0;
+  font-size: large;
+}
+.ySEComponentMenu .ySEComponentSearch .ySECompSearchField {
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding-right: 0;
+  padding-left: 0;
+}
+.ySEComponentMenu .ySEComponentsResult {
+  padding: 20px 50px 50px 50px;
+}
+.ySEComponentMenu .ySEComponentsResult span.ySEBottomLabel {
+  display: block;
+  padding-left: 0px;
+  margin-top: 30px;
+  text-align: left;
+}
+.ySEComponentMenu .ySEComponentsResult ul.nav.nav-tabs li {
+  float: none;
+  display: inline-block;
+}
+.ySEComponentMenu .ySEComponentsResult ul.nav.nav-tabs li a {
+  color: #ffffff;
+  background-color: #32A0EB;
+  border-bottom: inherit;
+}
+.ySEComponentMenu .ySEComponentsResult ul.nav.nav-tabs li.active a {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid #ffffff;
+}
+.ySEComponentMenu .ySEComponents {
+  padding: 30px 0 0px;
+  text-align: center;
+}
+.ySEComponentMenu .ySEComponents .ySEComponentType {
+  max-width: 70px;
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-bottom: 20px;
+  float: left;
+}
+.ySEComponentMenu .ySEComponents .ySEComponentType img,
+.ySEComponentMenu .ySEComponents .ySEComponentType div {
+  width: 100%;
+}
+.ySEComponentMenu .ySEComponents .ySEComponentType div.control-label {
+  text-align: center;
+  color: #ffffff;
+  margin-top: 10px;
+}
+.ySEComponentMenu .ySEComponents .ySEComponentType :after {
+  float: none;
+}
+@media (min-width: 992px) {
+  .ySEComponentMenu {
+    width: 780px;
+    -webkit-transition: width 0.3s;
+    /* Safari */
+    transition: width 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane {
+    -ms-scrollbar-base-color: #32a0ec;
+    -ms-scrollbar-arrow-color: #327fec;
+    -ms-scrollbar-highlight-color: #32a0ec;
+    -ms-scrollbar-shadow-color: #327fec;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents {
+    overflow-y: scroll;
+    max-height: 240px;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentType div.control-label {
+    display: block;
+    /* Fallback for non-webkit */
+    display: -webkit-box;
+    height: 33.6px;
+    /* Fallback for non-webkit */
+    font-size: 12px;
+    line-height: 1.4;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    word-break: break-all;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem {
+    height: 55px;
+    vertical-align: middle;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem .smartEditComponent {
+    vertical-align: middle;
+    float: left;
+    width: 70px;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem .ySECustomCompTitle {
+    float: right;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-top: 4px;
+    width: calc(100% - 70px);
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem .smartEditComponent img {
+    width: 70px;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem .ySECustCompName,
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentItem .ySECustCompType {
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    letter-spacing: 0.6px;
+  }
+}
+@media (max-width: 991px) {
+  .ySEComponentMenu {
+    position: fixed;
+    top: 300px;
+    left: 0;
+    right: 0;
+    -webkit-transition: width 0.3s;
+    /* Safari */
+    transition: width 0.3s;
+    transition-timing-function: ease-in-out;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentType {
+    max-width: 100px;
+  }
+  .ySEComponentMenu .ySEComponentsResult .tab-content .tab-pane .ySEComponents .ySEComponentType img {
+    height: 65px;
+  }
+}
+#experience-selector-btn:focus,
+#experience-selector-btn:active {
+  outline: none;
+  outline-offset: 0;
+  box-shadow: none;
+}

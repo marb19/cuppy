@@ -1,0 +1,11 @@
+#Ant properties
+#Tue Feb 16 10:47:26 CET 2016
+builddate=20160216 1047
+description=webservicescommonsbackoffice
+group.id=de.hybris.platform
+module.name=platform-module
+name=webservicescommonsbackoffice
+releasedate=20160213 0023
+vendor=hybris
+version=6.0.0.0-SNAPSHOT
+version.api=6.0.0
